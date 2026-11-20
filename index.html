@@ -194,6 +194,108 @@
                 </div>
                 <span class="tech-note" x-show="item.note" x-text="item.note"></span>
 
+                <template x-if="(tech.images || []).length > 0">
+                  <div
+                    class="tech-carousel"
+                    role="region"
+                    aria-roledescription="carousel"
+                    :aria-label="`Illustrations de ${tech.name}`"
+                    x-data="{
+                      activeSlide: 0,
+                      rafPending: false,
+                      count() { return (tech.images || []).length; },
+                      goTo(idx) {
+                        const track = this.$refs.track;
+                        if (!track) return;
+                        const total = this.count();
+                        const target = ((idx % total) + total) % total;
+                        this.activeSlide = target;
+                        track.scrollTo({ left: target * track.clientWidth });
+                      },
+                      onScroll() {
+                        if (this.rafPending) return;
+                        this.rafPending = true;
+                        requestAnimationFrame(() => {
+                          this.rafPending = false;
+                          const track = this.$refs.track;
+                          if (!track || !track.clientWidth) return;
+                          this.activeSlide = Math.round(track.scrollLeft / track.clientWidth);
+                        });
+                      }
+                    }"
+                  >
+                    <div class="carousel-stage">
+                      <template x-if="tech.images.length > 1">
+                        <div class="carousel-controls">
+                          <button
+                            type="button"
+                            class="carousel-btn"
+                            @click="goTo(activeSlide - 1)"
+                            aria-label="Image précédente"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                          </button>
+                          <button
+                            type="button"
+                            class="carousel-btn"
+                            @click="goTo(activeSlide + 1)"
+                            aria-label="Image suivante"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                          </button>
+                        </div>
+                      </template>
+
+                      <div
+                        class="carousel-track"
+                        x-ref="track"
+                        tabindex="0"
+                        role="group"
+                        aria-label="Images"
+                        @scroll="onScroll()"
+                      >
+                        <template x-for="(img, iIdx) in tech.images" :key="img.url">
+                          <figure
+                            class="carousel-slide"
+                            role="group"
+                            aria-roledescription="slide"
+                            :aria-label="`${iIdx + 1} sur ${tech.images.length}`"
+                          >
+                            <button
+                              type="button"
+                              class="carousel-img-btn"
+                              @click="openLightbox(tech, iIdx)"
+                              :aria-label="`Agrandir ${tech.name} — ${img.title}`"
+                            >
+                              <img
+                                class="carousel-img"
+                                :src="img.url"
+                                :alt="`${tech.name} — ${img.title}`"
+                                loading="lazy"
+                              />
+                            </button>
+                            <figcaption class="carousel-caption" x-text="img.credit"></figcaption>
+                          </figure>
+                        </template>
+                      </div>
+                    </div>
+
+                    <template x-if="tech.images.length > 1">
+                      <nav class="carousel-markers" aria-label="Choisir une image">
+                        <template x-for="(img, iIdx) in tech.images" :key="`dot-${iIdx}`">
+                          <button
+                            type="button"
+                            class="carousel-dot"
+                            :aria-current="activeSlide === iIdx ? 'true' : 'false'"
+                            :aria-label="`Image ${iIdx + 1} sur ${tech.images.length}`"
+                            @click="goTo(iIdx)"
+                          ></button>
+                        </template>
+                      </nav>
+                    </template>
+                  </div>
+                </template>
+
                 <template x-if="tech.videos?.baseline?.youtube_id">
                   <a
                     class="video-link"
@@ -362,6 +464,64 @@
     </div>
   </dialog>
 
+  <dialog
+    id="lightbox-dialog"
+    class="lightbox-dialog"
+    closedby="any"
+    aria-labelledby="lightbox-title"
+    x-ref="lightboxDialog"
+    @close="lightbox = null"
+    @keydown.left.prevent="lightbox && lightbox.images.length > 1 && stepLightbox(-1)"
+    @keydown.right.prevent="lightbox && lightbox.images.length > 1 && stepLightbox(1)"
+  >
+    <template x-if="lightbox">
+      <div class="lightbox-inner">
+        <div class="lightbox-header">
+          <div>
+            <h2 id="lightbox-title" class="lightbox-title" x-text="lightbox.name"></h2>
+            <p class="lightbox-subtitle" x-text="lightbox.images[lightbox.index]?.title"></p>
+          </div>
+          <button type="button" class="glossary-close" @click="$refs.lightboxDialog.close()" aria-label="Fermer l’image">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+
+        <div class="lightbox-stage">
+          <button
+            type="button"
+            class="carousel-btn lightbox-nav prev"
+            x-show="lightbox.images.length > 1"
+            @click="stepLightbox(-1)"
+            aria-label="Image précédente"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+
+          <img
+            class="lightbox-img"
+            :src="lightbox.images[lightbox.index]?.url"
+            :alt="`${lightbox.name} — ${lightbox.images[lightbox.index]?.title}`"
+          />
+
+          <button
+            type="button"
+            class="carousel-btn lightbox-nav next"
+            x-show="lightbox.images.length > 1"
+            @click="stepLightbox(1)"
+            aria-label="Image suivante"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="lightbox-footer">
+          <span class="lightbox-credit" x-text="lightbox.images[lightbox.index]?.credit"></span>
+          <span class="lightbox-counter" x-show="lightbox.images.length > 1" x-text="`${lightbox.index + 1} / ${lightbox.images.length}`"></span>
+        </div>
+      </div>
+    </template>
+  </dialog>
+
   <script>
     const MASTERED_KEY = 'judo:mastered';
 
@@ -477,6 +637,7 @@
         mastered: loadMastered(),
         glossarySearch: '',
         glossaryKind: 'all',
+        lightbox: null,
 
         glossaryKindOptions: [
           { value: 'all', label: 'Tout' },
@@ -676,6 +837,22 @@
 
         openGlossary() {
           this.$refs.glossaryDialog?.showModal();
+        },
+
+        openLightbox(tech, index = 0) {
+          const images = tech.images || [];
+          if (!images.length) return;
+          this.lightbox = { name: tech.name, images, index };
+          this.$refs.lightboxDialog?.showModal();
+        },
+
+        stepLightbox(delta) {
+          if (!this.lightbox) return;
+          const total = this.lightbox.images.length;
+          this.lightbox = {
+            ...this.lightbox,
+            index: ((this.lightbox.index + delta) % total + total) % total,
+          };
         },
 
         get glossaryEntries() {

@@ -18,11 +18,26 @@
           "color": "#facc15",
           "is_stripe": true,
           "items": [
-            { "id": "o-soto-gari", "group": "Nage-waza" },
-            { "id": "hiza-guruma", "group": "Nage-waza" },
-            { "id": "uki-goshi", "group": "Nage-waza" },
-            { "id": "kuzure-gesa-gatame", "group": "Katame-waza" },
-            { "id": "yoko-shiho-gatame", "group": "Katame-waza" }
+            {
+              "id": "o-soto-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "hiza-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "uki-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "kuzure-gesa-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "yoko-shiho-gatame",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -32,11 +47,26 @@
           "color": "#eab308",
           "is_stripe": false,
           "items": [
-            { "id": "o-uchi-gari", "group": "Nage-waza" },
-            { "id": "ko-uchi-gari", "group": "Nage-waza" },
-            { "id": "tai-otoshi", "group": "Nage-waza" },
-            { "id": "tate-shiho-gatame", "group": "Katame-waza" },
-            { "id": "kami-shiho-gatame", "group": "Katame-waza" }
+            {
+              "id": "o-uchi-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ko-uchi-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tai-otoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tate-shiho-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "kami-shiho-gatame",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -46,12 +76,30 @@
           "color": "#fb923c",
           "is_stripe": true,
           "items": [
-            { "id": "ko-soto-gari", "group": "Nage-waza" },
-            { "id": "ko-soto-gake", "group": "Nage-waza" },
-            { "id": "o-goshi", "group": "Nage-waza" },
-            { "id": "ippon-seoi-nage", "group": "Nage-waza" },
-            { "id": "kuzure-kami-shiho-gatame", "group": "Katame-waza" },
-            { "id": "hon-gesa-gatame", "group": "Katame-waza" }
+            {
+              "id": "ko-soto-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ko-soto-gake",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "o-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ippon-seoi-nage",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "kuzure-kami-shiho-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "hon-gesa-gatame",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -61,12 +109,30 @@
           "color": "#f97316",
           "is_stripe": false,
           "items": [
-            { "id": "de-ashi-barai", "group": "Nage-waza" },
-            { "id": "okuri-ashi-barai", "group": "Nage-waza" },
-            { "id": "tsuri-komi-goshi", "group": "Nage-waza" },
-            { "id": "harai-goshi", "group": "Nage-waza" },
-            { "id": "kuzure-gesa-gatame", "group": "Katame-waza" },
-            { "id": "kata-gatame", "group": "Katame-waza" }
+            {
+              "id": "de-ashi-barai",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "okuri-ashi-barai",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tsuri-komi-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "harai-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "kuzure-gesa-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "kata-gatame",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -76,12 +142,30 @@
           "color": "#4ade80",
           "is_stripe": true,
           "items": [
-            { "id": "sasae-tsuri-komi-ashi", "group": "Nage-waza" },
-            { "id": "morote-seoi-nage", "group": "Nage-waza" },
-            { "id": "uchi-mata", "group": "Nage-waza" },
-            { "id": "ko-uchi-makikomi", "group": "Nage-waza" },
-            { "id": "yoko-shiho-gatame", "group": "Katame-waza" },
-            { "id": "kuzure-kami-shiho-gatame", "group": "Katame-waza" }
+            {
+              "id": "sasae-tsuri-komi-ashi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "morote-seoi-nage",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "uchi-mata",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ko-uchi-makikomi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "yoko-shiho-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "kuzure-kami-shiho-gatame",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -91,12 +175,32 @@
           "color": "#16a34a",
           "is_stripe": false,
           "items": [
-            { "id": "tomoe-nage", "group": "Nage-waza" },
-            { "id": "yoko-otoshi", "group": "Nage-waza" },
-            { "id": "tani-otoshi", "group": "Nage-waza" },
-            { "id": "seoi-otoshi", "group": "Nage-waza", "note": "Affiché « Seo-otoshi » sur la fiche" },
-            { "id": "tate-shiho-gatame", "group": "Katame-waza", "note": "Deux variantes demandées" },
-            { "id": "ude-hishigi-juji-gatame", "group": "Katame-waza" }
+            {
+              "id": "tomoe-nage",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "yoko-otoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tani-otoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "seoi-otoshi",
+              "group": "Nage-waza",
+              "note": "Affiché « Seo-otoshi » sur la fiche"
+            },
+            {
+              "id": "tate-shiho-gatame",
+              "group": "Katame-waza",
+              "note": "Deux variantes demandées"
+            },
+            {
+              "id": "ude-hishigi-juji-gatame",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -106,14 +210,39 @@
           "color": "#60a5fa",
           "is_stripe": true,
           "items": [
-            { "id": "hane-goshi", "group": "Nage-waza" },
-            { "id": "ashi-guruma", "group": "Nage-waza" },
-            { "id": "sukui-nage", "group": "Nage-waza" },
-            { "id": "ushiro-goshi", "group": "Nage-waza" },
-            { "id": "morote-gari", "group": "Nage-waza" },
-            { "id": "ude-garami", "group": "Katame-waza" },
-            { "id": "ude-hishigi-waki-gatame", "group": "Katame-waza" },
-            { "id": "juji-jime", "group": "Katame-waza", "note": "Kata-juji-jime, Nami-juji-jime, Gyaku-juji-jime" }
+            {
+              "id": "hane-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ashi-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "sukui-nage",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ushiro-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "morote-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ude-garami",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-waki-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "juji-jime",
+              "group": "Katame-waza",
+              "note": "Kata-juji-jime, Nami-juji-jime, Gyaku-juji-jime"
+            }
           ]
         },
         {
@@ -123,14 +252,38 @@
           "color": "#2563eb",
           "is_stripe": false,
           "items": [
-            { "id": "o-guruma", "group": "Nage-waza" },
-            { "id": "te-guruma", "group": "Nage-waza" },
-            { "id": "utsuri-goshi", "group": "Nage-waza" },
-            { "id": "kuchiki-daoshi", "group": "Nage-waza" },
-            { "id": "ude-hishigi-ude-gatame", "group": "Katame-waza" },
-            { "id": "ude-hishigi-hiza-gatame", "group": "Katame-waza" },
-            { "id": "hadaka-jime", "group": "Katame-waza" },
-            { "id": "kata-ha-jime", "group": "Katame-waza" }
+            {
+              "id": "o-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "te-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "utsuri-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "kuchiki-daoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ude-hishigi-ude-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-hiza-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "hadaka-jime",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "kata-ha-jime",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -140,18 +293,54 @@
           "color": "#78350f",
           "is_stripe": false,
           "items": [
-            { "id": "soto-makikomi", "group": "Nage-waza" },
-            { "id": "hane-makikomi", "group": "Nage-waza" },
-            { "id": "uki-waza", "group": "Nage-waza" },
-            { "id": "sumi-gaeshi", "group": "Nage-waza" },
-            { "id": "hikkomi-gaeshi", "group": "Nage-waza" },
-            { "id": "kata-guruma", "group": "Nage-waza" },
-            { "id": "ura-nage", "group": "Nage-waza" },
-            { "id": "yoko-guruma", "group": "Nage-waza" },
-            { "id": "ude-hishigi-hara-gatame", "group": "Katame-waza" },
-            { "id": "ude-hishigi-sankaku-gatame", "group": "Katame-waza" },
-            { "id": "sankaku-jime", "group": "Katame-waza" },
-            { "id": "okuri-eri-jime", "group": "Katame-waza" }
+            {
+              "id": "soto-makikomi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "hane-makikomi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "uki-waza",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "sumi-gaeshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "hikkomi-gaeshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "kata-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ura-nage",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "yoko-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ude-hishigi-hara-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-sankaku-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "sankaku-jime",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "okuri-eri-jime",
+              "group": "Katame-waza"
+            }
           ]
         }
       ]
@@ -168,20 +357,63 @@
           "color": "#eab308",
           "is_stripe": false,
           "items": [
-            { "id": "de-ashi-barai", "group": "Nage-waza" },
-            { "id": "hiza-guruma", "group": "Nage-waza" },
-            { "id": "sasae-tsuri-komi-ashi", "group": "Nage-waza" },
-            { "id": "uki-goshi", "group": "Nage-waza" },
-            { "id": "o-soto-gari", "group": "Nage-waza" },
-            { "id": "o-goshi", "group": "Nage-waza" },
-            { "id": "o-uchi-gari", "group": "Nage-waza" },
-            { "id": "ippon-seoi-nage", "group": "Nage-waza", "note": "Ippon- / Morote- / Eri-seoi-nage" },
-            { "id": "hon-gesa-gatame", "group": "Katame-waza" },
-            { "id": "kuzure-gesa-gatame", "group": "Katame-waza" },
-            { "id": "kata-gatame", "group": "Katame-waza" },
-            { "id": "kami-shiho-gatame", "group": "Katame-waza" },
-            { "id": "yoko-shiho-gatame", "group": "Katame-waza" },
-            { "id": "tate-shiho-gatame", "group": "Katame-waza" }
+            {
+              "id": "de-ashi-barai",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "hiza-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "sasae-tsuri-komi-ashi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "uki-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "o-soto-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "o-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "o-uchi-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ippon-seoi-nage",
+              "group": "Nage-waza",
+              "note": "Ippon- / Morote- / Eri-seoi-nage"
+            },
+            {
+              "id": "hon-gesa-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "kuzure-gesa-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "kata-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "kami-shiho-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "yoko-shiho-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "tate-shiho-gatame",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -191,18 +423,58 @@
           "color": "#f97316",
           "is_stripe": false,
           "items": [
-            { "id": "ko-soto-gari", "group": "Nage-waza" },
-            { "id": "ko-uchi-gari", "group": "Nage-waza" },
-            { "id": "koshi-guruma", "group": "Nage-waza" },
-            { "id": "tsuri-komi-goshi", "group": "Nage-waza" },
-            { "id": "okuri-ashi-barai", "group": "Nage-waza" },
-            { "id": "tai-otoshi", "group": "Nage-waza" },
-            { "id": "harai-goshi", "group": "Nage-waza" },
-            { "id": "uchi-mata", "group": "Nage-waza" },
-            { "id": "kuzure-gesa-gatame", "group": "Katame-waza", "note": "Variantes" },
-            { "id": "kuzure-kami-shiho-gatame", "group": "Katame-waza", "note": "Variantes" },
-            { "id": "yoko-shiho-gatame", "group": "Katame-waza", "note": "Variantes" },
-            { "id": "tate-shiho-gatame", "group": "Katame-waza", "note": "Variantes" }
+            {
+              "id": "ko-soto-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ko-uchi-gari",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "koshi-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tsuri-komi-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "okuri-ashi-barai",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tai-otoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "harai-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "uchi-mata",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "kuzure-gesa-gatame",
+              "group": "Katame-waza",
+              "note": "Variantes"
+            },
+            {
+              "id": "kuzure-kami-shiho-gatame",
+              "group": "Katame-waza",
+              "note": "Variantes"
+            },
+            {
+              "id": "yoko-shiho-gatame",
+              "group": "Katame-waza",
+              "note": "Variantes"
+            },
+            {
+              "id": "tate-shiho-gatame",
+              "group": "Katame-waza",
+              "note": "Variantes"
+            }
           ]
         },
         {
@@ -212,18 +484,55 @@
           "color": "#16a34a",
           "is_stripe": false,
           "items": [
-            { "id": "ko-soto-gake", "group": "Nage-waza" },
-            { "id": "tsuri-goshi", "group": "Nage-waza" },
-            { "id": "yoko-otoshi", "group": "Nage-waza" },
-            { "id": "ashi-guruma", "group": "Nage-waza" },
-            { "id": "hane-goshi", "group": "Nage-waza" },
-            { "id": "harai-tsuri-komi-ashi", "group": "Nage-waza" },
-            { "id": "tomoe-nage", "group": "Nage-waza" },
-            { "id": "kata-guruma", "group": "Nage-waza" },
-            { "id": "ude-garami", "group": "Katame-waza" },
-            { "id": "ude-hishigi-juji-gatame", "group": "Katame-waza" },
-            { "id": "ude-hishigi-ude-gatame", "group": "Katame-waza" },
-            { "id": "juji-jime", "group": "Katame-waza", "note": "Kata-juji-jime (2 var.), Gyaku-juji-jime, Nami-juji-jime" }
+            {
+              "id": "ko-soto-gake",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tsuri-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "yoko-otoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ashi-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "hane-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "harai-tsuri-komi-ashi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tomoe-nage",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "kata-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ude-garami",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-juji-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-ude-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "juji-jime",
+              "group": "Katame-waza",
+              "note": "Kata-juji-jime (2 var.), Gyaku-juji-jime, Nami-juji-jime"
+            }
           ]
         },
         {
@@ -233,21 +542,66 @@
           "color": "#2563eb",
           "is_stripe": false,
           "items": [
-            { "id": "sumi-gaeshi", "group": "Nage-waza" },
-            { "id": "tani-otoshi", "group": "Nage-waza" },
-            { "id": "hane-makikomi", "group": "Nage-waza" },
-            { "id": "sukui-nage", "group": "Nage-waza" },
-            { "id": "utsuri-goshi", "group": "Nage-waza" },
-            { "id": "o-guruma", "group": "Nage-waza" },
-            { "id": "soto-makikomi", "group": "Nage-waza" },
-            { "id": "uki-otoshi", "group": "Nage-waza" },
-            { "id": "ude-hishigi-hiza-gatame", "group": "Katame-waza" },
-            { "id": "ude-hishigi-ashi-gatame", "group": "Katame-waza" },
-            { "id": "ude-hishigi-waki-gatame", "group": "Katame-waza" },
-            { "id": "ude-hishigi-hara-gatame", "group": "Katame-waza" },
-            { "id": "hadaka-jime", "group": "Katame-waza" },
-            { "id": "okuri-eri-jime", "group": "Katame-waza" },
-            { "id": "kata-ha-jime", "group": "Katame-waza" }
+            {
+              "id": "sumi-gaeshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "tani-otoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "hane-makikomi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "sukui-nage",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "utsuri-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "o-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "soto-makikomi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "uki-otoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ude-hishigi-hiza-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-ashi-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-waki-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-hara-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "hadaka-jime",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "okuri-eri-jime",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "kata-ha-jime",
+              "group": "Katame-waza"
+            }
           ]
         },
         {
@@ -257,21 +611,66 @@
           "color": "#78350f",
           "is_stripe": false,
           "items": [
-            { "id": "o-soto-guruma", "group": "Nage-waza" },
-            { "id": "uki-waza", "group": "Nage-waza" },
-            { "id": "yoko-wakare", "group": "Nage-waza" },
-            { "id": "yoko-guruma", "group": "Nage-waza" },
-            { "id": "ushiro-goshi", "group": "Nage-waza" },
-            { "id": "ura-nage", "group": "Nage-waza" },
-            { "id": "sumi-otoshi", "group": "Nage-waza" },
-            { "id": "yoko-gake", "group": "Nage-waza" },
-            { "id": "ude-hishigi-te-gatame", "group": "Katame-waza" },
-            { "id": "ude-hishigi-sankaku-gatame", "group": "Katame-waza" },
-            { "id": "katate-jime", "group": "Katame-waza" },
-            { "id": "ryote-jime", "group": "Katame-waza" },
-            { "id": "sode-guruma-jime", "group": "Katame-waza" },
-            { "id": "tsukkomi-jime", "group": "Katame-waza" },
-            { "id": "sankaku-jime", "group": "Katame-waza" }
+            {
+              "id": "o-soto-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "uki-waza",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "yoko-wakare",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "yoko-guruma",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ushiro-goshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ura-nage",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "sumi-otoshi",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "yoko-gake",
+              "group": "Nage-waza"
+            },
+            {
+              "id": "ude-hishigi-te-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ude-hishigi-sankaku-gatame",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "katate-jime",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "ryote-jime",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "sode-guruma-jime",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "tsukkomi-jime",
+              "group": "Katame-waza"
+            },
+            {
+              "id": "sankaku-jime",
+              "group": "Katame-waza"
+            }
           ]
         }
       ]
@@ -287,7 +686,36 @@
         "Tsukuri : avancer le pied gauche à côté du pied droit d'uke, poitrine contre poitrine.",
         "Kake : faucher fortement l'arrière de la cuisse d'uke avec la jambe droite tendue, orteils pointés."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/O-soto-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-soto-gari.jpg",
+          "title": "O-soto-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Judo01cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judo01cropped.jpg",
+          "title": "Judo01cropped",
+          "credit": "Cpl. Jeff Sisto · Public domain"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/O_soto_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O_soto_gari.jpg",
+          "title": "O soto gari",
+          "credit": "Bealopez17 · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Judo01NoBack.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judo01NoBack.jpg",
+          "title": "Judo01NoBack",
+          "credit": "Cpl. Jeff Sisto · Public domain"
+        }
+      ]
     },
     "hiza-guruma": {
       "name": "Hiza-guruma",
@@ -298,7 +726,36 @@
         "Tsukuri : pivoter en reculant le pied d'appui et bloquer la rotule d'uke avec la plante du pied.",
         "Kake : poursuivre la rotation des mains en volant de voiture pour faire basculer uke."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Hiza-guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hiza-guruma.jpg",
+          "title": "Hiza-guruma",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Screen_capture_of_Doug_Rogers_throwing_a_training_partner_with_hiza_guruma_in_the_National_Film_Board_documentary_Judoka_%281965%29.png/960px-Screen_capture_of_Doug_Rogers_throwing_a_training_partner_with_hiza_guruma_in_the_National_Film_Board_documentary_Judoka_%281965%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Screen_capture_of_Doug_Rogers_throwing_a_training_partner_with_hiza_guruma_in_the_National_Film_Board_documentary_Judoka_(1965).png",
+          "title": "Screen capture of Doug Rogers throwing a training partner with hiza guruma in the National Film Board documentary Judoka (1965)",
+          "credit": "National Film Board of Canada · Public domain"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        }
+      ]
     },
     "uki-goshi": {
       "name": "Uki-goshi",
@@ -309,7 +766,36 @@
         "Tsukuri : glisser le bras autour de la taille et placer la demi-hanche contre le ventre d'uke.",
         "Kake : pivoter rapidement les hanches sans soulever complètement uke, en gardant les jambes toniques."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Nage_no_kata_-_Uki_goshi_2a.svg/960px-Nage_no_kata_-_Uki_goshi_2a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Uki_goshi_2a.svg",
+          "title": "Nage no kata - Uki goshi 2a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Nage_no_kata_-_Uki_goshi_1a.svg/960px-Nage_no_kata_-_Uki_goshi_1a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Uki_goshi_1a.svg",
+          "title": "Nage no kata - Uki goshi 1a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Nage_no_kata_-_Uki_goshi_6a.svg/960px-Nage_no_kata_-_Uki_goshi_6a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Uki_goshi_6a.svg",
+          "title": "Nage no kata - Uki goshi 6a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Nage_no_kata_-_Uki_goshi_4a.svg/960px-Nage_no_kata_-_Uki_goshi_4a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Uki_goshi_4a.svg",
+          "title": "Nage no kata - Uki goshi 4a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        }
+      ]
     },
     "o-uchi-gari": {
       "name": "O-uchi-gari",
@@ -320,7 +806,36 @@
         "Tsukuri : entrer le pied d'appui entre les jambes d'uke et engager le mollet derrière son talon.",
         "Kake : faucher en arc de cercle au ras du tatami tout en dirigeant le buste d'uke vers l'arrière."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/2018_World_Judo_Championships_40.jpg/960px-2018_World_Judo_Championships_40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2018_World_Judo_Championships_40.jpg",
+          "title": "2018 World Judo Championships 40",
+          "credit": "Rodolfo Vilela/rededoesporte.gov.br · CC BY 3.0 br"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/EVD-judo-065.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EVD-judo-065.jpg",
+          "title": "EVD-judo-065",
+          "credit": "User:Evdcoldeportes · CC BY-SA 2.5 co"
+        }
+      ]
     },
     "ko-uchi-gari": {
       "name": "Ko-uchi-gari",
@@ -331,7 +846,30 @@
         "Tsukuri : placer le pied d'appui près du pied ciblé et armer la plante du pied contre le talon d'Achille.",
         "Kake : balayer le pied dans la direction des orteils d'uke en accompagnant avec les mains."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Ko-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ko-uchi-gari.jpg",
+          "title": "Ko-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        }
+      ]
     },
     "tai-otoshi": {
       "name": "Tai-otoshi",
@@ -342,7 +880,36 @@
         "Tsukuri : pivoter et tendre la jambe droite devant les tibias d'uke sans contact de hanche.",
         "Kake : projeter avec les mains vers le bas-avant en explosant sur les appuis."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Tai-otoshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tai-otoshi.jpg",
+          "title": "Tai-otoshi",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tai-otoshi-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tai-otoshi-2.jpg",
+          "title": "Tai-otoshi-2",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Tai-otoshi-2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tai-otoshi-2_(cropped).jpg",
+          "title": "Tai-otoshi-2 (cropped)",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Seattle_-_Budokan_Dojo_judo_demo_02.jpg/960px-Seattle_-_Budokan_Dojo_judo_demo_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Seattle_-_Budokan_Dojo_judo_demo_02.jpg",
+          "title": "Seattle - Budokan Dojo judo demo 02",
+          "credit": "Joe Mabel · CC BY-SA 3.0"
+        }
+      ]
     },
     "ko-soto-gari": {
       "name": "Ko-soto-gari",
@@ -353,7 +920,36 @@
         "Tsukuri : ouvrir l'angle sur le côté et placer la plante du pied contre le talon externe d'uke.",
         "Kake : faucher dans la direction où pointent ses orteils en tassant ses épaules vers le tapis."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Ko-soto-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ko-soto-gari.jpg",
+          "title": "Ko-soto-gari",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SJJFkosotogari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:SJJFkosotogari.jpg",
+          "title": "SJJFkosotogari",
+          "credit": "Sv. Ju-jutsuförbundet · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        }
+      ]
     },
     "ko-soto-gake": {
       "name": "Ko-soto-gake",
@@ -364,7 +960,30 @@
         "Tsukuri : crocheter le mollet ou le talon d'uke de l'extérieur avec votre pied.",
         "Kake : soulever légèrement le crochet tout en poussant uke vers l'arrière."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ko-soto-gake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ko-soto-gake.jpg",
+          "title": "Ko-soto-gake",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        }
+      ]
     },
     "o-goshi": {
       "name": "O-goshi",
@@ -375,7 +994,36 @@
         "Tsukuri : fléchir les genoux pour placer les hanches sous le centre de gravité d'uke.",
         "Kake : pousser dans les jambes et pivoter les épaules pour projeter par-dessus la hanche."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/O-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-goshi.jpg",
+          "title": "O-goshi",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/O-goshi_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-goshi_(cropped).jpg",
+          "title": "O-goshi (cropped)",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Marco_Sannino_Judo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Marco_Sannino_Judo.jpg",
+          "title": "Marco Sannino Judo",
+          "credit": "Marco Sannino · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/EVD-judo-053.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EVD-judo-053.jpg",
+          "title": "EVD-judo-053",
+          "credit": "User:Evdcoldeportes · CC BY-SA 2.5 co"
+        }
+      ]
     },
     "ippon-seoi-nage": {
       "name": "Ippon-seoi-nage",
@@ -386,7 +1034,30 @@
         "Tsukuri : pivoter à 180°, glisser le bras sous l'aisselle d'uke et coller le dos à son buste.",
         "Kake : tendre les jambes et tirer vers le bas-avant par-dessus l'épaule."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ippon-seoi-nage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ippon-seoi-nage.jpg",
+          "title": "Ippon-seoi-nage",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Ippon-seoi-nage2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ippon-seoi-nage2.jpg",
+          "title": "Ippon-seoi-nage2",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Vladimir_Putin_at_G8_Summit_2000-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_at_G8_Summit_2000-12.jpg",
+          "title": "Vladimir Putin at G8 Summit 2000-12",
+          "credit": "Presidential Press and Information Office · CC BY 4.0"
+        }
+      ]
     },
     "de-ashi-barai": {
       "name": "De-ashi-barai",
@@ -397,7 +1068,36 @@
         "Tsukuri : orienter le pied balayeur en cuillère contre la cheville externe d'uke.",
         "Kake : balayer au ras du tatami tout en tournant le buste d'uke avec les mains."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/De-ashi-barai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:De-ashi-barai.jpg",
+          "title": "De-ashi-barai",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Okuri-ashi-barai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Okuri-ashi-barai.jpg",
+          "title": "Okuri-ashi-barai",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Judo_Nage-waza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judo_Nage-waza.jpg",
+          "title": "Judo Nage-waza",
+          "credit": "Fjölnir Ásgeirsson · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Okuri-ashi-barai2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Okuri-ashi-barai2.jpg",
+          "title": "Okuri-ashi-barai2",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        }
+      ]
     },
     "okuri-ashi-barai": {
       "name": "Okuri-ashi-barai",
@@ -408,7 +1108,36 @@
         "Tsukuri : balayer la cheville du pied qui se rapproche avant qu'il ne touche le sol.",
         "Kake : réunir les deux pieds d'uke dans le mouvement et tirer vers le bas avec les mains."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Okuri-ashi-barai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Okuri-ashi-barai.jpg",
+          "title": "Okuri-ashi-barai",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Okuri-ashi-barai2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Okuri-ashi-barai2.jpg",
+          "title": "Okuri-ashi-barai2",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Judo_Nage-waza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judo_Nage-waza.jpg",
+          "title": "Judo Nage-waza",
+          "credit": "Fjölnir Ásgeirsson · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/2024_EIJC_Kata_-_53595689481.jpg/960px-2024_EIJC_Kata_-_53595689481.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2024_EIJC_Kata_-_53595689481.jpg",
+          "title": "2024 EIJC Kata - 53595689481",
+          "credit": "Edmonton International Judo Championship · Public domain"
+        }
+      ]
     },
     "tsuri-komi-goshi": {
       "name": "Tsuri-komi-goshi",
@@ -419,7 +1148,30 @@
         "Tsukuri : fléchir très bas pour glisser les hanches sous la ceinture d'uke, coude du revers vers le haut.",
         "Kake : charger uke sur les hanches et projeter par extension des jambes et rotation."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Tsuri-komi-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tsuri-komi-goshi.jpg",
+          "title": "Tsuri-komi-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Sode-tsuri-komi-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sode-tsuri-komi-goshi.jpg",
+          "title": "Sode-tsuri-komi-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Sode-tsuri-komi-goshi2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sode-tsuri-komi-goshi2.jpg",
+          "title": "Sode-tsuri-komi-goshi2",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        }
+      ]
     },
     "harai-goshi": {
       "name": "Harai-goshi",
@@ -430,7 +1182,36 @@
         "Tsukuri : pivoter sur la jambe d'appui, coller la hanche contre la cuisse d'uke.",
         "Kake : balayer la jambe externe d'uke vers l'arrière tout en basculant le buste."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Harai-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Harai-goshi.jpg",
+          "title": "Harai-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Judo_kata_1.JPG/960px-Judo_kata_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judo_kata_1.JPG",
+          "title": "Judo kata 1",
+          "credit": "Bealopez17 · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Haraigoshi2.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Haraigoshi2.jpeg",
+          "title": "Haraigoshi2",
+          "credit": "吉田千春 · Public domain"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Haraigoshi.jpg/960px-Haraigoshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Haraigoshi.jpg",
+          "title": "Haraigoshi",
+          "credit": "Gotcha2 · Public domain"
+        }
+      ]
     },
     "sasae-tsuri-komi-ashi": {
       "name": "Sasae-tsuri-komi-ashi",
@@ -441,7 +1222,30 @@
         "Tsukuri : bloquer la cheville avancée d'uke avec la plante du pied, jambe d'appui proche.",
         "Kake : soulever et faire tourner le haut du corps d'uke par-dessus le point de blocage."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sasae-tsuri-komi-ashi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sasae-tsuri-komi-ashi.jpg",
+          "title": "Sasae-tsuri-komi-ashi",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Sasae-tsuri-komi-ashi_z.jpg/960px-Sasae-tsuri-komi-ashi_z.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sasae-tsuri-komi-ashi_z.jpg",
+          "title": "Sasae-tsuri-komi-ashi z",
+          "credit": "Ari Kyllönen · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Sasae-Tsuri-Komi-Ashi.JPG/960px-Sasae-Tsuri-Komi-Ashi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sasae-Tsuri-Komi-Ashi.JPG",
+          "title": "Sasae-Tsuri-Komi-Ashi",
+          "credit": "Showman · CC BY-SA 3.0"
+        }
+      ]
     },
     "morote-seoi-nage": {
       "name": "Morote-seoi-nage",
@@ -452,7 +1256,30 @@
         "Tsukuri : fléchir bas, plier le coude du revers sous l'aisselle d'uke en gardant les deux mains au kimono.",
         "Kake : charger uke sur le dos et projeter en poussant sur les jambes."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Morote-seoi-nage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Morote-seoi-nage.jpg",
+          "title": "Morote-seoi-nage",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Morote-seoi-nage_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Morote-seoi-nage_(cropped).jpg",
+          "title": "Morote-seoi-nage (cropped)",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Eri-seoi-nage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Eri-seoi-nage.jpg",
+          "title": "Eri-seoi-nage",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        }
+      ]
     },
     "uchi-mata": {
       "name": "Uchi-mata",
@@ -463,7 +1290,36 @@
         "Tsukuri : placer le pied d'appui au centre du triangle et engager la jambe entre les cuisses d'uke.",
         "Kake : faucher vers le haut et l'arrière en plongeant le buste et en tirant la manche."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Uchi_mata_Judo_throw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Uchi_mata_Judo_throw.jpg",
+          "title": "Uchi mata Judo throw",
+          "credit": "Francesco Ianett · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Uchi-mata.jpg/960px-Uchi-mata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Uchi-mata.jpg",
+          "title": "Uchi-mata",
+          "credit": "Ari Kyllönen · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Uchimata.jpg/960px-Uchimata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Uchimata.jpg",
+          "title": "Uchimata",
+          "credit": "Gotcha2 · Public domain"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Judo_%2821778664590%29.jpg/960px-Judo_%2821778664590%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judo_(21778664590).jpg",
+          "title": "Judo (21778664590)",
+          "credit": "Johnson Barros · CC BY 2.0"
+        }
+      ]
     },
     "ko-uchi-makikomi": {
       "name": "Ko-uchi-makikomi",
@@ -474,7 +1330,11 @@
         "Tsukuri : entrer bas comme pour ko-uchi-gari en enroulant le bras autour de la jambe ou du buste.",
         "Kake : s'enrouler sur le côté en entraînant uke vers le sol."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": []
     },
     "tomoe-nage": {
       "name": "Tomoe-nage",
@@ -485,7 +1345,36 @@
         "Tsukuri : glisser les hanches entre les pieds d'uke et placer le pied au bas-ventre.",
         "Kake : dérouler le dos au sol et pousser avec la jambe vers le haut-arrière pour projeter par-dessus soi."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Tomoe-nage.svg/960px-Tomoe-nage.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tomoe-nage.svg",
+          "title": "Tomoe-nage",
+          "credit": "Jdcollins13 · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Tomoe-nage_Judo_throw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tomoe-nage_Judo_throw.jpg",
+          "title": "Tomoe-nage Judo throw",
+          "credit": "Francesco Ianett · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Tomoe-nage-illustration.jpg/960px-Tomoe-nage-illustration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tomoe-nage-illustration.jpg",
+          "title": "Tomoe-nage-illustration",
+          "credit": "Michael Hultström · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/EVD-judo-073.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EVD-judo-073.jpg",
+          "title": "EVD-judo-073",
+          "credit": "User:Evdcoldeportes · CC BY-SA 2.5 co"
+        }
+      ]
     },
     "yoko-otoshi": {
       "name": "Yoko-otoshi",
@@ -496,7 +1385,30 @@
         "Tsukuri : glisser la jambe tendue à l'extérieur du pied d'uke tout en s'allongeant sur le flanc.",
         "Kake : tirer uke par-dessus la jambe tendue en gardant le contrôle des deux mains."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Yoko-otoshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yoko-otoshi.jpg",
+          "title": "Yoko-otoshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        }
+      ]
     },
     "tani-otoshi": {
       "name": "Tani-otoshi",
@@ -507,7 +1419,36 @@
         "Tsukuri : descendre les fesses vers le tatami derrière uke et tendre la jambe derrière ses deux chevilles.",
         "Kake : se laisser tomber sur le côté en tirant uke vers l'arrière."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Tani-otoshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tani-otoshi.jpg",
+          "title": "Tani-otoshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/2023_African_Games_Judo_85.jpg/960px-2023_African_Games_Judo_85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2023_African_Games_Judo_85.jpg",
+          "title": "2023 African Games Judo 85",
+          "credit": "Amuzujoe · CC BY-SA 4.0"
+        }
+      ]
     },
     "seoi-otoshi": {
       "name": "Seoi-otoshi",
@@ -518,7 +1459,36 @@
         "Tsukuri : entrer comme pour seoi-nage en posant un ou deux genoux au sol pour abaisser le centre.",
         "Kake : tirer uke vers le bas-avant sans le soulever sur le dos."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Eri-seoi-otoshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Eri-seoi-otoshi.jpg",
+          "title": "Eri-seoi-otoshi",
+          "credit": "Ari Kyllönen · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Nomura-Dojo-10th--Judo--2024-09-07_324.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_324.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_324.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 324",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Nomura-Dojo-10th--Judo--2024-09-07_325.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_325.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_325.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 325",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Nomura-Dojo-10th--Judo--2024-09-07_328.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_328.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_328.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 328",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        }
+      ]
     },
     "hane-goshi": {
       "name": "Hane-goshi",
@@ -529,7 +1499,30 @@
         "Tsukuri : pivoter sur la jambe d'appui et placer le côté de la jambe fléchie contre la cuisse d'uke.",
         "Kake : détendre la jambe en ressort tout en projetant avec les hanches et les bras."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Hane-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hane-goshi.jpg",
+          "title": "Hane-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Hane-makikomi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hane-makikomi.jpg",
+          "title": "Hane-makikomi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Tournoi_judo_%C3%89cole_polytechnique.jpg/960px-Tournoi_judo_%C3%89cole_polytechnique.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tournoi_judo_%C3%89cole_polytechnique.jpg",
+          "title": "Tournoi judo École polytechnique",
+          "credit": "Jérémy Barande · CC BY-SA 3.0"
+        }
+      ]
     },
     "ashi-guruma": {
       "name": "Ashi-guruma",
@@ -540,7 +1533,36 @@
         "Tsukuri : pivoter et tendre la jambe horizontalement devant les genoux d'uke sans contact de hanche.",
         "Kake : faire pivoter uke par-dessus la jambe tendue en tournant les épaules."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Ashi-guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ashi-guruma.jpg",
+          "title": "Ashi-guruma",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Ashi-Guruma.svg/960px-Ashi-Guruma.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ashi-Guruma.svg",
+          "title": "Ashi-Guruma",
+          "credit": "Jdcollins13 · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Ashi-guruma_%28crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ashi-guruma_(crop).jpg",
+          "title": "Ashi-guruma (crop)",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        }
+      ]
     },
     "sukui-nage": {
       "name": "Sukui-nage",
@@ -551,7 +1573,36 @@
         "Tsukuri : descendre sur les jambes à côté d'uke et passer les bras autour de ses cuisses/hanches.",
         "Kake : soulever uke en cuillère et le projeter vers l'arrière."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Sukui-nage.svg/960px-Sukui-nage.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sukui-nage.svg",
+          "title": "Sukui-nage",
+          "credit": "Jdcollins13 · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Sukui-nage2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sukui-nage2.jpg",
+          "title": "Sukui-nage2",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Nationale_bondskampioenschappen_Judo_in_Krasnapolski_te_Amsterdam%2C_J_van_Ierlan%2C_Bestanddeelnr_915-9882.jpg/960px-Nationale_bondskampioenschappen_Judo_in_Krasnapolski_te_Amsterdam%2C_J_van_Ierlan%2C_Bestanddeelnr_915-9882.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nationale_bondskampioenschappen_Judo_in_Krasnapolski_te_Amsterdam,_J_van_Ierlan,_Bestanddeelnr_915-9882.jpg",
+          "title": "Nationale bondskampioenschappen Judo in Krasnapolski te Amsterdam, J van Ierlan, Bestanddeelnr 915-9882",
+          "credit": "Jack de Nijs for Anefo  / Anefo · CC0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Morote-gari.svg/960px-Morote-gari.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Morote-gari.svg",
+          "title": "Morote-gari",
+          "credit": "Jdcollins13 · CC BY-SA 3.0"
+        }
+      ]
     },
     "ushiro-goshi": {
       "name": "Ushiro-goshi",
@@ -562,7 +1613,36 @@
         "Tsukuri : ceinturer uke par l'arrière et placer les hanches sous les siennes.",
         "Kake : soulever uke verticalement et le déposer sur le dos devant soi."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Ushiro-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ushiro-goshi.jpg",
+          "title": "Ushiro-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2018_World_Judo_Championships_160.jpg/960px-2018_World_Judo_Championships_160.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2018_World_Judo_Championships_160.jpg",
+          "title": "2018 World Judo Championships 160",
+          "credit": "Rodolfo Vilela/rededoesporte.gov.br · CC BY 3.0 br"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Lucio_Far%C3%ADas_demonstrating_a_Judo_technique.jpg/960px-Lucio_Far%C3%ADas_demonstrating_a_Judo_technique.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Lucio_Far%C3%ADas_demonstrating_a_Judo_technique.jpg",
+          "title": "Lucio Farías demonstrating a Judo technique",
+          "credit": "Iamsimplymartha · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ushirogoshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ushirogoshi.jpg",
+          "title": "Ushirogoshi",
+          "credit": "有馬純臣 · Public domain"
+        }
+      ]
     },
     "morote-gari": {
       "name": "Morote-gari",
@@ -573,7 +1653,18 @@
         "Tsukuri : changer de niveau rapidement, coller l'épaule au ventre d'uke et saisir l'arrière des deux genoux.",
         "Kake : tirer les jambes vers soi tout en poussant avec l'épaule."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Morote-gari.svg/960px-Morote-gari.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Morote-gari.svg",
+          "title": "Morote-gari",
+          "credit": "Jdcollins13 · CC BY-SA 3.0"
+        }
+      ]
     },
     "o-guruma": {
       "name": "O-guruma",
@@ -584,7 +1675,36 @@
         "Tsukuri : placer la jambe tendue en travers du haut de la cuisse / hanche d'uke.",
         "Kake : faire basculer uke par-dessus la jambe comme autour d'un axe."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/O-guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-guruma.jpg",
+          "title": "O-guruma",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/O_guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O_guruma.jpg",
+          "title": "O guruma",
+          "credit": "parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/O-soto-guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-soto-guruma.jpg",
+          "title": "O-soto-guruma",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/%E7%A5%9E%E9%81%93%E5%85%AD%E5%90%88%E6%B5%81%E3%81%AE%E5%86%85%E8%82%A1%E6%8E%83%E3%80%81%E8%82%A1%E6%8E%83.png/960px-%E7%A5%9E%E9%81%93%E5%85%AD%E5%90%88%E6%B5%81%E3%81%AE%E5%86%85%E8%82%A1%E6%8E%83%E3%80%81%E8%82%A1%E6%8E%83.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:%E7%A5%9E%E9%81%93%E5%85%AD%E5%90%88%E6%B5%81%E3%81%AE%E5%86%85%E8%82%A1%E6%8E%83%E3%80%81%E8%82%A1%E6%8E%83.png",
+          "title": "神道六合流の内股掃、股掃",
+          "credit": "野口清（天津武術会柔術部） · Public domain"
+        }
+      ]
     },
     "te-guruma": {
       "name": "Te-guruma",
@@ -595,7 +1715,18 @@
         "Tsukuri : passer un bras entre les jambes d'uke pour saisir sa cuisse de l'intérieur et l'autre à la ceinture.",
         "Kake : soulever en rotation et projeter uke par-dessus son épaule."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Sukui-nage.svg/960px-Sukui-nage.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sukui-nage.svg",
+          "title": "Sukui-nage",
+          "credit": "Jdcollins13 · CC BY-SA 3.0"
+        }
+      ]
     },
     "utsuri-goshi": {
       "name": "Utsuri-goshi",
@@ -606,7 +1737,18 @@
         "Tsukuri : glisser sa propre hanche devant celle d'uke pendant qu'il est en suspension.",
         "Kake : projeter uke par-dessus sa hanche vers l'avant."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Utsuri-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Utsuri-goshi.jpg",
+          "title": "Utsuri-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        }
+      ]
     },
     "kuchiki-daoshi": {
       "name": "Kuchiki-daoshi",
@@ -617,7 +1759,11 @@
         "Tsukuri : saisir l'intérieur du genou ou du talon avancé tout en contrôlant le revers.",
         "Kake : soulever la jambe saisie et pousser uke vers l'arrière."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": []
     },
     "soto-makikomi": {
       "name": "Soto-makikomi",
@@ -628,7 +1774,30 @@
         "Tsukuri : bloquer le bras d'uke sous l'aisselle et tourner le dos en plaçant le pied à l'extérieur.",
         "Kake : s'enrouler vers l'avant-côté au sol pour entraîner uke par-dessus le corps."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Soto-makikomi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Soto-makikomi.jpg",
+          "title": "Soto-makikomi",
+          "credit": "H. Zuehl · CC BY-SA 2.5"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Soto-makikomi2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Soto-makikomi2.jpg",
+          "title": "Soto-makikomi2",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Aussendrehwurf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Aussendrehwurf.jpg",
+          "title": "Aussendrehwurf",
+          "credit": "H. Zuehl · CC BY 2.5"
+        }
+      ]
     },
     "hane-makikomi": {
       "name": "Hane-makikomi",
@@ -639,7 +1808,18 @@
         "Tsukuri : placer le côté de la jambe contre celle d'uke comme dans hane-goshi.",
         "Kake : enrouler le buste vers le tatami en prolongeant la poussée de la jambe."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Hane-makikomi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hane-makikomi.jpg",
+          "title": "Hane-makikomi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        }
+      ]
     },
     "uki-waza": {
       "name": "Uki-waza",
@@ -650,7 +1830,36 @@
         "Tsukuri : glisser la jambe vers l'avant-extérieur et s'allonger sur le flanc.",
         "Kake : projeter uke en diagonale avant dans la continuité de sa chute."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Uki-waza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Uki-waza.jpg",
+          "title": "Uki-waza",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Uki_waza_Judo_throw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Uki_waza_Judo_throw.jpg",
+          "title": "Uki waza Judo throw",
+          "credit": "Francesco Ianett · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Nage_no_kata_-_Uki_goshi_2a.svg/960px-Nage_no_kata_-_Uki_goshi_2a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Uki_goshi_2a.svg",
+          "title": "Nage no kata - Uki goshi 2a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Nage_no_kata_-_Uki_goshi_1a.svg/960px-Nage_no_kata_-_Uki_goshi_1a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Uki_goshi_1a.svg",
+          "title": "Nage no kata - Uki goshi 1a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        }
+      ]
     },
     "sumi-gaeshi": {
       "name": "Sumi-gaeshi",
@@ -661,7 +1870,36 @@
         "Tsukuri : s'asseoir près du pied d'uke et placer le cou-de-pied sous l'intérieur de sa cuisse.",
         "Kake : basculer sur le dos en tirant le bras d'uke et en soulevant avec le crochet."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Sumi-gaeshi.svg/960px-Sumi-gaeshi.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sumi-gaeshi.svg",
+          "title": "Sumi-gaeshi",
+          "credit": "Jdcollins13 · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Sumi-gaeshi2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sumi-gaeshi2.jpg",
+          "title": "Sumi-gaeshi2",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/USMC-110122-M-9595T-591.jpg/960px-USMC-110122-M-9595T-591.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:USMC-110122-M-9595T-591.jpg",
+          "title": "USMC-110122-M-9595T-591",
+          "credit": "Lance Cpl. Andrew D. Thorburn · Public domain"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/EVD-judo-048.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EVD-judo-048.jpg",
+          "title": "EVD-judo-048",
+          "credit": "User:Evdcoldeportes · CC BY-SA 2.5 co"
+        }
+      ]
     },
     "hikkomi-gaeshi": {
       "name": "Hikkomi-gaeshi",
@@ -672,7 +1910,11 @@
         "Tsukuri : placer le pied à l'intérieur de la cuisse d'uke en descendant sur le dos.",
         "Kake : tirer fermement à la ceinture et pousser avec la jambe pour le retourner."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": []
     },
     "kata-guruma": {
       "name": "Kata-guruma",
@@ -683,7 +1925,36 @@
         "Tsukuri : descendre très bas sous le centre d'uke, tête sous son aisselle, hanches chargées sur les épaules.",
         "Kake : tendre les jambes et faire basculer uke par-dessus les épaules."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Kata-guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kata-guruma.jpg",
+          "title": "Kata-guruma",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Nage_no_kata_-_Kata_guruma_4a.svg/960px-Nage_no_kata_-_Kata_guruma_4a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Kata_guruma_4a.svg",
+          "title": "Nage no kata - Kata guruma 4a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Nage_no_kata_-_Kata_guruma_5a.svg/960px-Nage_no_kata_-_Kata_guruma_5a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Kata_guruma_5a.svg",
+          "title": "Nage no kata - Kata guruma 5a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nage_no_kata_-_Kata_guruma_1a.svg/960px-Nage_no_kata_-_Kata_guruma_1a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Kata_guruma_1a.svg",
+          "title": "Nage no kata - Kata guruma 1a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        }
+      ]
     },
     "ura-nage": {
       "name": "Ura-nage",
@@ -694,7 +1965,36 @@
         "Tsukuri : fléchir les genoux pour passer le bassin sous celui d'uke.",
         "Kake : cambrer le dos en extension et projeter uke par-dessus l'épaule."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Ura-nage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ura-nage.jpg",
+          "title": "Ura-nage",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ura-nage_Judo_throw.jpg/960px-Ura-nage_Judo_throw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ura-nage_Judo_throw.jpg",
+          "title": "Ura-nage Judo throw",
+          "credit": "Francesco Ianett · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Sunny_judo_%2826002793317%29.jpg/960px-Sunny_judo_%2826002793317%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sunny_judo_(26002793317).jpg",
+          "title": "Sunny judo (26002793317)",
+          "credit": "Radek Kucharski from Warsaw, Poland · CC BY 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Ura-Nage_2.jpg/960px-Ura-Nage_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ura-Nage_2.jpg",
+          "title": "Ura-Nage 2",
+          "credit": "Showman · CC BY-SA 3.0"
+        }
+      ]
     },
     "yoko-guruma": {
       "name": "Yoko-guruma",
@@ -705,7 +2005,36 @@
         "Tsukuri : glisser une jambe entre les jambes d'uke et se jeter sur le flanc.",
         "Kake : faire passer uke en roue par-dessus son propre corps."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Yoko-guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yoko-guruma.jpg",
+          "title": "Yoko-guruma",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Yokoguruma_ohs01.jpg/960px-Yokoguruma_ohs01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yokoguruma_ohs01.jpg",
+          "title": "Yokoguruma ohs01",
+          "credit": "PetrohsW · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        }
+      ]
     },
     "koshi-guruma": {
       "name": "Koshi-guruma",
@@ -716,7 +2045,36 @@
         "Tsukuri : pivoter et sortir la hanche plus loin que dans o-goshi.",
         "Kake : faire rouler uke par-dessus la hanche en tirant la manche vers le sol."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Koshi-guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Koshi-guruma.jpg",
+          "title": "Koshi-guruma",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Koshi-guruma_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Koshi-guruma_(cropped).jpg",
+          "title": "Koshi-guruma (cropped)",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/EVD-judo-056.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EVD-judo-056.jpg",
+          "title": "EVD-judo-056",
+          "credit": "User:Evdcoldeportes · CC BY-SA 2.5 co"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/USMC-090805-M-5021B-058.jpg/960px-USMC-090805-M-5021B-058.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:USMC-090805-M-5021B-058.jpg",
+          "title": "USMC-090805-M-5021B-058",
+          "credit": "Public domain"
+        }
+      ]
     },
     "tsuri-goshi": {
       "name": "Tsuri-goshi",
@@ -727,7 +2085,36 @@
         "Tsukuri : glisser les hanches sous celles d'uke.",
         "Kake : soulever à la ceinture et projeter par-dessus la hanche."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Tsuri-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tsuri-goshi.jpg",
+          "title": "Tsuri-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Tsuri-komi-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tsuri-komi-goshi.jpg",
+          "title": "Tsuri-komi-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Sode-tsuri-komi-goshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sode-tsuri-komi-goshi.jpg",
+          "title": "Sode-tsuri-komi-goshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/EVD-judo-057.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EVD-judo-057.jpg",
+          "title": "EVD-judo-057",
+          "credit": "User:Evdcoldeportes · CC BY-SA 2.5 co"
+        }
+      ]
     },
     "harai-tsuri-komi-ashi": {
       "name": "Harai-tsuri-komi-ashi",
@@ -738,7 +2125,18 @@
         "Tsukuri : reculer pour créer l'espace et balayer la cheville du pied qui recule.",
         "Kake : accompagner la rotation des mains pour faire chuter uke en arc."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Harai-tsurikomi-ashi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Harai-tsurikomi-ashi.jpg",
+          "title": "Harai-tsurikomi-ashi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        }
+      ]
     },
     "uki-otoshi": {
       "name": "Uki-otoshi",
@@ -749,7 +2147,36 @@
         "Tsukuri : poser un genou au sol en reculant pour laisser passer uke.",
         "Kake : projeter uke vers le sol uniquement par l'action des mains."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Uki-otoshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Uki-otoshi.jpg",
+          "title": "Uki-otoshi",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Uki-otoshi_Throw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Uki-otoshi_Throw.jpg",
+          "title": "Uki-otoshi Throw",
+          "credit": "Francesco Ianett · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Nage_no_kata_-_Uki_otoshi_2a.svg/960px-Nage_no_kata_-_Uki_otoshi_2a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nage_no_kata_-_Uki_otoshi_2a.svg",
+          "title": "Nage no kata - Uki otoshi 2a",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        }
+      ]
     },
     "o-soto-guruma": {
       "name": "O-soto-guruma",
@@ -760,7 +2187,30 @@
         "Tsukuri : placer la jambe tendue derrière les deux cuisses d'uke.",
         "Kake : projeter uke par-dessus la jambe en arc vers l'arrière."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/O-soto-guruma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-soto-guruma.jpg",
+          "title": "O-soto-guruma",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        }
+      ]
     },
     "yoko-wakare": {
       "name": "Yoko-wakare",
@@ -771,7 +2221,18 @@
         "Tsukuri : projeter ses deux jambes en avant sous le corps d'uke en s'allongeant sur le flanc.",
         "Kake : faire basculer uke par-dessus soi dans la direction du mouvement."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Yoko-wakare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yoko-wakare.jpg",
+          "title": "Yoko-wakare",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        }
+      ]
     },
     "sumi-otoshi": {
       "name": "Sumi-otoshi",
@@ -782,7 +2243,36 @@
         "Tsukuri : fléchir les appuis en décalage sur le côté.",
         "Kake : abaisser et diriger uke vers son angle arrière mort avec les deux mains."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Sumi-otoshi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sumi-otoshi.jpg",
+          "title": "Sumi-otoshi",
+          "credit": "Michael Hultström · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Sumiotoshi_ohs01.jpg/960px-Sumiotoshi_ohs01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sumiotoshi_ohs01.jpg",
+          "title": "Sumiotoshi ohs01",
+          "credit": "PetrohsW · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Judoserie_met_Tweede_Kamer_lid_Mevrouw_van_Someren%2C_Bestanddeelnr_912-1439.jpg/960px-Judoserie_met_Tweede_Kamer_lid_Mevrouw_van_Someren%2C_Bestanddeelnr_912-1439.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judoserie_met_Tweede_Kamer_lid_Mevrouw_van_Someren,_Bestanddeelnr_912-1439.jpg",
+          "title": "Judoserie met Tweede Kamer lid Mevrouw van Someren, Bestanddeelnr 912-1439",
+          "credit": "Jack de Nijs for Anefo · CC0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Judoserie_met_Tweede_Kamer_lid_Mevrouw_van_Someren%2C_Bestanddeelnr_912-1435.jpg/960px-Judoserie_met_Tweede_Kamer_lid_Mevrouw_van_Someren%2C_Bestanddeelnr_912-1435.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judoserie_met_Tweede_Kamer_lid_Mevrouw_van_Someren,_Bestanddeelnr_912-1435.jpg",
+          "title": "Judoserie met Tweede Kamer lid Mevrouw van Someren, Bestanddeelnr 912-1435",
+          "credit": "Jack de Nijs for Anefo · CC0"
+        }
+      ]
     },
     "yoko-gake": {
       "name": "Yoko-gake",
@@ -793,7 +2283,36 @@
         "Tsukuri : balayer/accrocher la cheville par l'extérieur en se laissant tomber sur le flanc.",
         "Kake : tirer fermement les épaules d'uke vers le sol."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Yoko-gake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yoko-gake.jpg",
+          "title": "Yoko-gake",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ouchi_gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ouchi_gari.jpg",
+          "title": "Ouchi gari",
+          "credit": "flickr user parhessiastes · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:O-uchi-gari.jpg",
+          "title": "O-uchi-gari",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Yokogake.jpg/960px-Yokogake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yokogake.jpg",
+          "title": "Yokogake",
+          "credit": "Gotcha2 · CC BY-SA 3.0"
+        }
+      ]
     },
     "hon-gesa-gatame": {
       "name": "Hon-gesa-gatame",
@@ -804,7 +2323,18 @@
         "Appuis : jambes écartées en ciseaux, hanches basses près du buste d'uke.",
         "Pression : tête baissée vers uke et poitrine collée pour empêcher le pont ou la sortie."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Hon-kesa-gatame.jpg/960px-Hon-kesa-gatame.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hon-kesa-gatame.jpg",
+          "title": "Hon-kesa-gatame",
+          "credit": "Michael Hultström · CC BY-SA 3.0"
+        }
+      ]
     },
     "kuzure-gesa-gatame": {
       "name": "Kuzure-gesa-gatame",
@@ -815,7 +2345,18 @@
         "Appuis : garder les jambes écartées et la hanche lourde contre les côtes d'uke.",
         "Pression : bloquer l'épaule d'uke au tatami pour éviter qu'il ne tourne."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kuzure-kesa-gatame.jpg/960px-Kuzure-kesa-gatame.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kuzure-kesa-gatame.jpg",
+          "title": "Kuzure-kesa-gatame",
+          "credit": "Michael Hultström · CC BY-SA 2.0"
+        }
+      ]
     },
     "kata-gatame": {
       "name": "Kata-gatame",
@@ -826,7 +2367,36 @@
         "Appuis : joindre les mains (paume contre paume) et descendre la poitrine basse.",
         "Pression : caler une jambe écartée pour stabiliser la base et fixer les épaules."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Kata_gatame.svg/960px-Kata_gatame.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kata_gatame.svg",
+          "title": "Kata gatame",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Judocas_practicando_t%C3%A9cnicas_de_control_por_el_hombro_%28Kata-Gatame%29_durante_un_entrenamiento_de_judo_%2CLa_Paz_-Bolivia.jpg/960px-Judocas_practicando_t%C3%A9cnicas_de_control_por_el_hombro_%28Kata-Gatame%29_durante_un_entrenamiento_de_judo_%2CLa_Paz_-Bolivia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judocas_practicando_t%C3%A9cnicas_de_control_por_el_hombro_(Kata-Gatame)_durante_un_entrenamiento_de_judo_,La_Paz_-Bolivia.jpg",
+          "title": "Judocas practicando técnicas de control por el hombro (Kata-Gatame) durante un entrenamiento de judo ,La Paz -Bolivia",
+          "credit": "Norkiña · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/2024_EIJC_Kata_-_Katame_no_Kata_udehishigiudegatame.jpg/960px-2024_EIJC_Kata_-_Katame_no_Kata_udehishigiudegatame.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2024_EIJC_Kata_-_Katame_no_Kata_udehishigiudegatame.jpg",
+          "title": "2024 EIJC Kata - Katame no Kata udehishigiudegatame",
+          "credit": "Edmonton International Judo Championship · Public domain"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Kata_juji_gatame.svg/960px-Kata_juji_gatame.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kata_juji_gatame.svg",
+          "title": "Kata juji gatame",
+          "credit": "Judcosta · CC BY-SA 3.0"
+        }
+      ]
     },
     "kami-shiho-gatame": {
       "name": "Kami-shiho-gatame",
@@ -837,7 +2407,36 @@
         "Appuis : genoux écartés ou jambes tendues en arrière, hanches basses au tapis.",
         "Pression : coller les coudes aux flancs d'uke pour bloquer tout retournement."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Kami-shiho-gatame.jpg/960px-Kami-shiho-gatame.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kami-shiho-gatame.jpg",
+          "title": "Kami-shiho-gatame",
+          "credit": "Michael Hultström · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Kami_shiho_gatame.svg/960px-Kami_shiho_gatame.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kami_shiho_gatame.svg",
+          "title": "Kami shiho gatame",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Kuzure_kami_shiho_gatame.svg/960px-Kuzure_kami_shiho_gatame.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kuzure_kami_shiho_gatame.svg",
+          "title": "Kuzure kami shiho gatame",
+          "credit": "Judcosta · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Fig4-1-north-south_position.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Fig4-1-north-south_position.jpg",
+          "title": "Fig4-1-north-south position",
+          "credit": "Public domain"
+        }
+      ]
     },
     "kuzure-kami-shiho-gatame": {
       "name": "Kuzure-kami-shiho-gatame",
@@ -848,7 +2447,18 @@
         "Appuis : se décaler légèrement sur le côté pour bloquer la hanche.",
         "Pression : garder le poids du buste sur la poitrine d'uke."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Kuzure_kami_shiho_gatame.svg/960px-Kuzure_kami_shiho_gatame.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kuzure_kami_shiho_gatame.svg",
+          "title": "Kuzure kami shiho gatame",
+          "credit": "Judcosta · CC BY-SA 3.0"
+        }
+      ]
     },
     "yoko-shiho-gatame": {
       "name": "Yoko-shiho-gatame",
@@ -859,7 +2469,36 @@
         "Appuis : genoux près du corps d'uke, orteils actifs ou jambes écartées.",
         "Pression : poitrine lourde sur le sternum pour couper la reprise de garde."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Yoko_shiho_gatame.svg/960px-Yoko_shiho_gatame.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yoko_shiho_gatame.svg",
+          "title": "Yoko shiho gatame",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Judocas_practicando_t%C3%A9cnica_de_control_%28Yoko_Shiho_Gatame%29_durante_un_entrenamiento_de_judo_%2CLa_Paz_-Bolivia.jpg/960px-Judocas_practicando_t%C3%A9cnica_de_control_%28Yoko_Shiho_Gatame%29_durante_un_entrenamiento_de_judo_%2CLa_Paz_-Bolivia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judocas_practicando_t%C3%A9cnica_de_control_(Yoko_Shiho_Gatame)_durante_un_entrenamiento_de_judo_,La_Paz_-Bolivia.jpg",
+          "title": "Judocas practicando técnica de control (Yoko Shiho Gatame) durante un entrenamiento de judo ,La Paz -Bolivia",
+          "credit": "Norkiña · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Judocas_practicando_t%C3%A9cnica_de_control_%28Yoko_-Shiho_-Gatame%29_durante_un_entrenamiento_de_judo_%2CLa_Paz_-Bolivia.jpg/960px-Judocas_practicando_t%C3%A9cnica_de_control_%28Yoko_-Shiho_-Gatame%29_durante_un_entrenamiento_de_judo_%2CLa_Paz_-Bolivia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judocas_practicando_t%C3%A9cnica_de_control_(Yoko_-Shiho_-Gatame)_durante_un_entrenamiento_de_judo_,La_Paz_-Bolivia.jpg",
+          "title": "Judocas practicando técnica de control (Yoko -Shiho -Gatame) durante un entrenamiento de judo ,La Paz -Bolivia",
+          "credit": "Norkiña · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Judocas_practicando_t%C3%A9cnica_de_control_Yoko_Shiho_Gatame_%2CLa_Paz_-Bolivia.jpg/960px-Judocas_practicando_t%C3%A9cnica_de_control_Yoko_Shiho_Gatame_%2CLa_Paz_-Bolivia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judocas_practicando_t%C3%A9cnica_de_control_Yoko_Shiho_Gatame_,La_Paz_-Bolivia.jpg",
+          "title": "Judocas practicando técnica de control Yoko Shiho Gatame ,La Paz -Bolivia",
+          "credit": "Norkiña · CC BY-SA 4.0"
+        }
+      ]
     },
     "tate-shiho-gatame": {
       "name": "Tate-shiho-gatame",
@@ -870,7 +2509,36 @@
         "Appuis : crocheter les pieds sous les cuisses d'uke ou serrer les genoux près des hanches.",
         "Pression : garder le centre de gravité bas et les mains actives pour contrer le pont."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Tate-shiho-gatame.jpg/960px-Tate-shiho-gatame.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tate-shiho-gatame.jpg",
+          "title": "Tate-shiho-gatame",
+          "credit": "Michael Hultström · CC BY-SA 2.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/2018-10-07_Judo_Girls%27_44_kg_at_2018_Summer_Youth_Olympics_%E2%80%93_Bronze_ARG%E2%80%93CRO_%28Martin_Rulsch%29_10.jpg/960px-2018-10-07_Judo_Girls%27_44_kg_at_2018_Summer_Youth_Olympics_%E2%80%93_Bronze_ARG%E2%80%93CRO_%28Martin_Rulsch%29_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2018-10-07_Judo_Girls%27_44_kg_at_2018_Summer_Youth_Olympics_%E2%80%93_Bronze_ARG%E2%80%93CRO_(Martin_Rulsch)_10.jpg",
+          "title": "2018-10-07 Judo Girls' 44 kg at 2018 Summer Youth Olympics – Bronze ARG–CRO (Martin Rulsch) 10",
+          "credit": "Martin Rulsch, Wikimedia Commons · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/2018-10-07_Judo_Boys%27_66_kg_at_2018_Summer_Youth_Olympics_%E2%80%93_Bronze_CUB%E2%80%93ESP_%28Martin_Rulsch%29_11.jpg/960px-2018-10-07_Judo_Boys%27_66_kg_at_2018_Summer_Youth_Olympics_%E2%80%93_Bronze_CUB%E2%80%93ESP_%28Martin_Rulsch%29_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2018-10-07_Judo_Boys%27_66_kg_at_2018_Summer_Youth_Olympics_%E2%80%93_Bronze_CUB%E2%80%93ESP_(Martin_Rulsch)_11.jpg",
+          "title": "2018-10-07 Judo Boys' 66 kg at 2018 Summer Youth Olympics – Bronze CUB–ESP (Martin Rulsch) 11",
+          "credit": "Martin Rulsch, Wikimedia Commons · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Dan_Hadani_collection_%28990044370210205171%29.jpg/960px-Dan_Hadani_collection_%28990044370210205171%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Dan_Hadani_collection_(990044370210205171).jpg",
+          "title": "Dan Hadani collection (990044370210205171)",
+          "credit": "Israel Press and Photo Agency (I.P.P.A.) photographer · CC BY 4.0"
+        }
+      ]
     },
     "ude-garami": {
       "name": "Ude-garami",
@@ -881,7 +2549,36 @@
         "Verrouillage : saisir le poignet d'uke et passer l'autre bras sous son coude pour attraper son propre poignet.",
         "Finalisation : coller le coude au flanc d'uke et effectuer une rotation progressive vers l'épaule."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/EVD-judo-090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EVD-judo-090.jpg",
+          "title": "EVD-judo-090",
+          "credit": "User:Evdcoldeportes · CC BY-SA 2.5 co"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/2025_EIJC_Newaza_-_54382633821.jpg/960px-2025_EIJC_Newaza_-_54382633821.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2025_EIJC_Newaza_-_54382633821.jpg",
+          "title": "2025 EIJC Newaza - 54382633821",
+          "credit": "Edmonton International Judo Championship · Public domain"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2025_EIJC_Newaza.jpg/960px-2025_EIJC_Newaza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2025_EIJC_Newaza.jpg",
+          "title": "2025 EIJC Newaza",
+          "credit": "Edmonton International Judo Championship · Public domain"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/2025_EIJC_Newaza_-_54382833689.jpg/960px-2025_EIJC_Newaza_-_54382833689.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2025_EIJC_Newaza_-_54382833689.jpg",
+          "title": "2025 EIJC Newaza - 54382833689",
+          "credit": "Edmonton International Judo Championship · Public domain"
+        }
+      ]
     },
     "ude-hishigi-juji-gatame": {
       "name": "Ude-hishigi-juji-gatame",
@@ -892,7 +2589,36 @@
         "Verrouillage : serrer fermement les genoux et contrôler le poignet d'uke, pouce vers le haut.",
         "Finalisation : tirer le bras vers la poitrine tout en poussant doucement les hanches vers le haut."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Juji-gatame.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Juji-gatame.jpg",
+          "title": "Juji-gatame",
+          "credit": "Mhultstrom · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Nomura-Dojo-10th--Judo--2024-09-07_298.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_298.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_298.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 298",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Nomura-Dojo-10th--Judo--2024-09-07_297.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_297.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_297.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 297",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Nomura-Dojo-10th--Judo--2024-09-07_295.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_295.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_295.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 295",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        }
+      ]
     },
     "ude-hishigi-waki-gatame": {
       "name": "Ude-hishigi-waki-gatame",
@@ -903,7 +2629,30 @@
         "Verrouillage : serrer le coude contre le flanc et contrôler l'avant-bras à deux mains.",
         "Finalisation : exercer une pression contrôlée sur l'articulation du coude vers le bas."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2024_EIJC_Kata_-_Kodokan_Goshin_Jutsu_wakigatame.jpg/960px-2024_EIJC_Kata_-_Kodokan_Goshin_Jutsu_wakigatame.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2024_EIJC_Kata_-_Kodokan_Goshin_Jutsu_wakigatame.jpg",
+          "title": "2024 EIJC Kata - Kodokan Goshin Jutsu wakigatame",
+          "credit": "Edmonton International Judo Championship · Public domain"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Kime_no_kata_-_Tachiai_-_Ryote_dori_3a.svg/960px-Kime_no_kata_-_Tachiai_-_Ryote_dori_3a.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kime_no_kata_-_Tachiai_-_Ryote_dori_3a.svg",
+          "title": "Kime no kata - Tachiai - Ryote dori 3a",
+          "credit": "Judcosta · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Ciampa_armbar.jpg/960px-Ciampa_armbar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ciampa_armbar.jpg",
+          "title": "Ciampa armbar",
+          "credit": "shstrng · CC BY 2.0"
+        }
+      ]
     },
     "ude-hishigi-ude-gatame": {
       "name": "Ude-hishigi-ude-gatame",
@@ -914,7 +2663,36 @@
         "Verrouillage : bloquer le poignet d'uke contre l'épaule et placer les deux mains à l'arrière du coude.",
         "Finalisation : tendre le bras en poussant progressivement sur le coude."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/EVD-judo-089.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EVD-judo-089.jpg",
+          "title": "EVD-judo-089",
+          "credit": "User:Evdcoldeportes · CC BY-SA 2.5 co"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Nomura-Dojo-10th--Judo--2024-09-07_296.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_296.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_296.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 296",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Nomura-Dojo-10th--Judo--2024-09-07_298.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_298.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_298.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 298",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Nomura-Dojo-10th--Judo--2024-09-07_297.jpg/960px-Nomura-Dojo-10th--Judo--2024-09-07_297.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nomura-Dojo-10th--Judo--2024-09-07_297.jpg",
+          "title": "Nomura-Dojo-10th--Judo--2024-09-07 297",
+          "credit": "RuinDig/Yuki Uchida · CC BY 4.0"
+        }
+      ]
     },
     "ude-hishigi-hiza-gatame": {
       "name": "Ude-hishigi-hiza-gatame",
@@ -925,7 +2703,18 @@
         "Verrouillage : placer le genou comme point d'appui juste au-dessus du coude d'uke.",
         "Finalisation : tirer le poignet vers soi contre le genou."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Kazik1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kazik1.jpg",
+          "title": "Kazik1",
+          "credit": "Stepan Benca · CC0"
+        }
+      ]
     },
     "ude-hishigi-ashi-gatame": {
       "name": "Ude-hishigi-ashi-gatame",
@@ -936,7 +2725,11 @@
         "Verrouillage : placer la jambe par-dessus ou sous l'articulation du coude.",
         "Finalisation : tirer le poignet en extension contre la jambe."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": []
     },
     "ude-hishigi-hara-gatame": {
       "name": "Ude-hishigi-hara-gatame",
@@ -947,7 +2740,11 @@
         "Verrouillage : appuyer l'abdomen ou la hanche sur l'arrière du coude d'uke.",
         "Finalisation : abaisser le bassin tout en tirant le poignet vers le haut."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": []
     },
     "ude-hishigi-sankaku-gatame": {
       "name": "Ude-hishigi-sankaku-gatame",
@@ -958,7 +2755,18 @@
         "Verrouillage : orienter le pouce du bras isolé vers le haut.",
         "Finalisation : serrer les cuisses et exercer une pression sur le coude contre la hanche."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Carnage_at_the_Creek_6_-_triangle_armbar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Carnage_at_the_Creek_6_-_triangle_armbar.jpg",
+          "title": "Carnage at the Creek 6 - triangle armbar",
+          "credit": "Kelly Bailey · CC BY 2.0"
+        }
+      ]
     },
     "ude-hishigi-te-gatame": {
       "name": "Ude-hishigi-te-gatame",
@@ -969,7 +2777,18 @@
         "Verrouillage : placer l'avant-bras ou la main en appui derrière le coude d'uke.",
         "Finalisation : effectuer une pression progressive sur l'articulation."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Defense.gov_News_Photo_110510-N-RC734-189_-_Petty_Officer_2nd_Class_Jaqueline_Rodriguez_subdues_a_simulated_suspect_after_being_sprayed_with_oleoresin_capsicum_spray_also_known_as_pepper.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_110510-N-RC734-189_-_Petty_Officer_2nd_Class_Jaqueline_Rodriguez_subdues_a_simulated_suspect_after_being_sprayed_with_oleoresin_capsicum_spray_also_known_as_pepper.jpg",
+          "title": "Defense.gov News Photo 110510-N-RC734-189 - Petty Officer 2nd Class Jaqueline Rodriguez subdues a simulated suspect after being sprayed with oleoresin capsicum spray also known as pepper",
+          "credit": "Petty Officer 2nd Class Joseph M. Buliavac, U.S. Navy · Public domain"
+        }
+      ]
     },
     "juji-jime": {
       "name": "Juji-jime (Kata / Nami / Gyaku)",
@@ -980,7 +2799,36 @@
         "Position : garder les coudes bas et collés au buste pour ne pas laisser d'espace.",
         "Finalisation : tirer vers soi en tournant les poignets pour comprimer les carotides."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Ushiro_juji_jime_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ushiro_juji_jime_2.png",
+          "title": "Ushiro juji jime 2",
+          "credit": "LawBasics · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Kata_juji_jime.svg/960px-Kata_juji_jime.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kata_juji_jime.svg",
+          "title": "Kata juji jime",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Ushiro_juji_jime.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ushiro_juji_jime.png",
+          "title": "Ushiro juji jime",
+          "credit": "LawBasics · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Kata_juji_gatame.svg/960px-Kata_juji_gatame.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kata_juji_gatame.svg",
+          "title": "Kata juji gatame",
+          "credit": "Judcosta · CC BY-SA 3.0"
+        }
+      ]
     },
     "hadaka-jime": {
       "name": "Hadaka-jime",
@@ -991,7 +2839,18 @@
         "Position : joindre les mains (ou verrouiller sur le biceps) et coller la tête contre la sienne.",
         "Finalisation : serrer les coudes vers l'arrière et soulever légèrement le buste."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/EIJC_2025_Kata_-_54382853728.jpg/960px-EIJC_2025_Kata_-_54382853728.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:EIJC_2025_Kata_-_54382853728.jpg",
+          "title": "EIJC 2025 Kata - 54382853728",
+          "credit": "Edmonton International Judo Championship · Public domain"
+        }
+      ]
     },
     "kata-ha-jime": {
       "name": "Kata-ha-jime",
@@ -1002,7 +2861,18 @@
         "Position : passer l'autre bras sous l'aisselle d'uke pour lever son bras et placer la main derrière sa nuque.",
         "Finalisation : pousser la tête vers l'avant tout en tirant le revers."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Kataha-jime_illustration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kataha-jime_illustration.jpg",
+          "title": "Kataha-jime illustration",
+          "credit": "Jdcollins13 · CC BY-SA 3.0"
+        }
+      ]
     },
     "okuri-eri-jime": {
       "name": "Okuri-eri-jime",
@@ -1013,7 +2883,36 @@
         "Position : contrôler l'autre revers sous l'aisselle d'uke avec la seconde main.",
         "Finalisation : tirer les deux mains dans des directions opposées en ouvrant la poitrine."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Flickr_-_Government_Press_Office_%28GPO%29_-_A_JUDO_COMPETITION.jpg/960px-Flickr_-_Government_Press_Office_%28GPO%29_-_A_JUDO_COMPETITION.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Flickr_-_Government_Press_Office_(GPO)_-_A_JUDO_COMPETITION.jpg",
+          "title": "Flickr - Government Press Office (GPO) - A JUDO COMPETITION",
+          "credit": "Yaakov Saar · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2016_Summer_Olympics_Judo%2C_August_9_-_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2016_Summer_Olympics_Judo,_August_9_-_22.jpg",
+          "title": "2016 Summer Olympics Judo, August 9 - 22",
+          "credit": "Mohammad Hassansadeh / Tasnimnews · CC BY 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Judo_at_the_2016_Summer_Paralympics_%E2%80%93_Men%27s_73_kg%2C_Gasimov_vs_Solovey_12.jpg/960px-Judo_at_the_2016_Summer_Paralympics_%E2%80%93_Men%27s_73_kg%2C_Gasimov_vs_Solovey_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judo_at_the_2016_Summer_Paralympics_%E2%80%93_Men%27s_73_kg,_Gasimov_vs_Solovey_12.jpg",
+          "title": "Judo at the 2016 Summer Paralympics – Men's 73 kg, Gasimov vs Solovey 12",
+          "credit": "Ilgar Jafarov · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Judo_at_the_2016_Summer_Paralympics_%E2%80%93_Men%27s_73_kg%2C_Gasimov_vs_Solovey_11.jpg/960px-Judo_at_the_2016_Summer_Paralympics_%E2%80%93_Men%27s_73_kg%2C_Gasimov_vs_Solovey_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Judo_at_the_2016_Summer_Paralympics_%E2%80%93_Men%27s_73_kg,_Gasimov_vs_Solovey_11.jpg",
+          "title": "Judo at the 2016 Summer Paralympics – Men's 73 kg, Gasimov vs Solovey 11",
+          "credit": "Ilgar Jafarov · CC BY-SA 4.0"
+        }
+      ]
     },
     "sankaku-jime": {
       "name": "Sankaku-jime",
@@ -1024,7 +2923,36 @@
         "Position : passer le pied derrière le genou opposé (triangle fermé) et orienter le genou vers l'axe.",
         "Finalisation : serrer les cuisses et tirer doucement la tête vers le bas."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Triangle_choke_attempt_in_grappling_tournament_at_Joint_Base_Balad%2C_Iraq%2C_2011.jpg/960px-Triangle_choke_attempt_in_grappling_tournament_at_Joint_Base_Balad%2C_Iraq%2C_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Triangle_choke_attempt_in_grappling_tournament_at_Joint_Base_Balad,_Iraq,_2011.jpg",
+          "title": "Triangle choke attempt in grappling tournament at Joint Base Balad, Iraq, 2011",
+          "credit": "SSgt Corenthia Fennell · Public domain"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Triangle_choke.jpeg/960px-Triangle_choke.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Triangle_choke.jpeg",
+          "title": "Triangle choke",
+          "credit": "Zoran.jerkovic · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Image939-triangle_choke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Image939-triangle_choke.jpg",
+          "title": "Image939-triangle choke",
+          "credit": "AnonymousUnknown author · Public domain"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Image938-triangle_choke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Image938-triangle_choke.jpg",
+          "title": "Image938-triangle choke",
+          "credit": "Public domain"
+        }
+      ]
     },
     "katate-jime": {
       "name": "Katate-jime",
@@ -1035,7 +2963,36 @@
         "Position : stabiliser uke au sol avec le poids du corps ou l'autre bras.",
         "Finalisation : appliquer le tranchant du poignet sur le côté du cou."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Kata_juji_jime.svg/960px-Kata_juji_jime.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kata_juji_jime.svg",
+          "title": "Kata juji jime",
+          "credit": "Judcosta · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Ushiro_juji_jime_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ushiro_juji_jime_2.png",
+          "title": "Ushiro juji jime 2",
+          "credit": "LawBasics · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Kata_juji_gatame.svg/960px-Kata_juji_gatame.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kata_juji_gatame.svg",
+          "title": "Kata juji gatame",
+          "credit": "Judcosta · CC BY-SA 3.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Ushiro_juji_jime.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ushiro_juji_jime.png",
+          "title": "Ushiro juji jime",
+          "credit": "LawBasics · CC BY-SA 4.0"
+        }
+      ]
     },
     "ryote-jime": {
       "name": "Ryote-jime",
@@ -1046,7 +3003,11 @@
         "Position : coller les poings de chaque côté du cou.",
         "Finalisation : comprimer les carotides vers l'intérieur."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": []
     },
     "sode-guruma-jime": {
       "name": "Sode-guruma-jime",
@@ -1057,7 +3018,36 @@
         "Position : glisser l'autre main devant la gorge d'uke.",
         "Finalisation : étendre les deux avant-bras en ciseaux."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Ushiro_juji_jime_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ushiro_juji_jime_2.png",
+          "title": "Ushiro juji jime 2",
+          "credit": "LawBasics · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Ushiro_juji_jime.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ushiro_juji_jime.png",
+          "title": "Ushiro juji jime",
+          "credit": "LawBasics · CC BY-SA 4.0"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Image899-Sleeve_choke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Image899-Sleeve_choke.jpg",
+          "title": "Image899-Sleeve choke",
+          "credit": "US ARMY (photographer unknown) · Public domain"
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Army_combatives-ezekiel_choke.jpg/960px-Army_combatives-ezekiel_choke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Army_combatives-ezekiel_choke.jpg",
+          "title": "Army combatives-ezekiel choke",
+          "credit": "807th Medical Command (Deployment Support) · CC BY 2.0"
+        }
+      ]
     },
     "tsukkomi-jime": {
       "name": "Tsukkomi-jime",
@@ -1068,7 +3058,18 @@
         "Position : garder les coudes alignés et les poignets fermes.",
         "Finalisation : pousser vers le bas et l'avant contre les côtés du cou."
       ],
-      "videos": { "baseline": null, "mistakes_and_counters": [] }
+      "videos": {
+        "baseline": null,
+        "mistakes_and_counters": []
+      },
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/ArmyMilCombativesChokehold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:ArmyMilCombativesChokehold.jpg",
+          "title": "ArmyMilCombativesChokehold",
+          "credit": "US Army serviceman · Public domain"
+        }
+      ]
     }
   }
 }

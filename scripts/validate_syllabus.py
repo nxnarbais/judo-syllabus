@@ -83,6 +83,11 @@ def validate(data: dict) -> tuple[list[str], list[str]]:
             check_video(f"technique '{tid}' baseline", videos["baseline"], errors)
         for i, video in enumerate(videos.get("mistakes_and_counters") or []):
             check_video(f"technique '{tid}' mistakes_and_counters[{i}]", video, errors)
+        for i, img in enumerate(tech.get("images") or []):
+            if not (img.get("url") or "").startswith("https://"):
+                errors.append(f"technique '{tid}' images[{i}]: invalid url")
+            if not img.get("title"):
+                errors.append(f"technique '{tid}' images[{i}]: missing 'title'")
 
     for tid in sorted(set(techniques) - used):
         warnings.append(f"technique '{tid}' is not referenced by any belt")

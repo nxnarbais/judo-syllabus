@@ -1091,6 +1091,246 @@ dialog::backdrop {
   }
 }
 
+/* Technique image carousel */
+.tech-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.carousel-stage {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  touch-action: manipulation;
+  scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .carousel-track {
+    scroll-behavior: smooth;
+  }
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-img-btn {
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  height: 176px;
+  padding: 0.4rem;
+  cursor: zoom-in;
+}
+
+.carousel-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-caption {
+  padding: 0.28rem 0.6rem;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: var(--surface-muted);
+  border-top: 1px solid var(--border);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-controls {
+  position: absolute;
+  inset: 0 0 24px 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.4rem;
+  pointer-events: none;
+}
+
+.carousel-btn {
+  pointer-events: auto;
+  touch-action: manipulation;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  background: rgba(255, 254, 251, 0.9);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.carousel-btn:hover {
+  background: var(--surface);
+  border-color: var(--indigo);
+  color: var(--indigo);
+}
+
+.carousel-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.carousel-markers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.carousel-dot {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.carousel-dot::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--border-strong);
+  transition: width 0.15s, background 0.15s;
+}
+
+.carousel-dot[aria-current="true"]::before {
+  width: 18px;
+  background: var(--indigo);
+}
+
+/* Lightbox dialog */
+.lightbox-dialog[open] {
+  width: min(920px, calc(100vw - 2rem));
+  max-height: min(90vh, 860px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 24px 60px rgba(36, 34, 30, 0.28);
+  overflow: hidden;
+}
+
+.lightbox-inner {
+  display: flex;
+  flex-direction: column;
+  max-height: min(90vh, 860px);
+}
+
+.lightbox-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.95rem 1.15rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.lightbox-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.lightbox-subtitle {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.lightbox-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 1rem 3rem;
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 68vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+}
+
+.lightbox-nav.prev {
+  left: 0.75rem;
+}
+
+.lightbox-nav.next {
+  right: 0.75rem;
+}
+
+.lightbox-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 1.15rem;
+  background: var(--surface-muted);
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.lightbox-counter {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 @media (max-width: 640px) {
   .container {
     padding: 0 1rem;
