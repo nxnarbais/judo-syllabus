@@ -5,7 +5,7 @@ Application statique sans connexion ni étape de build pour réviser les techniq
 ## Structure
 
 - `index.html` : Interface statique (Alpine.js via CDN), filtres par ceinture, type (`Nage-waza` / `Katame-waza`), statut de révision et recherche instantanée.
-- `style.css` : Mise en page responsive mobile-first, thème clair / sombre automatique.
+- `style.css` : Mise en page responsive mobile-first, thème clair inspiré du judogi (coton écru, tatami, encre sumi, indigo).
 - `syllabus.json` : Source de données unique (programme du dojo avec chevrons + référentiel officiel SJV / ASJ).
 - `sw.js`, `manifest.webmanifest`, `icon.svg` : Fonctionnement hors ligne et installation sur l'écran d'accueil (PWA).
 - `scripts/validate_syllabus.py` : Vérifie la cohérence de `syllabus.json` (à lancer après chaque modification).

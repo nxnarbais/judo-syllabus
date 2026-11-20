@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Réviser les techniques de Judo par ceinture et chevron : programme du dojo et référentiel officiel SJV / ASJ." />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#f7f4ec" />
   <title>Référentiel Judo — Ceintures &amp; Chevrons</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
@@ -13,23 +13,38 @@
 </head>
 <body x-data="judoApp()" x-init="init()">
   <header class="site-header">
-    <div class="container header-top">
-      <div>
-        <h1 class="site-title" x-text="meta.title || 'Référentiel Judo'">Référentiel Judo</h1>
-        <p class="site-subtitle" x-text="currentTrack?.description || ''"></p>
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="brand-mark" src="icon.svg" alt="" width="44" height="44" />
+        <div>
+          <h1 class="site-title">Référentiel Judo</h1>
+          <p class="site-subtitle" x-text="currentTrack?.description || 'Ceintures & chevrons'">Ceintures &amp; chevrons</p>
+        </div>
       </div>
 
-      <div class="track-switcher" role="group" aria-label="Programme">
-        <template x-for="trackKey in Object.keys(tracks)" :key="trackKey">
-          <button
-            type="button"
-            class="track-btn"
-            :class="{ active: selectedTrack === trackKey }"
-            :aria-pressed="selectedTrack === trackKey"
-            @click="setTrack(trackKey)"
-            x-text="tracks[trackKey].label"
-          ></button>
-        </template>
+      <div class="header-side" x-show="!loading && !error" x-cloak>
+        <div class="segmented track-switcher" role="group" aria-label="Programme">
+          <template x-for="trackKey in Object.keys(tracks)" :key="trackKey">
+            <button
+              type="button"
+              class="seg-btn"
+              :class="{ active: selectedTrack === trackKey }"
+              :aria-pressed="selectedTrack === trackKey"
+              @click="setTrack(trackKey)"
+              x-text="tracks[trackKey].label"
+            ></button>
+          </template>
+        </div>
+
+        <div class="overall" :aria-label="`${trackProgress.done} sur ${trackProgress.total} techniques acquises`">
+          <div class="overall-text">
+            <span>Progression</span>
+            <strong x-text="`${trackProgress.done} / ${trackProgress.total}`"></strong>
+          </div>
+          <div class="progress-bar" aria-hidden="true">
+            <span :style="`width: ${pct(trackProgress)}%`"></span>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -40,30 +55,63 @@
 
     <div x-show="!loading && !error" x-cloak>
       <section class="controls" aria-label="Filtres">
-        <div class="search-row">
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input
             type="search"
             class="search-input"
-            placeholder="Rechercher une technique (ex. osoto, hanche, clé...)"
+            placeholder="Rechercher : osoto, hanche, clé…"
             x-model.trim="search"
             aria-label="Rechercher une technique"
           />
-
-          <div class="group-pills" role="group" aria-label="Type de technique">
-            <template x-for="g in groupOptions" :key="g.value">
-              <button
-                type="button"
-                class="pill-btn"
-                :class="{ active: selectedGroup === g.value }"
-                :aria-pressed="selectedGroup === g.value"
-                @click="selectedGroup = g.value"
-                x-text="g.label"
-              ></button>
-            </template>
-          </div>
+          <button type="button" class="search-clear" x-show="search" x-cloak @click="search = ''" aria-label="Effacer la recherche">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
         </div>
 
-        <nav class="belt-tabs" aria-label="Niveaux de ceinture">
+        <div class="filter-row">
+          <div class="filter">
+            <span class="filter-label" id="lbl-type">Type</span>
+            <div class="segmented" role="group" aria-labelledby="lbl-type">
+              <template x-for="g in groupOptions" :key="g.value">
+                <button
+                  type="button"
+                  class="seg-btn"
+                  :class="{ active: selectedGroup === g.value }"
+                  :aria-pressed="selectedGroup === g.value"
+                  @click="selectedGroup = g.value"
+                >
+                  <span x-text="g.label"></span>
+                  <small x-show="g.hint" x-text="g.hint"></small>
+                </button>
+              </template>
+            </div>
+          </div>
+
+          <div class="filter">
+            <span class="filter-label" id="lbl-status">Statut</span>
+            <div class="segmented" role="group" aria-labelledby="lbl-status">
+              <template x-for="s in statusOptions" :key="s.value">
+                <button
+                  type="button"
+                  class="seg-btn"
+                  :class="{ active: selectedStatus === s.value }"
+                  :aria-pressed="selectedStatus === s.value"
+                  @click="selectedStatus = s.value"
+                  x-text="s.label"
+                ></button>
+              </template>
+            </div>
+          </div>
+
+          <button type="button" class="reset-filters" x-show="filtersActive" x-cloak @click="resetFilters()">
+            Effacer les filtres
+          </button>
+        </div>
+      </section>
+
+      <nav class="belt-nav" aria-label="Niveaux de ceinture">
+        <div class="belt-tabs">
           <button
             type="button"
             class="belt-tab"
@@ -71,67 +119,47 @@
             :aria-pressed="selectedBelt === 'all'"
             @click="setBelt('all')"
           >
-            Toutes les ceintures
+            <span class="belt-tab-name">Toutes</span>
+            <span class="belt-tab-count" x-text="`${trackProgress.done}/${trackProgress.total}`"></span>
           </button>
 
           <template x-for="belt in currentBelts" :key="belt.id">
             <button
               type="button"
               class="belt-tab"
-              :class="{ active: selectedBelt === belt.id }"
+              :class="{ active: selectedBelt === belt.id, complete: isComplete(belt) }"
               :aria-pressed="selectedBelt === belt.id"
+              :title="belt.name"
               @click="setBelt(belt.id)"
             >
-              <span
-                class="belt-swatch"
-                :class="{ stripe: belt.is_stripe }"
-                :style="`--swatch-color: ${belt.color}; background-color: ${belt.is_stripe ? '#ffffff' : belt.color}`"
-              ></span>
-              <span x-text="belt.short_name"></span>
+              <span class="obi" :class="{ stripe: belt.is_stripe }" :style="`--belt: ${belt.color}`" aria-hidden="true"></span>
+              <span class="belt-tab-name" x-text="belt.short_name"></span>
+              <span class="belt-tab-count" x-text="`${progressOf(belt.items).done}/${progressOf(belt.items).total}`"></span>
             </button>
           </template>
-        </nav>
-
-        <div class="options-row">
-          <div class="group-pills" role="group" aria-label="Statut de révision">
-            <template x-for="s in statusOptions" :key="s.value">
-              <button
-                type="button"
-                class="pill-btn small"
-                :class="{ active: selectedStatus === s.value }"
-                :aria-pressed="selectedStatus === s.value"
-                @click="selectedStatus = s.value"
-                x-text="s.label"
-              ></button>
-            </template>
-          </div>
-
-          <label class="checkbox-label" x-show="selectedBelt !== 'all'">
-            <input type="checkbox" x-model="cumulative" />
-            Inclure les ceintures précédentes
-          </label>
-
-          <span class="progress-summary" x-text="`${trackProgress.done} / ${trackProgress.total} techniques acquises`"></span>
         </div>
-      </section>
+
+        <label class="toggle" x-show="selectedBelt !== 'all'" x-cloak>
+          <input type="checkbox" x-model="cumulative" />
+          <span class="toggle-track" aria-hidden="true"><span></span></span>
+          Inclure les ceintures précédentes
+        </label>
+      </nav>
 
       <div x-show="filteredBelts.length === 0" class="empty-state">
-        Aucune technique ne correspond à votre recherche.
+        <p>Aucune technique ne correspond à ces critères.</p>
+        <button type="button" class="btn-secondary" x-show="filtersActive" @click="resetFilters()">Effacer les filtres</button>
       </div>
 
       <template x-for="belt in filteredBelts" :key="belt.id">
         <section class="belt-section" :id="`section-${belt.id}`">
-          <h2 class="belt-heading">
-            <span
-              class="belt-swatch"
-              :class="{ stripe: belt.is_stripe }"
-              :style="`--swatch-color: ${belt.color}; background-color: ${belt.is_stripe ? '#ffffff' : belt.color}`"
-            ></span>
-            <span x-text="belt.name"></span>
-            <span class="belt-count" x-text="`${belt.progress.done} / ${belt.progress.total} acquise${belt.progress.done > 1 ? 's' : ''}`"></span>
-          </h2>
+          <header class="belt-heading">
+            <span class="obi large" :class="{ stripe: belt.is_stripe }" :style="`--belt: ${belt.color}`" aria-hidden="true"></span>
+            <h2 x-text="belt.name"></h2>
+            <span class="belt-count" :class="{ complete: belt.progress.done === belt.progress.total }" x-text="`${belt.progress.done} / ${belt.progress.total} acquise${belt.progress.done > 1 ? 's' : ''}`"></span>
+          </header>
           <div class="progress-bar" role="progressbar" :aria-valuenow="belt.progress.done" aria-valuemin="0" :aria-valuemax="belt.progress.total" :aria-label="`Progression ${belt.name}`">
-            <span :style="`width: ${belt.progress.total ? (100 * belt.progress.done / belt.progress.total) : 0}%`"></span>
+            <span :style="`width: ${pct(belt.progress)}%`"></span>
           </div>
 
           <div class="cards-grid">
@@ -142,13 +170,12 @@
                 x-data="{ showMistakes: false, tech: getTech(item.id) }"
               >
                 <div class="card-header">
-                  <div>
+                  <div class="card-titles">
                     <h3 class="tech-name" x-text="tech.name"></h3>
                     <p class="tech-french">
                       <span x-text="tech.french_name"></span>
                       <span x-show="tech.category" x-text="` · ${tech.category}`"></span>
                     </p>
-                    <span class="tech-note" x-show="item.note" x-text="item.note"></span>
                   </div>
                   <span
                     class="badge-group"
@@ -156,38 +183,36 @@
                     x-text="item.group === 'Nage-waza' ? 'Debout' : 'Sol'"
                   ></span>
                 </div>
+                <span class="tech-note" x-show="item.note" x-text="item.note"></span>
 
-                <!-- 1. Exam Baseline Video (Zero-Iframe Thumbnail Card) -->
                 <template x-if="tech.videos?.baseline?.youtube_id">
-                  <div class="video-box">
-                    <a
-                      class="video-link"
-                      :href="tech.videos.baseline.url"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div class="video-thumb-wrap">
-                        <img
-                          class="video-thumb"
-                          :src="`https://i.ytimg.com/vi/${tech.videos.baseline.youtube_id}/hqdefault.jpg`"
-                          :alt="tech.videos.baseline.title || tech.name"
-                          loading="lazy"
-                        />
-                        <div class="play-overlay">
-                          <span class="play-circle" aria-hidden="true">&#9654;</span>
-                        </div>
-                      </div>
-                      <div class="video-meta">
-                        <span class="video-title" x-text="tech.videos.baseline.title"></span>
-                        <span class="video-channel" x-text="tech.videos.baseline.channel || 'YouTube'"></span>
-                      </div>
-                    </a>
-                  </div>
+                  <a
+                    class="video-link"
+                    :href="tech.videos.baseline.url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-thumb-wrap">
+                      <img
+                        class="video-thumb"
+                        :src="`https://i.ytimg.com/vi/${tech.videos.baseline.youtube_id}/hqdefault.jpg`"
+                        :alt="tech.videos.baseline.title || tech.name"
+                        loading="lazy"
+                      />
+                      <span class="play-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>
+                      </span>
+                    </div>
+                    <div class="video-meta">
+                      <span class="video-title" x-text="tech.videos.baseline.title"></span>
+                      <span class="video-channel" x-text="tech.videos.baseline.channel || 'YouTube'"></span>
+                    </div>
+                  </a>
                 </template>
 
                 <template x-if="!tech.videos?.baseline?.youtube_id">
                   <div class="video-placeholder">
-                    <span>Vidéo d'examen à valider</span>
+                    <span>Pas encore de vidéo validée</span>
                     <a
                       class="yt-search-link"
                       :href="`https://www.youtube.com/results?search_query=${encodeURIComponent('judo ' + tech.name + ' kodokan')}`"
@@ -199,17 +224,15 @@
                   </div>
                 </template>
 
-                <!-- 2. Key Mechanics (3 points) -->
-                <div>
-                  <p class="section-label">Mécaniques clés</p>
-                  <ul class="mechanics-list">
+                <div x-show="(tech.mechanics || []).length">
+                  <p class="section-label">Points clés</p>
+                  <ol class="mechanics-list">
                     <template x-for="(point, pIdx) in (tech.mechanics || [])" :key="pIdx">
                       <li x-text="point"></li>
                     </template>
-                  </ul>
+                  </ol>
                 </div>
 
-                <!-- 3. Common Mistakes & Counters -->
                 <template x-if="(tech.videos?.mistakes_and_counters || []).length > 0">
                   <div>
                     <button
@@ -218,11 +241,11 @@
                       :aria-expanded="showMistakes"
                       @click="showMistakes = !showMistakes"
                     >
-                      <span x-text="`Erreurs fréquentes & Contres (${tech.videos.mistakes_and_counters.length})`"></span>
-                      <span aria-hidden="true" x-text="showMistakes ? '−' : '+'"></span>
+                      <span x-text="`Erreurs fréquentes & contres (${tech.videos.mistakes_and_counters.length})`"></span>
+                      <svg class="chevron" :class="{ open: showMistakes }" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
 
-                    <div class="mistakes-body" x-show="showMistakes" x-transition>
+                    <div class="mistakes-body" x-show="showMistakes" x-transition.opacity>
                       <template x-for="(m, mIdx) in tech.videos.mistakes_and_counters" :key="mIdx">
                         <div class="mistake-item">
                           <a
@@ -239,15 +262,18 @@
                   </div>
                 </template>
 
-                <!-- 4. Revision status -->
                 <button
                   type="button"
                   class="mastered-toggle"
                   :class="{ active: isMastered(item.id) }"
                   :aria-pressed="isMastered(item.id)"
                   @click="toggleMastered(item.id)"
-                  x-text="isMastered(item.id) ? '✓ Acquise' : 'Marquer comme acquise'"
-                ></button>
+                >
+                  <span class="check" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+                  </span>
+                  <span x-text="isMastered(item.id) ? 'Acquise' : 'Marquer comme acquise'"></span>
+                </button>
               </article>
             </template>
           </div>
@@ -257,10 +283,9 @@
   </main>
 
   <footer class="container site-footer">
-    <p>Référentiel statique, sans connexion · Source de données : <code>syllabus.json</code></p>
+    <p>Référentiel hors ligne · Progression enregistrée sur cet appareil</p>
     <p x-show="Object.keys(mastered).length > 0" x-cloak>
-      Progression enregistrée sur cet appareil ·
-      <button type="button" class="link-btn" @click="resetProgress()">Réinitialiser</button>
+      <button type="button" class="link-btn" @click="resetProgress()">Réinitialiser ma progression</button>
     </p>
   </footer>
 
@@ -300,9 +325,9 @@
         mastered: loadMastered(),
 
         groupOptions: [
-          { value: 'all', label: 'Toutes' },
-          { value: 'Nage-waza', label: 'Nage-waza (Debout)' },
-          { value: 'Katame-waza', label: 'Katame-waza (Sol)' },
+          { value: 'all', label: 'Tout', hint: '' },
+          { value: 'Nage-waza', label: 'Debout', hint: 'Nage-waza' },
+          { value: 'Katame-waza', label: 'Sol', hint: 'Katame-waza' },
         ],
         statusOptions: [
           { value: 'all', label: 'Tout' },
@@ -399,6 +424,25 @@
         progressOf(items) {
           const ids = [...new Set(items.map((i) => i.id))];
           return { done: ids.filter((id) => this.isMastered(id)).length, total: ids.length };
+        },
+
+        pct(p) {
+          return p.total ? Math.round((100 * p.done) / p.total) : 0;
+        },
+
+        isComplete(belt) {
+          const p = this.progressOf(belt.items);
+          return p.total > 0 && p.done === p.total;
+        },
+
+        get filtersActive() {
+          return Boolean(this.search) || this.selectedGroup !== 'all' || this.selectedStatus !== 'all';
+        },
+
+        resetFilters() {
+          this.search = '';
+          this.selectedGroup = 'all';
+          this.selectedStatus = 'all';
         },
 
         get trackProgress() {
