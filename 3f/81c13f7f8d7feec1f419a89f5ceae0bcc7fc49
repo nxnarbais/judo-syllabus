@@ -1,0 +1,14 @@
+Makefile
+  h_c48f198b8665b9 1-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3f81c13f7f8d7feec1f419a89f5ceae0bcc7fc49",
+  "prompts": {},
+  "humans": {
+    "h_c48f198b8665b9": {
+      "author": "Nicolas Narbais <nicolas.narbais@gmail.com>"
+    }
+  }
+}
