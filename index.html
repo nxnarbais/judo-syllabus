@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Réviser les techniques de Judo par ceinture et chevron : programme du dojo et référentiel officiel SJV / ASJ." />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Référentiel Judo — Ceintures &amp; Chevrons</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+</head>
+<body x-data="judoApp()" x-init="init()">
+  <header class="site-header">
+    <div class="container header-top">
+      <div>
+        <h1 class="site-title" x-text="meta.title || 'Référentiel Judo'">Référentiel Judo</h1>
+        <p class="site-subtitle" x-text="currentTrack?.description || ''"></p>
+      </div>
+
+      <div class="track-switcher" role="group" aria-label="Programme">
+        <template x-for="trackKey in Object.keys(tracks)" :key="trackKey">
+          <button
+            type="button"
+            class="track-btn"
+            :class="{ active: selectedTrack === trackKey }"
+            :aria-pressed="selectedTrack === trackKey"
+            @click="setTrack(trackKey)"
+            x-text="tracks[trackKey].label"
+          ></button>
+        </template>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div x-show="loading" class="empty-state">Chargement du référentiel…</div>
+    <div x-show="error" x-cloak class="empty-state" x-text="error"></div>
+
+    <div x-show="!loading && !error" x-cloak>
+      <section class="controls" aria-label="Filtres">
+        <div class="search-row">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Rechercher une technique (ex. osoto, hanche, clé...)"
+            x-model.trim="search"
+            aria-label="Rechercher une technique"
+          />
+
+          <div class="group-pills" role="group" aria-label="Type de technique">
+            <template x-for="g in groupOptions" :key="g.value">
+              <button
+                type="button"
+                class="pill-btn"
+                :class="{ active: selectedGroup === g.value }"
+                :aria-pressed="selectedGroup === g.value"
+                @click="selectedGroup = g.value"
+                x-text="g.label"
+              ></button>
+            </template>
+          </div>
+        </div>
+
+        <nav class="belt-tabs" aria-label="Niveaux de ceinture">
+          <button
+            type="button"
+            class="belt-tab"
+            :class="{ active: selectedBelt === 'all' }"
+            :aria-pressed="selectedBelt === 'all'"
+            @click="setBelt('all')"
+          >
+            Toutes les ceintures
+          </button>
+
+          <template x-for="belt in currentBelts" :key="belt.id">
+            <button
+              type="button"
+              class="belt-tab"
+              :class="{ active: selectedBelt === belt.id }"
+              :aria-pressed="selectedBelt === belt.id"
+              @click="setBelt(belt.id)"
+            >
+              <span
+                class="belt-swatch"
+                :class="{ stripe: belt.is_stripe }"
+                :style="`--swatch-color: ${belt.color}; background-color: ${belt.is_stripe ? '#ffffff' : belt.color}`"
+              ></span>
+              <span x-text="belt.short_name"></span>
+            </button>
+          </template>
+        </nav>
+
+        <div class="options-row">
+          <div class="group-pills" role="group" aria-label="Statut de révision">
+            <template x-for="s in statusOptions" :key="s.value">
+              <button
+                type="button"
+                class="pill-btn small"
+                :class="{ active: selectedStatus === s.value }"
+                :aria-pressed="selectedStatus === s.value"
+                @click="selectedStatus = s.value"
+                x-text="s.label"
+              ></button>
+            </template>
+          </div>
+
+          <label class="checkbox-label" x-show="selectedBelt !== 'all'">
+            <input type="checkbox" x-model="cumulative" />
+            Inclure les ceintures précédentes
+          </label>
+
+          <span class="progress-summary" x-text="`${trackProgress.done} / ${trackProgress.total} techniques acquises`"></span>
+        </div>
+      </section>
+
+      <div x-show="filteredBelts.length === 0" class="empty-state">
+        Aucune technique ne correspond à votre recherche.
+      </div>
+
+      <template x-for="belt in filteredBelts" :key="belt.id">
+        <section class="belt-section" :id="`section-${belt.id}`">
+          <h2 class="belt-heading">
+            <span
+              class="belt-swatch"
+              :class="{ stripe: belt.is_stripe }"
+              :style="`--swatch-color: ${belt.color}; background-color: ${belt.is_stripe ? '#ffffff' : belt.color}`"
+            ></span>
+            <span x-text="belt.name"></span>
+            <span class="belt-count" x-text="`${belt.progress.done} / ${belt.progress.total} acquise${belt.progress.done > 1 ? 's' : ''}`"></span>
+          </h2>
+          <div class="progress-bar" role="progressbar" :aria-valuenow="belt.progress.done" aria-valuemin="0" :aria-valuemax="belt.progress.total" :aria-label="`Progression ${belt.name}`">
+            <span :style="`width: ${belt.progress.total ? (100 * belt.progress.done / belt.progress.total) : 0}%`"></span>
+          </div>
+
+          <div class="cards-grid">
+            <template x-for="(item, idx) in belt.items" :key="`${belt.id}-${item.id}-${idx}`">
+              <article
+                class="tech-card"
+                :class="{ mastered: isMastered(item.id) }"
+                x-data="{ showMistakes: false, tech: getTech(item.id) }"
+              >
+                <div class="card-header">
+                  <div>
+                    <h3 class="tech-name" x-text="tech.name"></h3>
+                    <p class="tech-french">
+                      <span x-text="tech.french_name"></span>
+                      <span x-show="tech.category" x-text="` · ${tech.category}`"></span>
+                    </p>
+                    <span class="tech-note" x-show="item.note" x-text="item.note"></span>
+                  </div>
+                  <span
+                    class="badge-group"
+                    :class="item.group === 'Nage-waza' ? 'nage' : 'katame'"
+                    x-text="item.group === 'Nage-waza' ? 'Debout' : 'Sol'"
+                  ></span>
+                </div>
+
+                <!-- 1. Exam Baseline Video (Zero-Iframe Thumbnail Card) -->
+                <template x-if="tech.videos?.baseline?.youtube_id">
+                  <div class="video-box">
+                    <a
+                      class="video-link"
+                      :href="tech.videos.baseline.url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="video-thumb-wrap">
+                        <img
+                          class="video-thumb"
+                          :src="`https://i.ytimg.com/vi/${tech.videos.baseline.youtube_id}/hqdefault.jpg`"
+                          :alt="tech.videos.baseline.title || tech.name"
+                          loading="lazy"
+                        />
+                        <div class="play-overlay">
+                          <span class="play-circle" aria-hidden="true">&#9654;</span>
+                        </div>
+                      </div>
+                      <div class="video-meta">
+                        <span class="video-title" x-text="tech.videos.baseline.title"></span>
+                        <span class="video-channel" x-text="tech.videos.baseline.channel || 'YouTube'"></span>
+                      </div>
+                    </a>
+                  </div>
+                </template>
+
+                <template x-if="!tech.videos?.baseline?.youtube_id">
+                  <div class="video-placeholder">
+                    <span>Vidéo d'examen à valider</span>
+                    <a
+                      class="yt-search-link"
+                      :href="`https://www.youtube.com/results?search_query=${encodeURIComponent('judo ' + tech.name + ' kodokan')}`"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Chercher sur YouTube
+                    </a>
+                  </div>
+                </template>
+
+                <!-- 2. Key Mechanics (3 points) -->
+                <div>
+                  <p class="section-label">Mécaniques clés</p>
+                  <ul class="mechanics-list">
+                    <template x-for="(point, pIdx) in (tech.mechanics || [])" :key="pIdx">
+                      <li x-text="point"></li>
+                    </template>
+                  </ul>
+                </div>
+
+                <!-- 3. Common Mistakes & Counters -->
+                <template x-if="(tech.videos?.mistakes_and_counters || []).length > 0">
+                  <div>
+                    <button
+                      type="button"
+                      class="mistakes-toggle"
+                      :aria-expanded="showMistakes"
+                      @click="showMistakes = !showMistakes"
+                    >
+                      <span x-text="`Erreurs fréquentes & Contres (${tech.videos.mistakes_and_counters.length})`"></span>
+                      <span aria-hidden="true" x-text="showMistakes ? '−' : '+'"></span>
+                    </button>
+
+                    <div class="mistakes-body" x-show="showMistakes" x-transition>
+                      <template x-for="(m, mIdx) in tech.videos.mistakes_and_counters" :key="mIdx">
+                        <div class="mistake-item">
+                          <a
+                            class="mistake-link"
+                            :href="m.url"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            x-text="m.title + (m.channel ? ` (${m.channel})` : '')"
+                          ></a>
+                          <p class="mistake-note" x-show="m.note" x-text="m.note"></p>
+                        </div>
+                      </template>
+                    </div>
+                  </div>
+                </template>
+
+                <!-- 4. Revision status -->
+                <button
+                  type="button"
+                  class="mastered-toggle"
+                  :class="{ active: isMastered(item.id) }"
+                  :aria-pressed="isMastered(item.id)"
+                  @click="toggleMastered(item.id)"
+                  x-text="isMastered(item.id) ? '✓ Acquise' : 'Marquer comme acquise'"
+                ></button>
+              </article>
+            </template>
+          </div>
+        </section>
+      </template>
+    </div>
+  </main>
+
+  <footer class="container site-footer">
+    <p>Référentiel statique, sans connexion · Source de données : <code>syllabus.json</code></p>
+    <p x-show="Object.keys(mastered).length > 0" x-cloak>
+      Progression enregistrée sur cet appareil ·
+      <button type="button" class="link-btn" @click="resetProgress()">Réinitialiser</button>
+    </p>
+  </footer>
+
+  <script>
+    const MASTERED_KEY = 'judo:mastered';
+
+    // Accent-, case- and hyphen-insensitive form used for search ("osoto" matches "O-soto-gari", "cle" matches "clé").
+    function normalize(text) {
+      return String(text || '')
+        .normalize('NFD')
+        .replace(/[̀-ͯ]/g, '')
+        .toLowerCase()
+        .replace(/[-\s'’]+/g, '');
+    }
+
+    function loadMastered() {
+      try {
+        return JSON.parse(localStorage.getItem(MASTERED_KEY)) || {};
+      } catch {
+        return {};
+      }
+    }
+
+    function judoApp() {
+      return {
+        loading: true,
+        error: '',
+        meta: {},
+        tracks: {},
+        techniques: {},
+        selectedTrack: 'dojo',
+        selectedBelt: 'all',
+        selectedGroup: 'all',
+        selectedStatus: 'all',
+        cumulative: false,
+        search: '',
+        mastered: loadMastered(),
+
+        groupOptions: [
+          { value: 'all', label: 'Toutes' },
+          { value: 'Nage-waza', label: 'Nage-waza (Debout)' },
+          { value: 'Katame-waza', label: 'Katame-waza (Sol)' },
+        ],
+        statusOptions: [
+          { value: 'all', label: 'Tout' },
+          { value: 'todo', label: 'À revoir' },
+          { value: 'done', label: 'Acquises' },
+        ],
+
+        async init() {
+          try {
+            const res = await fetch('syllabus.json');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            this.meta = data.meta || {};
+            this.tracks = data.tracks || {};
+            this.techniques = data.techniques || {};
+            if (!this.tracks[this.selectedTrack]) {
+              this.selectedTrack = Object.keys(this.tracks)[0] || '';
+            }
+            this.applyHash();
+            window.addEventListener('hashchange', () => this.applyHash());
+          } catch (e) {
+            this.error = "Impossible de charger syllabus.json. Servez ce dossier via un serveur HTTP local (ex. python3 -m http.server 8000).";
+          } finally {
+            this.loading = false;
+          }
+        },
+
+        applyHash() {
+          const hash = decodeURIComponent(window.location.hash.replace('#', '').trim());
+          if (!hash) return;
+          if (this.tracks[hash]) {
+            this.selectedTrack = hash;
+            this.selectedBelt = 'all';
+            return;
+          }
+          for (const [trackKey, track] of Object.entries(this.tracks)) {
+            if ((track.belts || []).some((b) => b.id === hash)) {
+              this.selectedTrack = trackKey;
+              this.selectedBelt = hash;
+              return;
+            }
+          }
+        },
+
+        setTrack(trackKey) {
+          this.selectedTrack = trackKey;
+          this.selectedBelt = 'all';
+          history.replaceState(null, '', `#${trackKey}`);
+        },
+
+        setBelt(beltId) {
+          this.selectedBelt = beltId;
+          history.replaceState(null, '', beltId === 'all' ? `#${this.selectedTrack}` : `#${beltId}`);
+        },
+
+        get currentTrack() {
+          return this.tracks[this.selectedTrack] || null;
+        },
+
+        get currentBelts() {
+          return this.currentTrack?.belts || [];
+        },
+
+        getTech(id) {
+          return this.techniques[id] || { name: id, french_name: '', mechanics: [], videos: {} };
+        },
+
+        isMastered(id) {
+          return Boolean(this.mastered[id]);
+        },
+
+        toggleMastered(id) {
+          const next = { ...this.mastered };
+          if (next[id]) delete next[id];
+          else next[id] = true;
+          this.mastered = next;
+          this.saveMastered();
+        },
+
+        resetProgress() {
+          if (!confirm('Effacer toute la progression enregistrée sur cet appareil ?')) return;
+          this.mastered = {};
+          this.saveMastered();
+        },
+
+        saveMastered() {
+          try {
+            localStorage.setItem(MASTERED_KEY, JSON.stringify(this.mastered));
+          } catch {
+            // Storage unavailable (private mode): progress lives for this session only.
+          }
+        },
+
+        progressOf(items) {
+          const ids = [...new Set(items.map((i) => i.id))];
+          return { done: ids.filter((id) => this.isMastered(id)).length, total: ids.length };
+        },
+
+        get trackProgress() {
+          return this.progressOf(this.currentBelts.flatMap((b) => b.items));
+        },
+
+        get visibleBelts() {
+          if (this.selectedBelt === 'all') return this.currentBelts;
+          const idx = this.currentBelts.findIndex((b) => b.id === this.selectedBelt);
+          if (idx === -1) return [];
+          return this.cumulative ? this.currentBelts.slice(0, idx + 1) : [this.currentBelts[idx]];
+        },
+
+        matchesSearch(item, tokens) {
+          if (tokens.length === 0) return true;
+          const tech = this.getTech(item.id);
+          const haystack = normalize(
+            [tech.name, tech.french_name, tech.category, item.note, ...(tech.mechanics || [])].join(' ')
+          );
+          return tokens.every((t) => haystack.includes(t));
+        },
+
+        get filteredBelts() {
+          const tokens = this.search.split(/\s+/).map(normalize).filter(Boolean);
+          return this.visibleBelts
+            .map((belt) => {
+              const items = belt.items.filter((item) => {
+                if (this.selectedGroup !== 'all' && item.group !== this.selectedGroup) return false;
+                if (this.selectedStatus === 'done' && !this.isMastered(item.id)) return false;
+                if (this.selectedStatus === 'todo' && this.isMastered(item.id)) return false;
+                return this.matchesSearch(item, tokens);
+              });
+              return { ...belt, items, progress: this.progressOf(belt.items) };
+            })
+            .filter((belt) => belt.items.length > 0);
+        },
+      };
+    }
+
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+    }
+  </script>
+</body>
+</html>

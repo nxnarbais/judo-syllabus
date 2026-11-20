@@ -1,0 +1,1074 @@
+{
+  "meta": {
+    "title": "Référentiel Judo — Ceintures & Chevrons",
+    "subtitle": "Progression du Dojo & Programme officiel SJV / ASJ",
+    "language": "fr",
+    "updated_at": "2026-11-20"
+  },
+  "tracks": {
+    "dojo": {
+      "id": "dojo",
+      "label": "Programme du Dojo (Chevrons)",
+      "description": "Progression affichée au dojo avec chevrons intermédiaires et ceintures.",
+      "belts": [
+        {
+          "id": "chevron-jaune",
+          "name": "Chevron Jaune",
+          "short_name": "Ch. Jaune",
+          "color": "#facc15",
+          "is_stripe": true,
+          "items": [
+            { "id": "o-soto-gari", "group": "Nage-waza" },
+            { "id": "hiza-guruma", "group": "Nage-waza" },
+            { "id": "uki-goshi", "group": "Nage-waza" },
+            { "id": "kuzure-gesa-gatame", "group": "Katame-waza" },
+            { "id": "yoko-shiho-gatame", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "ceinture-jaune",
+          "name": "Ceinture Jaune",
+          "short_name": "Jaune",
+          "color": "#eab308",
+          "is_stripe": false,
+          "items": [
+            { "id": "o-uchi-gari", "group": "Nage-waza" },
+            { "id": "ko-uchi-gari", "group": "Nage-waza" },
+            { "id": "tai-otoshi", "group": "Nage-waza" },
+            { "id": "tate-shiho-gatame", "group": "Katame-waza" },
+            { "id": "kami-shiho-gatame", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "chevron-orange",
+          "name": "Chevron Orange",
+          "short_name": "Ch. Orange",
+          "color": "#fb923c",
+          "is_stripe": true,
+          "items": [
+            { "id": "ko-soto-gari", "group": "Nage-waza" },
+            { "id": "ko-soto-gake", "group": "Nage-waza" },
+            { "id": "o-goshi", "group": "Nage-waza" },
+            { "id": "ippon-seoi-nage", "group": "Nage-waza" },
+            { "id": "kuzure-kami-shiho-gatame", "group": "Katame-waza" },
+            { "id": "hon-gesa-gatame", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "ceinture-orange",
+          "name": "Ceinture Orange",
+          "short_name": "Orange",
+          "color": "#f97316",
+          "is_stripe": false,
+          "items": [
+            { "id": "de-ashi-barai", "group": "Nage-waza" },
+            { "id": "okuri-ashi-barai", "group": "Nage-waza" },
+            { "id": "tsuri-komi-goshi", "group": "Nage-waza" },
+            { "id": "harai-goshi", "group": "Nage-waza" },
+            { "id": "kuzure-gesa-gatame", "group": "Katame-waza" },
+            { "id": "kata-gatame", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "chevron-vert",
+          "name": "Chevron Vert",
+          "short_name": "Ch. Vert",
+          "color": "#4ade80",
+          "is_stripe": true,
+          "items": [
+            { "id": "sasae-tsuri-komi-ashi", "group": "Nage-waza" },
+            { "id": "morote-seoi-nage", "group": "Nage-waza" },
+            { "id": "uchi-mata", "group": "Nage-waza" },
+            { "id": "ko-uchi-makikomi", "group": "Nage-waza" },
+            { "id": "yoko-shiho-gatame", "group": "Katame-waza" },
+            { "id": "kuzure-kami-shiho-gatame", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "ceinture-verte",
+          "name": "Ceinture Verte",
+          "short_name": "Verte",
+          "color": "#16a34a",
+          "is_stripe": false,
+          "items": [
+            { "id": "tomoe-nage", "group": "Nage-waza" },
+            { "id": "yoko-otoshi", "group": "Nage-waza" },
+            { "id": "tani-otoshi", "group": "Nage-waza" },
+            { "id": "seoi-otoshi", "group": "Nage-waza", "note": "Affiché « Seo-otoshi » sur la fiche" },
+            { "id": "tate-shiho-gatame", "group": "Katame-waza", "note": "Deux variantes demandées" },
+            { "id": "ude-hishigi-juji-gatame", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "chevron-bleu",
+          "name": "Chevron Bleu",
+          "short_name": "Ch. Bleu",
+          "color": "#60a5fa",
+          "is_stripe": true,
+          "items": [
+            { "id": "hane-goshi", "group": "Nage-waza" },
+            { "id": "ashi-guruma", "group": "Nage-waza" },
+            { "id": "sukui-nage", "group": "Nage-waza" },
+            { "id": "ushiro-goshi", "group": "Nage-waza" },
+            { "id": "morote-gari", "group": "Nage-waza" },
+            { "id": "ude-garami", "group": "Katame-waza" },
+            { "id": "ude-hishigi-waki-gatame", "group": "Katame-waza" },
+            { "id": "juji-jime", "group": "Katame-waza", "note": "Kata-juji-jime, Nami-juji-jime, Gyaku-juji-jime" }
+          ]
+        },
+        {
+          "id": "ceinture-bleue",
+          "name": "Ceinture Bleue",
+          "short_name": "Bleue",
+          "color": "#2563eb",
+          "is_stripe": false,
+          "items": [
+            { "id": "o-guruma", "group": "Nage-waza" },
+            { "id": "te-guruma", "group": "Nage-waza" },
+            { "id": "utsuri-goshi", "group": "Nage-waza" },
+            { "id": "kuchiki-daoshi", "group": "Nage-waza" },
+            { "id": "ude-hishigi-ude-gatame", "group": "Katame-waza" },
+            { "id": "ude-hishigi-hiza-gatame", "group": "Katame-waza" },
+            { "id": "hadaka-jime", "group": "Katame-waza" },
+            { "id": "kata-ha-jime", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "ceinture-marron",
+          "name": "Ceinture Marron",
+          "short_name": "Marron",
+          "color": "#78350f",
+          "is_stripe": false,
+          "items": [
+            { "id": "soto-makikomi", "group": "Nage-waza" },
+            { "id": "hane-makikomi", "group": "Nage-waza" },
+            { "id": "uki-waza", "group": "Nage-waza" },
+            { "id": "sumi-gaeshi", "group": "Nage-waza" },
+            { "id": "hikkomi-gaeshi", "group": "Nage-waza" },
+            { "id": "kata-guruma", "group": "Nage-waza" },
+            { "id": "ura-nage", "group": "Nage-waza" },
+            { "id": "yoko-guruma", "group": "Nage-waza" },
+            { "id": "ude-hishigi-hara-gatame", "group": "Katame-waza" },
+            { "id": "ude-hishigi-sankaku-gatame", "group": "Katame-waza" },
+            { "id": "sankaku-jime", "group": "Katame-waza" },
+            { "id": "okuri-eri-jime", "group": "Katame-waza" }
+          ]
+        }
+      ]
+    },
+    "sjv": {
+      "id": "sjv",
+      "label": "Officiel SJV / ASJ",
+      "description": "Programme officiel de la Fédération Suisse de Judo & Ju-Jitsu (poster Go-Kyo / Katame-waza sans chevrons).",
+      "belts": [
+        {
+          "id": "sjv-jaune",
+          "name": "Jaune (5e Kyu)",
+          "short_name": "Jaune",
+          "color": "#eab308",
+          "is_stripe": false,
+          "items": [
+            { "id": "de-ashi-barai", "group": "Nage-waza" },
+            { "id": "hiza-guruma", "group": "Nage-waza" },
+            { "id": "sasae-tsuri-komi-ashi", "group": "Nage-waza" },
+            { "id": "uki-goshi", "group": "Nage-waza" },
+            { "id": "o-soto-gari", "group": "Nage-waza" },
+            { "id": "o-goshi", "group": "Nage-waza" },
+            { "id": "o-uchi-gari", "group": "Nage-waza" },
+            { "id": "ippon-seoi-nage", "group": "Nage-waza", "note": "Ippon- / Morote- / Eri-seoi-nage" },
+            { "id": "hon-gesa-gatame", "group": "Katame-waza" },
+            { "id": "kuzure-gesa-gatame", "group": "Katame-waza" },
+            { "id": "kata-gatame", "group": "Katame-waza" },
+            { "id": "kami-shiho-gatame", "group": "Katame-waza" },
+            { "id": "yoko-shiho-gatame", "group": "Katame-waza" },
+            { "id": "tate-shiho-gatame", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "sjv-orange",
+          "name": "Orange (4e Kyu)",
+          "short_name": "Orange",
+          "color": "#f97316",
+          "is_stripe": false,
+          "items": [
+            { "id": "ko-soto-gari", "group": "Nage-waza" },
+            { "id": "ko-uchi-gari", "group": "Nage-waza" },
+            { "id": "koshi-guruma", "group": "Nage-waza" },
+            { "id": "tsuri-komi-goshi", "group": "Nage-waza" },
+            { "id": "okuri-ashi-barai", "group": "Nage-waza" },
+            { "id": "tai-otoshi", "group": "Nage-waza" },
+            { "id": "harai-goshi", "group": "Nage-waza" },
+            { "id": "uchi-mata", "group": "Nage-waza" },
+            { "id": "kuzure-gesa-gatame", "group": "Katame-waza", "note": "Variantes" },
+            { "id": "kuzure-kami-shiho-gatame", "group": "Katame-waza", "note": "Variantes" },
+            { "id": "yoko-shiho-gatame", "group": "Katame-waza", "note": "Variantes" },
+            { "id": "tate-shiho-gatame", "group": "Katame-waza", "note": "Variantes" }
+          ]
+        },
+        {
+          "id": "sjv-verte",
+          "name": "Verte (3e Kyu)",
+          "short_name": "Verte",
+          "color": "#16a34a",
+          "is_stripe": false,
+          "items": [
+            { "id": "ko-soto-gake", "group": "Nage-waza" },
+            { "id": "tsuri-goshi", "group": "Nage-waza" },
+            { "id": "yoko-otoshi", "group": "Nage-waza" },
+            { "id": "ashi-guruma", "group": "Nage-waza" },
+            { "id": "hane-goshi", "group": "Nage-waza" },
+            { "id": "harai-tsuri-komi-ashi", "group": "Nage-waza" },
+            { "id": "tomoe-nage", "group": "Nage-waza" },
+            { "id": "kata-guruma", "group": "Nage-waza" },
+            { "id": "ude-garami", "group": "Katame-waza" },
+            { "id": "ude-hishigi-juji-gatame", "group": "Katame-waza" },
+            { "id": "ude-hishigi-ude-gatame", "group": "Katame-waza" },
+            { "id": "juji-jime", "group": "Katame-waza", "note": "Kata-juji-jime (2 var.), Gyaku-juji-jime, Nami-juji-jime" }
+          ]
+        },
+        {
+          "id": "sjv-bleue",
+          "name": "Bleue (2e Kyu)",
+          "short_name": "Bleue",
+          "color": "#2563eb",
+          "is_stripe": false,
+          "items": [
+            { "id": "sumi-gaeshi", "group": "Nage-waza" },
+            { "id": "tani-otoshi", "group": "Nage-waza" },
+            { "id": "hane-makikomi", "group": "Nage-waza" },
+            { "id": "sukui-nage", "group": "Nage-waza" },
+            { "id": "utsuri-goshi", "group": "Nage-waza" },
+            { "id": "o-guruma", "group": "Nage-waza" },
+            { "id": "soto-makikomi", "group": "Nage-waza" },
+            { "id": "uki-otoshi", "group": "Nage-waza" },
+            { "id": "ude-hishigi-hiza-gatame", "group": "Katame-waza" },
+            { "id": "ude-hishigi-ashi-gatame", "group": "Katame-waza" },
+            { "id": "ude-hishigi-waki-gatame", "group": "Katame-waza" },
+            { "id": "ude-hishigi-hara-gatame", "group": "Katame-waza" },
+            { "id": "hadaka-jime", "group": "Katame-waza" },
+            { "id": "okuri-eri-jime", "group": "Katame-waza" },
+            { "id": "kata-ha-jime", "group": "Katame-waza" }
+          ]
+        },
+        {
+          "id": "sjv-marron",
+          "name": "Marron (1er Kyu)",
+          "short_name": "Marron",
+          "color": "#78350f",
+          "is_stripe": false,
+          "items": [
+            { "id": "o-soto-guruma", "group": "Nage-waza" },
+            { "id": "uki-waza", "group": "Nage-waza" },
+            { "id": "yoko-wakare", "group": "Nage-waza" },
+            { "id": "yoko-guruma", "group": "Nage-waza" },
+            { "id": "ushiro-goshi", "group": "Nage-waza" },
+            { "id": "ura-nage", "group": "Nage-waza" },
+            { "id": "sumi-otoshi", "group": "Nage-waza" },
+            { "id": "yoko-gake", "group": "Nage-waza" },
+            { "id": "ude-hishigi-te-gatame", "group": "Katame-waza" },
+            { "id": "ude-hishigi-sankaku-gatame", "group": "Katame-waza" },
+            { "id": "katate-jime", "group": "Katame-waza" },
+            { "id": "ryote-jime", "group": "Katame-waza" },
+            { "id": "sode-guruma-jime", "group": "Katame-waza" },
+            { "id": "tsukkomi-jime", "group": "Katame-waza" },
+            { "id": "sankaku-jime", "group": "Katame-waza" }
+          ]
+        }
+      ]
+    }
+  },
+  "techniques": {
+    "o-soto-gari": {
+      "name": "O-soto-gari",
+      "french_name": "Grand fauchage extérieur",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : déséquilibrer uke vers son talon arrière droit (coin arrière).",
+        "Tsukuri : avancer le pied gauche à côté du pied droit d'uke, poitrine contre poitrine.",
+        "Kake : faucher fortement l'arrière de la cuisse d'uke avec la jambe droite tendue, orteils pointés."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "hiza-guruma": {
+      "name": "Hiza-guruma",
+      "french_name": "Roue autour du genou",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant et sur le côté pour charger sa jambe avant.",
+        "Tsukuri : pivoter en reculant le pied d'appui et bloquer la rotule d'uke avec la plante du pied.",
+        "Kake : poursuivre la rotation des mains en volant de voiture pour faire basculer uke."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "uki-goshi": {
+      "name": "Uki-goshi",
+      "french_name": "Hanche flottée",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant sur la pointe des pieds.",
+        "Tsukuri : glisser le bras autour de la taille et placer la demi-hanche contre le ventre d'uke.",
+        "Kake : pivoter rapidement les hanches sans soulever complètement uke, en gardant les jambes toniques."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "o-uchi-gari": {
+      "name": "O-uchi-gari",
+      "french_name": "Grand fauchage intérieur",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : pousser/tirer uke sur son talon arrière.",
+        "Tsukuri : entrer le pied d'appui entre les jambes d'uke et engager le mollet derrière son talon.",
+        "Kake : faucher en arc de cercle au ras du tatami tout en dirigeant le buste d'uke vers l'arrière."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ko-uchi-gari": {
+      "name": "Ko-uchi-gari",
+      "french_name": "Petit fauchage intérieur",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : amener le poids d'uke sur son pied avant.",
+        "Tsukuri : placer le pied d'appui près du pied ciblé et armer la plante du pied contre le talon d'Achille.",
+        "Kake : balayer le pied dans la direction des orteils d'uke en accompagnant avec les mains."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "tai-otoshi": {
+      "name": "Tai-otoshi",
+      "french_name": "Renversement du corps",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant-droit sur ses orteils.",
+        "Tsukuri : pivoter et tendre la jambe droite devant les tibias d'uke sans contact de hanche.",
+        "Kake : projeter avec les mains vers le bas-avant en explosant sur les appuis."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ko-soto-gari": {
+      "name": "Ko-soto-gari",
+      "french_name": "Petit fauchage extérieur",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : charger le talon d'uke vers l'arrière-côté.",
+        "Tsukuri : ouvrir l'angle sur le côté et placer la plante du pied contre le talon externe d'uke.",
+        "Kake : faucher dans la direction où pointent ses orteils en tassant ses épaules vers le tapis."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ko-soto-gake": {
+      "name": "Ko-soto-gake",
+      "french_name": "Petit accrochage extérieur",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : fixer le poids d'uke sur sa jambe d'appui arrière.",
+        "Tsukuri : crocheter le mollet ou le talon d'uke de l'extérieur avec votre pied.",
+        "Kake : soulever légèrement le crochet tout en poussant uke vers l'arrière."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "o-goshi": {
+      "name": "O-goshi",
+      "french_name": "Grande projection de hanche",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant et passer le bras profondément autour de sa taille.",
+        "Tsukuri : fléchir les genoux pour placer les hanches sous le centre de gravité d'uke.",
+        "Kake : pousser dans les jambes et pivoter les épaules pour projeter par-dessus la hanche."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ippon-seoi-nage": {
+      "name": "Ippon-seoi-nage",
+      "french_name": "Projection d'épaule à un bras",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant et vers le haut sur la pointe des pieds.",
+        "Tsukuri : pivoter à 180°, glisser le bras sous l'aisselle d'uke et coller le dos à son buste.",
+        "Kake : tendre les jambes et tirer vers le bas-avant par-dessus l'épaule."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "de-ashi-barai": {
+      "name": "De-ashi-barai",
+      "french_name": "Balayage du pied avancé",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : provoquer le pas d'uke et saisir le timing juste avant qu'il ne pose le poids.",
+        "Tsukuri : orienter le pied balayeur en cuillère contre la cheville externe d'uke.",
+        "Kake : balayer au ras du tatami tout en tournant le buste d'uke avec les mains."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "okuri-ashi-barai": {
+      "name": "Okuri-ashi-barai",
+      "french_name": "Balayage des deux pieds",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : déplacer uke latéralement en le soulevant légèrement au moment du pas chassé.",
+        "Tsukuri : balayer la cheville du pied qui se rapproche avant qu'il ne touche le sol.",
+        "Kake : réunir les deux pieds d'uke dans le mouvement et tirer vers le bas avec les mains."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "tsuri-komi-goshi": {
+      "name": "Tsuri-komi-goshi",
+      "french_name": "Hanche pêchée",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : lever fortement uke au revers et à la manche vers l'avant.",
+        "Tsukuri : fléchir très bas pour glisser les hanches sous la ceinture d'uke, coude du revers vers le haut.",
+        "Kake : charger uke sur les hanches et projeter par extension des jambes et rotation."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "harai-goshi": {
+      "name": "Harai-goshi",
+      "french_name": "Hanche fauchée",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant-côté pour charger son pied avant.",
+        "Tsukuri : pivoter sur la jambe d'appui, coller la hanche contre la cuisse d'uke.",
+        "Kake : balayer la jambe externe d'uke vers l'arrière tout en basculant le buste."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "sasae-tsuri-komi-ashi": {
+      "name": "Sasae-tsuri-komi-ashi",
+      "french_name": "Blocage du pied en pêchant",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant-côté pour l'obliger à avancer sa jambe.",
+        "Tsukuri : bloquer la cheville avancée d'uke avec la plante du pied, jambe d'appui proche.",
+        "Kake : soulever et faire tourner le haut du corps d'uke par-dessus le point de blocage."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "morote-seoi-nage": {
+      "name": "Morote-seoi-nage",
+      "french_name": "Projection d'épaule à deux mains",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : lever uke vers l'avant avec les deux mains.",
+        "Tsukuri : fléchir bas, plier le coude du revers sous l'aisselle d'uke en gardant les deux mains au kimono.",
+        "Kake : charger uke sur le dos et projeter en poussant sur les jambes."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "uchi-mata": {
+      "name": "Uchi-mata",
+      "french_name": "Fauchage par l'intérieur de la cuisse",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : amener uke vers l'avant en cercle pour alléger ses appuis.",
+        "Tsukuri : placer le pied d'appui au centre du triangle et engager la jambe entre les cuisses d'uke.",
+        "Kake : faucher vers le haut et l'arrière en plongeant le buste et en tirant la manche."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ko-uchi-makikomi": {
+      "name": "Ko-uchi-makikomi",
+      "french_name": "Petit enroulement intérieur",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : amener uke vers l'avant-côté sur son talon.",
+        "Tsukuri : entrer bas comme pour ko-uchi-gari en enroulant le bras autour de la jambe ou du buste.",
+        "Kake : s'enrouler sur le côté en entraînant uke vers le sol."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "tomoe-nage": {
+      "name": "Tomoe-nage",
+      "french_name": "Projection en cercle",
+      "category": "Ma-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant pour qu'il avance et fléchisse les genoux.",
+        "Tsukuri : glisser les hanches entre les pieds d'uke et placer le pied au bas-ventre.",
+        "Kake : dérouler le dos au sol et pousser avec la jambe vers le haut-arrière pour projeter par-dessus soi."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "yoko-otoshi": {
+      "name": "Yoko-otoshi",
+      "french_name": "Renversement latéral",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : déséquilibrer uke directement sur son côté.",
+        "Tsukuri : glisser la jambe tendue à l'extérieur du pied d'uke tout en s'allongeant sur le flanc.",
+        "Kake : tirer uke par-dessus la jambe tendue en gardant le contrôle des deux mains."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "tani-otoshi": {
+      "name": "Tani-otoshi",
+      "french_name": "Chute dans la vallée",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : rompre l'équilibre d'uke vers ses deux talons arrière.",
+        "Tsukuri : descendre les fesses vers le tatami derrière uke et tendre la jambe derrière ses deux chevilles.",
+        "Kake : se laisser tomber sur le côté en tirant uke vers l'arrière."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "seoi-otoshi": {
+      "name": "Seoi-otoshi",
+      "french_name": "Renversement par l'épaule",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant sur la pointe des pieds.",
+        "Tsukuri : entrer comme pour seoi-nage en posant un ou deux genoux au sol pour abaisser le centre.",
+        "Kake : tirer uke vers le bas-avant sans le soulever sur le dos."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "hane-goshi": {
+      "name": "Hane-goshi",
+      "french_name": "Hanche percutée / sautée",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant-haut.",
+        "Tsukuri : pivoter sur la jambe d'appui et placer le côté de la jambe fléchie contre la cuisse d'uke.",
+        "Kake : détendre la jambe en ressort tout en projetant avec les hanches et les bras."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ashi-guruma": {
+      "name": "Ashi-guruma",
+      "french_name": "Roue autour de la jambe",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke en cercle vers l'avant-côté.",
+        "Tsukuri : pivoter et tendre la jambe horizontalement devant les genoux d'uke sans contact de hanche.",
+        "Kake : faire pivoter uke par-dessus la jambe tendue en tournant les épaules."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "sukui-nage": {
+      "name": "Sukui-nage",
+      "french_name": "Projection en cuillère",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : déséquilibrer uke vers l'arrière ou l'arrière-côté.",
+        "Tsukuri : descendre sur les jambes à côté d'uke et passer les bras autour de ses cuisses/hanches.",
+        "Kake : soulever uke en cuillère et le projeter vers l'arrière."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ushiro-goshi": {
+      "name": "Ushiro-goshi",
+      "french_name": "Contre de hanche par l'arrière",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : absorber l'attaque de hanche d'uke en abaissant le centre de gravité.",
+        "Tsukuri : ceinturer uke par l'arrière et placer les hanches sous les siennes.",
+        "Kake : soulever uke verticalement et le déposer sur le dos devant soi."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "morote-gari": {
+      "name": "Morote-gari",
+      "french_name": "Fauchage à deux mains",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : feinter vers le haut pour amener le buste d'uke en arrière.",
+        "Tsukuri : changer de niveau rapidement, coller l'épaule au ventre d'uke et saisir l'arrière des deux genoux.",
+        "Kake : tirer les jambes vers soi tout en poussant avec l'épaule."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "o-guruma": {
+      "name": "O-guruma",
+      "french_name": "Grande roue",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant-côté.",
+        "Tsukuri : placer la jambe tendue en travers du haut de la cuisse / hanche d'uke.",
+        "Kake : faire basculer uke par-dessus la jambe comme autour d'un axe."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "te-guruma": {
+      "name": "Te-guruma",
+      "french_name": "Roue avec les mains",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : esquiver l'attaque d'uke en se décalant sur son côté.",
+        "Tsukuri : passer un bras entre les jambes d'uke pour saisir sa cuisse de l'intérieur et l'autre à la ceinture.",
+        "Kake : soulever en rotation et projeter uke par-dessus son épaule."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "utsuri-goshi": {
+      "name": "Utsuri-goshi",
+      "french_name": "Contre de hanche déplacée",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : bloquer l'attaque de hanche d'uke et le soulever légèrement par l'arrière.",
+        "Tsukuri : glisser sa propre hanche devant celle d'uke pendant qu'il est en suspension.",
+        "Kake : projeter uke par-dessus sa hanche vers l'avant."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "kuchiki-daoshi": {
+      "name": "Kuchiki-daoshi",
+      "french_name": "Chute de l'arbre mort",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke pour l'obliger à avancer une jambe.",
+        "Tsukuri : saisir l'intérieur du genou ou du talon avancé tout en contrôlant le revers.",
+        "Kake : soulever la jambe saisie et pousser uke vers l'arrière."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "soto-makikomi": {
+      "name": "Soto-makikomi",
+      "french_name": "Enroulement extérieur",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke fortement vers l'avant.",
+        "Tsukuri : bloquer le bras d'uke sous l'aisselle et tourner le dos en plaçant le pied à l'extérieur.",
+        "Kake : s'enrouler vers l'avant-côté au sol pour entraîner uke par-dessus le corps."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "hane-makikomi": {
+      "name": "Hane-makikomi",
+      "french_name": "Enroulement sauté",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant en enroulant son bras.",
+        "Tsukuri : placer le côté de la jambe contre celle d'uke comme dans hane-goshi.",
+        "Kake : enrouler le buste vers le tatami en prolongeant la poussée de la jambe."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "uki-waza": {
+      "name": "Uki-waza",
+      "french_name": "Technique flottée",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant-côté pour qu'il avance un pied en appui.",
+        "Tsukuri : glisser la jambe vers l'avant-extérieur et s'allonger sur le flanc.",
+        "Kake : projeter uke en diagonale avant dans la continuité de sa chute."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "sumi-gaeshi": {
+      "name": "Sumi-gaeshi",
+      "french_name": "Renversement dans l'angle",
+      "category": "Ma-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : amener uke penché vers l'avant-côté.",
+        "Tsukuri : s'asseoir près du pied d'uke et placer le cou-de-pied sous l'intérieur de sa cuisse.",
+        "Kake : basculer sur le dos en tirant le bras d'uke et en soulevant avec le crochet."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "hikkomi-gaeshi": {
+      "name": "Hikkomi-gaeshi",
+      "french_name": "Renversement en tirant dedans",
+      "category": "Ma-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : saisir la ceinture par-dessus le dos d'uke et le tirer vers l'avant.",
+        "Tsukuri : placer le pied à l'intérieur de la cuisse d'uke en descendant sur le dos.",
+        "Kake : tirer fermement à la ceinture et pousser avec la jambe pour le retourner."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "kata-guruma": {
+      "name": "Kata-guruma",
+      "french_name": "Roue autour des épaules",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant-bas.",
+        "Tsukuri : descendre très bas sous le centre d'uke, tête sous son aisselle, hanches chargées sur les épaules.",
+        "Kake : tendre les jambes et faire basculer uke par-dessus les épaules."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ura-nage": {
+      "name": "Ura-nage",
+      "french_name": "Projection en arrière",
+      "category": "Ma-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : coller les hanches contre uke en le ceinturant de côté ou par l'arrière.",
+        "Tsukuri : fléchir les genoux pour passer le bassin sous celui d'uke.",
+        "Kake : cambrer le dos en extension et projeter uke par-dessus l'épaule."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "yoko-guruma": {
+      "name": "Yoko-guruma",
+      "french_name": "Roue latérale",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : réagir à une poussée ou une attaque de hanche en passant sous le buste d'uke.",
+        "Tsukuri : glisser une jambe entre les jambes d'uke et se jeter sur le flanc.",
+        "Kake : faire passer uke en roue par-dessus son propre corps."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "koshi-guruma": {
+      "name": "Koshi-guruma",
+      "french_name": "Roue autour de la hanche",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant en enroulant le bras autour de sa nuque.",
+        "Tsukuri : pivoter et sortir la hanche plus loin que dans o-goshi.",
+        "Kake : faire rouler uke par-dessus la hanche en tirant la manche vers le sol."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "tsuri-goshi": {
+      "name": "Tsuri-goshi",
+      "french_name": "Hanche soulevée",
+      "category": "Koshi-waza",
+      "mechanics": [
+        "Kuzushi : saisir la ceinture d'uke dans le dos et tirer vers l'avant.",
+        "Tsukuri : glisser les hanches sous celles d'uke.",
+        "Kake : soulever à la ceinture et projeter par-dessus la hanche."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "harai-tsuri-komi-ashi": {
+      "name": "Harai-tsuri-komi-ashi",
+      "french_name": "Balayage du pied en pêchant",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : soulever et tirer uke vers l'avant alors qu'il recule le pied.",
+        "Tsukuri : reculer pour créer l'espace et balayer la cheville du pied qui recule.",
+        "Kake : accompagner la rotation des mains pour faire chuter uke en arc."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "uki-otoshi": {
+      "name": "Uki-otoshi",
+      "french_name": "Chute flottée",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : guider l'avancée d'uke jusqu'à son point de rupture vers l'avant.",
+        "Tsukuri : poser un genou au sol en reculant pour laisser passer uke.",
+        "Kake : projeter uke vers le sol uniquement par l'action des mains."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "o-soto-guruma": {
+      "name": "O-soto-guruma",
+      "french_name": "Grande roue extérieure",
+      "category": "Ashi-waza",
+      "mechanics": [
+        "Kuzushi : déséquilibrer uke vers l'arrière sur ses deux talons.",
+        "Tsukuri : placer la jambe tendue derrière les deux cuisses d'uke.",
+        "Kake : projeter uke par-dessus la jambe en arc vers l'arrière."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "yoko-wakare": {
+      "name": "Yoko-wakare",
+      "french_name": "Séparation latérale",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : tirer uke vers l'avant-côté sur ses orteils.",
+        "Tsukuri : projeter ses deux jambes en avant sous le corps d'uke en s'allongeant sur le flanc.",
+        "Kake : faire basculer uke par-dessus soi dans la direction du mouvement."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "sumi-otoshi": {
+      "name": "Sumi-otoshi",
+      "french_name": "Chute dans l'angle",
+      "category": "Te-waza",
+      "mechanics": [
+        "Kuzushi : attirer uke sur son talon arrière-côté sans contact de hanche ni de jambe.",
+        "Tsukuri : fléchir les appuis en décalage sur le côté.",
+        "Kake : abaisser et diriger uke vers son angle arrière mort avec les deux mains."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "yoko-gake": {
+      "name": "Yoko-gake",
+      "french_name": "Accrochage latéral",
+      "category": "Yoko-sutemi-waza",
+      "mechanics": [
+        "Kuzushi : charger le pied extérieur d'uke vers le côté.",
+        "Tsukuri : balayer/accrocher la cheville par l'extérieur en se laissant tomber sur le flanc.",
+        "Kake : tirer fermement les épaules d'uke vers le sol."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "hon-gesa-gatame": {
+      "name": "Hon-gesa-gatame",
+      "french_name": "Contrôle fondamental en écharpe",
+      "category": "Osaekomi-waza",
+      "mechanics": [
+        "Placement : contrôler le bras d'uke sous son aisselle et entourer sa nuque.",
+        "Appuis : jambes écartées en ciseaux, hanches basses près du buste d'uke.",
+        "Pression : tête baissée vers uke et poitrine collée pour empêcher le pont ou la sortie."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "kuzure-gesa-gatame": {
+      "name": "Kuzure-gesa-gatame",
+      "french_name": "Variante du contrôle en écharpe",
+      "category": "Osaekomi-waza",
+      "mechanics": [
+        "Placement : passer le bras sous l'aisselle opposée d'uke (main au tapis ou au col) plutôt que derrière la nuque.",
+        "Appuis : garder les jambes écartées et la hanche lourde contre les côtes d'uke.",
+        "Pression : bloquer l'épaule d'uke au tatami pour éviter qu'il ne tourne."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "kata-gatame": {
+      "name": "Kata-gatame",
+      "french_name": "Contrôle par l'épaule",
+      "category": "Osaekomi-waza",
+      "mechanics": [
+        "Placement : enfermer la tête et le bras d'uke entre votre épaule et votre bras.",
+        "Appuis : joindre les mains (paume contre paume) et descendre la poitrine basse.",
+        "Pression : caler une jambe écartée pour stabiliser la base et fixer les épaules."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "kami-shiho-gatame": {
+      "name": "Kami-shiho-gatame",
+      "french_name": "Contrôle des quatre coins par le haut",
+      "category": "Osaekomi-waza",
+      "mechanics": [
+        "Placement : se placer dans l'axe derrière la tête d'uke, bras sous ses aisselles saisissant la ceinture.",
+        "Appuis : genoux écartés ou jambes tendues en arrière, hanches basses au tapis.",
+        "Pression : coller les coudes aux flancs d'uke pour bloquer tout retournement."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "kuzure-kami-shiho-gatame": {
+      "name": "Kuzure-kami-shiho-gatame",
+      "french_name": "Variante du contrôle par le haut",
+      "category": "Osaekomi-waza",
+      "mechanics": [
+        "Placement : contrôler un bras sous l'aisselle et passer l'autre bras par-dessus l'épaule pour saisir la ceinture ou le revers.",
+        "Appuis : se décaler légèrement sur le côté pour bloquer la hanche.",
+        "Pression : garder le poids du buste sur la poitrine d'uke."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "yoko-shiho-gatame": {
+      "name": "Yoko-shiho-gatame",
+      "french_name": "Contrôle latéral des quatre coins",
+      "category": "Osaekomi-waza",
+      "mechanics": [
+        "Placement : se placer perpendiculairement à uke, un bras sous la tête et l'autre entre les jambes ou à la ceinture.",
+        "Appuis : genoux près du corps d'uke, orteils actifs ou jambes écartées.",
+        "Pression : poitrine lourde sur le sternum pour couper la reprise de garde."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "tate-shiho-gatame": {
+      "name": "Tate-shiho-gatame",
+      "french_name": "Contrôle longitudinal (montée)",
+      "category": "Osaekomi-waza",
+      "mechanics": [
+        "Placement : chevaucher le buste d'uke en contrôlant la tête et un bras (ou les deux).",
+        "Appuis : crocheter les pieds sous les cuisses d'uke ou serrer les genoux près des hanches.",
+        "Pression : garder le centre de gravité bas et les mains actives pour contrer le pont."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-garami": {
+      "name": "Ude-garami",
+      "french_name": "Clé de bras en torsion (Kimura / Americana)",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : immobiliser les épaules d'uke au sol et plier son bras à 90°.",
+        "Verrouillage : saisir le poignet d'uke et passer l'autre bras sous son coude pour attraper son propre poignet.",
+        "Finalisation : coller le coude au flanc d'uke et effectuer une rotation progressive vers l'épaule."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-hishigi-juji-gatame": {
+      "name": "Ude-hishigi-juji-gatame",
+      "french_name": "Clé de bras en croix",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : pivoter perpendiculairement à uke et passer la jambe par-dessus sa tête.",
+        "Verrouillage : serrer fermement les genoux et contrôler le poignet d'uke, pouce vers le haut.",
+        "Finalisation : tirer le bras vers la poitrine tout en poussant doucement les hanches vers le haut."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-hishigi-waki-gatame": {
+      "name": "Ude-hishigi-waki-gatame",
+      "french_name": "Clé de bras sous l'aisselle",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : bloquer le bras tendu d'uke sous son aisselle, petit doigt vers le haut.",
+        "Verrouillage : serrer le coude contre le flanc et contrôler l'avant-bras à deux mains.",
+        "Finalisation : exercer une pression contrôlée sur l'articulation du coude vers le bas."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-hishigi-ude-gatame": {
+      "name": "Ude-hishigi-ude-gatame",
+      "french_name": "Clé de bras par compression des mains",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : fixer l'épaule d'uke au sol ou contre votre buste.",
+        "Verrouillage : bloquer le poignet d'uke contre l'épaule et placer les deux mains à l'arrière du coude.",
+        "Finalisation : tendre le bras en poussant progressivement sur le coude."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-hishigi-hiza-gatame": {
+      "name": "Ude-hishigi-hiza-gatame",
+      "french_name": "Clé de bras avec le genou",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : contrôler le bras d'uke contre votre poitrine ou votre épaule.",
+        "Verrouillage : placer le genou comme point d'appui juste au-dessus du coude d'uke.",
+        "Finalisation : tirer le poignet vers soi contre le genou."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-hishigi-ashi-gatame": {
+      "name": "Ude-hishigi-ashi-gatame",
+      "french_name": "Clé de bras avec la jambe",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : immobiliser uke sur le côté ou le ventre et isoler son bras.",
+        "Verrouillage : placer la jambe par-dessus ou sous l'articulation du coude.",
+        "Finalisation : tirer le poignet en extension contre la jambe."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-hishigi-hara-gatame": {
+      "name": "Ude-hishigi-hara-gatame",
+      "french_name": "Clé de bras sur le ventre",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : contrôler l'épaule d'uke au sol et isoler son bras tendu.",
+        "Verrouillage : appuyer l'abdomen ou la hanche sur l'arrière du coude d'uke.",
+        "Finalisation : abaisser le bassin tout en tirant le poignet vers le haut."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-hishigi-sankaku-gatame": {
+      "name": "Ude-hishigi-sankaku-gatame",
+      "french_name": "Clé de bras en triangle",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : verrouiller le triangle de jambes autour de la tête et d'un bras d'uke.",
+        "Verrouillage : orienter le pouce du bras isolé vers le haut.",
+        "Finalisation : serrer les cuisses et exercer une pression sur le coude contre la hanche."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ude-hishigi-te-gatame": {
+      "name": "Ude-hishigi-te-gatame",
+      "french_name": "Clé de bras avec la main",
+      "category": "Kansetsu-waza",
+      "mechanics": [
+        "Contrôle : bloquer le poignet d'uke contre l'épaule ou le cou.",
+        "Verrouillage : placer l'avant-bras ou la main en appui derrière le coude d'uke.",
+        "Finalisation : effectuer une pression progressive sur l'articulation."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "juji-jime": {
+      "name": "Juji-jime (Kata / Nami / Gyaku)",
+      "french_name": "Étranglements croisés",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : saisir profondément les deux revers d'uke en croisant les poignets (paumes vers soi, vers l'extérieur ou inversées).",
+        "Position : garder les coudes bas et collés au buste pour ne pas laisser d'espace.",
+        "Finalisation : tirer vers soi en tournant les poignets pour comprimer les carotides."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "hadaka-jime": {
+      "name": "Hadaka-jime",
+      "french_name": "Étranglement à mains nues",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : passer l'avant-bras devant la gorge d'uke depuis son dos.",
+        "Position : joindre les mains (ou verrouiller sur le biceps) et coller la tête contre la sienne.",
+        "Finalisation : serrer les coudes vers l'arrière et soulever légèrement le buste."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "kata-ha-jime": {
+      "name": "Kata-ha-jime",
+      "french_name": "Étranglement par contrôle d'une aile",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : depuis le dos, saisir le revers opposé d'uke avec une main.",
+        "Position : passer l'autre bras sous l'aisselle d'uke pour lever son bras et placer la main derrière sa nuque.",
+        "Finalisation : pousser la tête vers l'avant tout en tirant le revers."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "okuri-eri-jime": {
+      "name": "Okuri-eri-jime",
+      "french_name": "Étranglement glissé par le revers",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : depuis le dos, glisser une main profondément au revers opposé d'uke.",
+        "Position : contrôler l'autre revers sous l'aisselle d'uke avec la seconde main.",
+        "Finalisation : tirer les deux mains dans des directions opposées en ouvrant la poitrine."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "sankaku-jime": {
+      "name": "Sankaku-jime",
+      "french_name": "Étranglement en triangle",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : enfermer la tête et un bras d'uke entre les jambes.",
+        "Position : passer le pied derrière le genou opposé (triangle fermé) et orienter le genou vers l'axe.",
+        "Finalisation : serrer les cuisses et tirer doucement la tête vers le bas."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "katate-jime": {
+      "name": "Katate-jime",
+      "french_name": "Étranglement à une main",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : saisir profondément le revers d'uke d'une main.",
+        "Position : stabiliser uke au sol avec le poids du corps ou l'autre bras.",
+        "Finalisation : appliquer le tranchant du poignet sur le côté du cou."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "ryote-jime": {
+      "name": "Ryote-jime",
+      "french_name": "Étranglement à deux mains",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : saisir les deux revers au niveau des épaules d'uke sans croiser les bras.",
+        "Position : coller les poings de chaque côté du cou.",
+        "Finalisation : comprimer les carotides vers l'intérieur."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "sode-guruma-jime": {
+      "name": "Sode-guruma-jime",
+      "french_name": "Étranglement par les manches (Ezekiel)",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : passer un bras derrière la nuque d'uke et saisir sa propre manche.",
+        "Position : glisser l'autre main devant la gorge d'uke.",
+        "Finalisation : étendre les deux avant-bras en ciseaux."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    },
+    "tsukkomi-jime": {
+      "name": "Tsukkomi-jime",
+      "french_name": "Étranglement en poussant",
+      "category": "Shime-waza",
+      "mechanics": [
+        "Prise : saisir les deux revers près du cou depuis la garde ou le dessus.",
+        "Position : garder les coudes alignés et les poignets fermes.",
+        "Finalisation : pousser vers le bas et l'avant contre les côtés du cou."
+      ],
+      "videos": { "baseline": null, "mistakes_and_counters": [] }
+    }
+  }
+}
