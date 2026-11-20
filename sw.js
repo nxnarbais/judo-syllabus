@@ -1,7 +1,7 @@
 // Offline cache. syllabus.json is network-first so edits show up immediately when online;
 // the rest of the app shell is stale-while-revalidate (served from cache, refreshed in the background).
 // Bump CACHE_VERSION when the SHELL list changes (e.g. a new Alpine version).
-const CACHE_VERSION = 'judo-v2';
+const CACHE_VERSION = 'judo-v3';
 const SHELL = [
   './',
   'index.html',

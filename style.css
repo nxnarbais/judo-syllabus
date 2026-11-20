@@ -53,6 +53,10 @@ button {
   font: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -542,6 +546,7 @@ svg {
 
 .card-titles {
   min-width: 0;
+  flex: 1;
 }
 
 .tech-name {
@@ -1107,10 +1112,14 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .carousel-stage {
   position: relative;
+  min-width: 0;
+  max-width: 100%;
   border: 1px solid var(--border);
   border-radius: 10px;
   background: #fff;
@@ -1119,6 +1128,8 @@ dialog::backdrop {
 
 .carousel-track {
   display: flex;
+  min-width: 0;
+  max-width: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   overscroll-behavior-x: contain;
@@ -1138,6 +1149,9 @@ dialog::backdrop {
 
 .carousel-slide {
   flex: 0 0 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   scroll-snap-align: center;
   margin: 0;
   display: flex;
@@ -1146,6 +1160,8 @@ dialog::backdrop {
 
 .carousel-img-btn {
   width: 100%;
+  min-width: 0;
+  overflow: hidden;
   border: none;
   display: flex;
   align-items: center;
@@ -1157,6 +1173,8 @@ dialog::backdrop {
 }
 
 .carousel-img {
+  min-width: 0;
+  min-height: 0;
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -1294,13 +1312,18 @@ dialog::backdrop {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 220px;
+  width: 100%;
   background: #fff;
   padding: 1rem 3rem;
-  min-height: 260px;
   overflow: hidden;
 }
 
 .lightbox-img {
+  min-width: 0;
+  min-height: 0;
   max-width: 100%;
   max-height: 66dvh;
   width: auto;
@@ -1335,6 +1358,11 @@ dialog::backdrop {
   border-top: 1px solid var(--border);
   font-size: 0.78rem;
   color: var(--text-muted);
+}
+
+.lightbox-credit {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .lightbox-counter {
