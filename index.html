@@ -26,6 +26,15 @@
         <button
           type="button"
           class="glossary-btn"
+          @click="openFlashcards()"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/></svg>
+          <span>Flashcards</span>
+        </button>
+
+        <button
+          type="button"
+          class="glossary-btn"
           @click="openGlossary()"
         >
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h8M8 11h6"/></svg>
@@ -522,6 +531,235 @@
     </template>
   </dialog>
 
+  <dialog
+    id="flashcards-dialog"
+    class="flashcards-dialog"
+    closedby="any"
+    aria-labelledby="flashcards-title"
+    x-ref="flashcardsDialog"
+    @close="closeFlashcards()"
+    @keydown.window="handleFlashcardKey($event)"
+  >
+    <div class="glossary-header">
+      <div>
+        <h2 id="flashcards-title" class="glossary-title">Flashcards</h2>
+        <p class="glossary-subtitle" x-text="flashcardHeaderSubtitle"></p>
+      </div>
+      <button type="button" class="glossary-close" @click="$refs.flashcardsDialog.close()" aria-label="Fermer les flashcards">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="fc-body">
+      <!-- Step 1: Setup -->
+      <template x-if="flashcardStep === 'setup'">
+        <div class="fc-setup">
+          <div class="fc-section">
+            <div class="fc-section-head">
+              <span class="filter-label">1. Choisir une ou plusieurs ceintures</span>
+              <button
+                type="button"
+                class="link-btn"
+                @click="flashcardBelts = []"
+                x-show="flashcardBelts.length > 0"
+              >
+                Tout sélectionner
+              </button>
+            </div>
+
+            <div class="fc-belt-grid" role="group" aria-label="Ceintures pour les flashcards">
+              <button
+                type="button"
+                class="fc-belt-chip"
+                :class="{ active: flashcardBelts.length === 0 }"
+                :aria-pressed="flashcardBelts.length === 0"
+                @click="flashcardBelts = []"
+              >
+                <span class="fc-belt-name">Toutes les ceintures</span>
+                <span class="belt-tab-count" x-text="`${flashcardCountForBelts([])} cartes`"></span>
+              </button>
+
+              <template x-for="belt in currentBelts" :key="`fc-${belt.id}`">
+                <button
+                  type="button"
+                  class="fc-belt-chip"
+                  :class="{ active: flashcardBelts.includes(belt.id) }"
+                  :aria-pressed="flashcardBelts.includes(belt.id)"
+                  @click="toggleFlashcardBelt(belt.id)"
+                >
+                  <span class="obi" :class="{ stripe: belt.is_stripe }" :style="`--belt: ${belt.color}`" aria-hidden="true"></span>
+                  <span class="fc-belt-name" x-text="belt.short_name"></span>
+                  <span class="belt-tab-count" x-text="flashcardCountForBelts([belt.id])"></span>
+                </button>
+              </template>
+            </div>
+
+            <label class="toggle fc-cumulative-toggle" x-show="flashcardBelts.length > 0">
+              <input type="checkbox" x-model="flashcardCumulative" />
+              <span class="toggle-track" aria-hidden="true"><span></span></span>
+              Inclure les ceintures précédentes
+            </label>
+          </div>
+
+          <div class="fc-section">
+            <span class="filter-label" id="fc-mode-lbl">2. Sens des questions</span>
+            <div class="segmented fc-mode-seg" role="group" aria-labelledby="fc-mode-lbl">
+              <template x-for="m in flashcardModeOptions" :key="m.value">
+                <button
+                  type="button"
+                  class="seg-btn"
+                  :class="{ active: flashcardMode === m.value }"
+                  :aria-pressed="flashcardMode === m.value"
+                  @click="flashcardMode = m.value"
+                  x-text="m.label"
+                ></button>
+              </template>
+            </div>
+          </div>
+
+          <div class="fc-setup-footer">
+            <button
+              type="button"
+              class="fc-primary-btn"
+              :disabled="flashcardAvailableTechs.length === 0"
+              @click="startFlashcards()"
+              x-text="`Commencer (${flashcardAvailableTechs.length} carte${flashcardAvailableTechs.length > 1 ? 's' : ''})`"
+            ></button>
+          </div>
+        </div>
+      </template>
+
+      <!-- Step 2: Play -->
+      <template x-if="flashcardStep === 'play' && currentFlashcard">
+        <div class="fc-play">
+          <div class="fc-progress-row">
+            <span class="fc-counter" x-text="`Carte ${flashcardIndex + 1} / ${flashcardDeck.length}`"></span>
+            <span class="fc-score" x-text="`Score : ${flashcardScore} / ${flashcardAnswers.length}`"></span>
+          </div>
+          <div class="progress-bar" aria-hidden="true">
+            <span :style="`width: ${Math.round(((flashcardIndex + (flashcardSelectedChoice ? 1 : 0)) / flashcardDeck.length) * 100)}%`"></span>
+          </div>
+
+          <div class="fc-prompt">
+            <template x-if="currentFlashcard.promptType === 'image-to-name'">
+              <div class="fc-prompt-img-wrap">
+                <img
+                  class="fc-prompt-img"
+                  :src="currentFlashcard.promptImage.url"
+                  :alt="flashcardSelectedChoice ? `${currentFlashcard.name} — ${currentFlashcard.promptImage.title}` : 'Illustration de technique à identifier'"
+                />
+                <p class="fc-prompt-hint">Quelle est cette technique ?</p>
+              </div>
+            </template>
+
+            <template x-if="currentFlashcard.promptType === 'name-to-image'">
+              <div class="fc-prompt-name-wrap">
+                <span class="fc-prompt-kicker" x-text="currentFlashcard.category || 'Technique'"></span>
+                <h3 class="fc-prompt-name" x-text="currentFlashcard.name"></h3>
+                <p class="fc-prompt-hint">Trouvez l’illustration correspondante</p>
+              </div>
+            </template>
+          </div>
+
+          <div
+            :class="currentFlashcard.promptType === 'image-to-name' ? 'fc-choices-text' : 'fc-choices-images'"
+            role="group"
+            aria-label="Choix de réponse"
+          >
+            <template x-for="(choice, cIdx) in currentFlashcard.choices" :key="choice.id">
+              <button
+                type="button"
+                class="fc-choice"
+                :class="{
+                  'fc-choice-img-btn': currentFlashcard.promptType === 'name-to-image',
+                  'correct': flashcardSelectedChoice && choice.id === currentFlashcard.id,
+                  'wrong': flashcardSelectedChoice === choice.id && choice.id !== currentFlashcard.id,
+                  'dimmed': flashcardSelectedChoice && choice.id !== currentFlashcard.id && flashcardSelectedChoice !== choice.id
+                }"
+                :disabled="Boolean(flashcardSelectedChoice)"
+                @click="selectFlashcardChoice(choice.id)"
+              >
+                <template x-if="currentFlashcard.promptType === 'image-to-name'">
+                  <span class="fc-choice-text">
+                    <span class="fc-choice-num" x-text="cIdx + 1"></span>
+                    <span class="fc-choice-label">
+                      <strong x-text="choice.name"></strong>
+                      <small x-show="flashcardSelectedChoice && choice.french_name" x-text="choice.french_name"></small>
+                    </span>
+                  </span>
+                </template>
+
+                <template x-if="currentFlashcard.promptType === 'name-to-image'">
+                  <div class="fc-choice-img-inner">
+                    <span class="fc-choice-num fc-choice-num-badge" x-text="cIdx + 1"></span>
+                    <img
+                      class="fc-choice-img"
+                      :src="choice.image.url"
+                      :alt="flashcardSelectedChoice ? choice.name : `Option ${cIdx + 1}`"
+                    />
+                  </div>
+                </template>
+              </button>
+            </template>
+          </div>
+
+          <div class="fc-feedback" x-show="flashcardSelectedChoice" x-transition.opacity>
+            <div class="fc-feedback-info" :class="flashcardSelectedChoice === currentFlashcard.id ? 'ok' : 'ko'">
+              <strong x-text="flashcardSelectedChoice === currentFlashcard.id ? 'Bonne réponse !' : `Réponse : ${currentFlashcard.name}`"></strong>
+              <span x-show="currentFlashcard.french_name" x-text="currentFlashcard.french_name"></span>
+            </div>
+            <button type="button" class="fc-primary-btn" @click="nextFlashcard()">
+              <span x-text="flashcardIndex + 1 < flashcardDeck.length ? 'Suivant →' : 'Voir le bilan'"></span>
+            </button>
+          </div>
+        </div>
+      </template>
+
+      <!-- Step 3: Summary -->
+      <template x-if="flashcardStep === 'summary'">
+        <div class="fc-summary">
+          <div class="fc-summary-hero">
+            <div class="fc-summary-score" x-text="`${flashcardScore} / ${flashcardDeck.length}`"></div>
+            <p class="fc-summary-pct" x-text="`${flashcardDeck.length ? Math.round((100 * flashcardScore) / flashcardDeck.length) : 0}% de réussite`"></p>
+          </div>
+
+          <template x-if="flashcardMissed.length > 0">
+            <div class="fc-missed-section">
+              <p class="section-label" x-text="`À revoir (${flashcardMissed.length})`"></p>
+              <ul class="fc-missed-list">
+                <template x-for="m in flashcardMissed" :key="`missed-${m.id}`">
+                  <li class="fc-missed-item">
+                    <img class="fc-missed-thumb" :src="m.thumb" :alt="m.name" />
+                    <div class="fc-missed-meta">
+                      <strong x-text="m.name"></strong>
+                      <span x-text="m.french_name"></span>
+                    </div>
+                  </li>
+                </template>
+              </ul>
+            </div>
+          </template>
+
+          <template x-if="flashcardMissed.length === 0">
+            <p class="fc-perfect">Sans faute ! Toutes les techniques de cette série ont été trouvées.</p>
+          </template>
+
+          <div class="fc-summary-actions">
+            <button
+              type="button"
+              class="fc-primary-btn"
+              x-show="flashcardMissed.length > 0"
+              @click="startFlashcards(flashcardMissed.map((m) => m.id))"
+              x-text="`Revoir les erreurs (${flashcardMissed.length})`"
+            ></button>
+            <button type="button" class="btn-secondary" @click="startFlashcards()">Recommencer</button>
+            <button type="button" class="btn-secondary" @click="flashcardStep = 'setup'">Changer de ceinture</button>
+          </div>
+        </div>
+      </template>
+    </div>
+  </dialog>
+
   <script>
     const MASTERED_KEY = 'judo:mastered';
 
@@ -613,6 +851,15 @@
         .replace(/[-\s'’]+/g, '');
     }
 
+    function shuffle(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
     function loadMastered() {
       try {
         return JSON.parse(localStorage.getItem(MASTERED_KEY)) || {};
@@ -638,6 +885,20 @@
         glossarySearch: '',
         glossaryKind: 'all',
         lightbox: null,
+        flashcardStep: 'setup',
+        flashcardBelts: [],
+        flashcardCumulative: false,
+        flashcardMode: 'mixed',
+        flashcardDeck: [],
+        flashcardIndex: 0,
+        flashcardSelectedChoice: null,
+        flashcardAnswers: [],
+
+        flashcardModeOptions: [
+          { value: 'mixed', label: 'Mixte' },
+          { value: 'image-to-name', label: 'Image → Nom' },
+          { value: 'name-to-image', label: 'Nom → Image' },
+        ],
 
         glossaryKindOptions: [
           { value: 'all', label: 'Tout' },
@@ -875,6 +1136,206 @@
             const haystack = normalize(`${entry.jp} ${entry.fr} ${entry.badge}`);
             return tokens.every((t) => haystack.includes(t));
           });
+        },
+
+        openFlashcards() {
+          this.flashcardBelts = [...this.selectedBelts];
+          this.flashcardCumulative = this.cumulative;
+          this.flashcardStep = 'setup';
+          this.$refs.flashcardsDialog?.showModal();
+        },
+
+        closeFlashcards() {
+          this.flashcardStep = 'setup';
+          this.flashcardDeck = [];
+          this.flashcardSelectedChoice = null;
+          this.flashcardAnswers = [];
+        },
+
+        toggleFlashcardBelt(beltId) {
+          if (this.flashcardBelts.includes(beltId)) {
+            this.flashcardBelts = this.flashcardBelts.filter((id) => id !== beltId);
+          } else {
+            this.flashcardBelts = [...this.flashcardBelts, beltId];
+          }
+        },
+
+        imagedTechsForBelts(beltIds, cumulative = false) {
+          let belts = this.currentBelts;
+          if (beltIds.length > 0) {
+            if (cumulative) {
+              const maxIdx = this.currentBelts.reduce(
+                (max, b, idx) => (beltIds.includes(b.id) ? idx : max),
+                -1
+              );
+              belts = maxIdx === -1 ? [] : this.currentBelts.slice(0, maxIdx + 1);
+            } else {
+              belts = this.currentBelts.filter((b) => beltIds.includes(b.id));
+            }
+          }
+          const seen = new Set();
+          const list = [];
+          for (const belt of belts) {
+            for (const item of belt.items) {
+              if (seen.has(item.id)) continue;
+              const tech = this.techniques[item.id];
+              if (tech && (tech.images || []).length > 0) {
+                seen.add(item.id);
+                list.push({ id: item.id, ...tech });
+              }
+            }
+          }
+          return list;
+        },
+
+        flashcardCountForBelts(beltIds) {
+          return this.imagedTechsForBelts(beltIds, false).length;
+        },
+
+        get flashcardAvailableTechs() {
+          return this.imagedTechsForBelts(this.flashcardBelts, this.flashcardCumulative);
+        },
+
+        get flashcardHeaderSubtitle() {
+          if (this.flashcardStep === 'setup') {
+            return this.currentTrack?.label || 'Sélectionnez une ceinture';
+          }
+          if (this.flashcardStep === 'summary') {
+            return 'Bilan de la session';
+          }
+          if (this.flashcardBelts.length === 0) return 'Toutes les ceintures';
+          return this.currentBelts
+            .filter((b) => this.flashcardBelts.includes(b.id))
+            .map((b) => b.short_name)
+            .join(', ');
+        },
+
+        get currentFlashcard() {
+          return this.flashcardDeck[this.flashcardIndex] || null;
+        },
+
+        get flashcardScore() {
+          return this.flashcardAnswers.filter((a) => a.correct).length;
+        },
+
+        get flashcardMissed() {
+          return this.flashcardAnswers
+            .filter((a) => !a.correct)
+            .map((a) => {
+              const t = this.getTech(a.id);
+              return {
+                id: a.id,
+                name: t.name,
+                french_name: t.french_name || '',
+                thumb: (t.images && t.images[0]?.url) || '',
+              };
+            });
+        },
+
+        pickRandomImage(tech) {
+          const imgs = tech.images || [];
+          return imgs[Math.floor(Math.random() * imgs.length)];
+        },
+
+        startFlashcards(onlyIds = null) {
+          const pool = this.flashcardAvailableTechs;
+          const targets = onlyIds
+            ? onlyIds
+                .map((id) => {
+                  const t = this.techniques[id];
+                  return t && (t.images || []).length > 0 ? { id, ...t } : null;
+                })
+                .filter(Boolean)
+            : pool;
+          if (targets.length === 0) return;
+
+          // Fallback distractor pools so every card always has 4 choices.
+          const trackImaged = this.imagedTechsForBelts([], false);
+          const allImaged = Object.entries(this.techniques)
+            .filter(([, t]) => (t.images || []).length > 0)
+            .map(([id, t]) => ({ id, ...t }));
+
+          this.flashcardDeck = shuffle(targets).map((tech) => {
+            const promptType =
+              this.flashcardMode === 'mixed'
+                ? Math.random() < 0.5
+                  ? 'image-to-name'
+                  : 'name-to-image'
+                : this.flashcardMode;
+
+            const used = new Set([tech.id]);
+            const distractors = [];
+            for (const candidatePool of [pool, trackImaged, allImaged]) {
+              for (const cand of shuffle(candidatePool)) {
+                if (distractors.length >= 3) break;
+                if (!used.has(cand.id)) {
+                  used.add(cand.id);
+                  distractors.push(cand);
+                }
+              }
+              if (distractors.length >= 3) break;
+            }
+
+            const choices = shuffle([tech, ...distractors]).map((c) => ({
+              id: c.id,
+              name: c.name,
+              french_name: c.french_name || '',
+              image: this.pickRandomImage(c),
+            }));
+
+            return {
+              id: tech.id,
+              name: tech.name,
+              french_name: tech.french_name || '',
+              category: tech.category || '',
+              promptType,
+              promptImage: this.pickRandomImage(tech),
+              choices,
+            };
+          });
+
+          this.flashcardIndex = 0;
+          this.flashcardSelectedChoice = null;
+          this.flashcardAnswers = [];
+          this.flashcardStep = 'play';
+        },
+
+        selectFlashcardChoice(choiceId) {
+          if (this.flashcardSelectedChoice || !this.currentFlashcard) return;
+          this.flashcardSelectedChoice = choiceId;
+          this.flashcardAnswers = [
+            ...this.flashcardAnswers,
+            {
+              id: this.currentFlashcard.id,
+              correct: choiceId === this.currentFlashcard.id,
+              promptType: this.currentFlashcard.promptType,
+            },
+          ];
+        },
+
+        nextFlashcard() {
+          if (!this.flashcardSelectedChoice) return;
+          if (this.flashcardIndex + 1 < this.flashcardDeck.length) {
+            this.flashcardIndex += 1;
+            this.flashcardSelectedChoice = null;
+          } else {
+            this.flashcardStep = 'summary';
+          }
+        },
+
+        handleFlashcardKey(e) {
+          if (!this.$refs.flashcardsDialog?.open || this.flashcardStep !== 'play' || !this.currentFlashcard) return;
+          if (!this.flashcardSelectedChoice && ['1', '2', '3', '4'].includes(e.key)) {
+            const idx = Number(e.key) - 1;
+            const choice = this.currentFlashcard.choices[idx];
+            if (choice) {
+              e.preventDefault();
+              this.selectFlashcardChoice(choice.id);
+            }
+          } else if (this.flashcardSelectedChoice && (e.key === 'Enter' || e.key === 'ArrowRight')) {
+            e.preventDefault();
+            this.nextFlashcard();
+          }
         },
       };
     }

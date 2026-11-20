@@ -1498,3 +1498,476 @@ dialog::backdrop {
     transition: none !important;
   }
 }
+
+/* Flashcards dialog */
+.flashcards-dialog[open] {
+  display: flex;
+  flex-direction: column;
+  width: min(760px, calc(100dvw - 1.5rem));
+  max-height: min(90dvh, 840px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 20px 50px rgba(36, 34, 30, 0.22);
+}
+
+.fc-body {
+  overflow-y: auto;
+  padding: 1.15rem 1.25rem 1.25rem;
+}
+
+.fc-setup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fc-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.fc-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.fc-belt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 0.5rem;
+}
+
+.fc-belt-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+
+.fc-belt-chip:hover {
+  border-color: var(--border-strong);
+}
+
+.fc-belt-chip.active {
+  background: var(--surface);
+  border-color: var(--indigo);
+  box-shadow: 0 0 0 1px var(--indigo);
+}
+
+.fc-belt-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fc-cumulative-toggle {
+  align-self: flex-start;
+}
+
+.fc-mode-seg {
+  align-self: flex-start;
+}
+
+.fc-setup-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.25rem;
+}
+
+.fc-primary-btn {
+  min-height: 44px;
+  padding: 0.55rem 1.25rem;
+  border: none;
+  border-radius: 11px;
+  background: var(--indigo);
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.fc-primary-btn:hover:not(:disabled) {
+  opacity: 0.92;
+}
+
+.fc-primary-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Flashcards play */
+.fc-play {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.fc-progress-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.fc-score {
+  color: var(--indigo);
+}
+
+.fc-prompt {
+  display: flex;
+  justify-content: center;
+}
+
+.fc-prompt-img-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fc-prompt-img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.5rem;
+}
+
+.fc-prompt-name-wrap {
+  width: 100%;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.fc-prompt-kicker {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--indigo);
+  background: var(--indigo-soft);
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.45rem;
+}
+
+.fc-prompt-name {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.7rem);
+  font-weight: 600;
+}
+
+.fc-prompt-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.fc-choices-text {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.fc-choices-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.fc-choice {
+  position: relative;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 0.75rem 0.85rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, opacity 0.15s;
+}
+
+.fc-choice:hover:not(:disabled) {
+  border-color: var(--indigo);
+  background: var(--indigo-soft);
+}
+
+.fc-choice:disabled {
+  cursor: default;
+}
+
+.fc-choice.correct {
+  border-color: var(--success);
+  background: var(--success-soft);
+  color: var(--success-text);
+}
+
+.fc-choice.wrong {
+  border-color: var(--red);
+  background: var(--red-soft);
+  color: var(--red-text);
+}
+
+.fc-choice.dimmed {
+  opacity: 0.55;
+}
+
+.fc-choice-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.fc-choice-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  background: var(--surface-muted);
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.fc-choice.correct .fc-choice-num {
+  background: var(--success);
+  color: #fff;
+}
+
+.fc-choice.wrong .fc-choice-num {
+  background: var(--red);
+  color: #fff;
+}
+
+.fc-choice-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.fc-choice-label strong {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.fc-choice-label small {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.fc-choice-img-btn {
+  padding: 0.4rem;
+  background: #fff;
+}
+
+.fc-choice-img-inner {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.fc-choice-num-badge {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  z-index: 1;
+}
+
+.fc-choice-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.fc-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
+}
+
+.fc-feedback-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  font-size: 0.88rem;
+}
+
+.fc-feedback-info.ok strong {
+  color: var(--success-text);
+}
+
+.fc-feedback-info.ko strong {
+  color: var(--red-text);
+}
+
+.fc-feedback-info span {
+  color: var(--text-muted);
+}
+
+/* Flashcards summary */
+.fc-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.fc-summary-hero {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.fc-summary-score {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--indigo);
+}
+
+.fc-summary-pct {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.fc-missed-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fc-missed-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.fc-missed-thumb {
+  width: 56px;
+  height: 44px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+
+.fc-missed-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.fc-missed-meta strong {
+  font-family: var(--serif);
+  font-size: 0.98rem;
+}
+
+.fc-missed-meta span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.fc-perfect {
+  text-align: center;
+  color: var(--success-text);
+  background: var(--success-soft);
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.fc-summary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+@media (max-width: 640px) {
+  .flashcards-dialog[open] {
+    width: calc(100dvw - 1rem);
+    max-height: 92dvh;
+    border-radius: 14px;
+  }
+
+  .fc-body {
+    padding: 1rem;
+  }
+
+  .fc-choices-text {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-mode-seg {
+    width: 100%;
+  }
+
+  .fc-mode-seg .seg-btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .fc-prompt-img {
+    max-height: 190px;
+  }
+
+  .fc-setup-footer .fc-primary-btn,
+  .fc-feedback .fc-primary-btn {
+    width: 100%;
+  }
+}
