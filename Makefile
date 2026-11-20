@@ -12,12 +12,12 @@ PLIST_PATH := $(HOME)/Library/LaunchAgents/$(PLIST_LABEL).plist
 GUI_DOMAIN := gui/$(shell id -u)
 
 .DEFAULT_GOAL := help
-.PHONY: help start stop restart status logs validate install-service uninstall-service
+.PHONY: help up down restart status logs validate install-service uninstall-service
 
 help: ## Show available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-18s\033[0m %s\n", $$1, $$2}'
 
-start: ## Start the server in the background (detached from terminal)
+up: ## Start the server in the background (detached from terminal)
 	@if [ -f "$(PID_FILE)" ] && kill -0 $$(cat "$(PID_FILE)") 2>/dev/null; then \
 		echo "Server already running (PID $$(cat "$(PID_FILE)")) on http://localhost:$(PORT)"; \
 	else \
@@ -33,7 +33,7 @@ start: ## Start the server in the background (detached from terminal)
 		fi; \
 	fi
 
-stop: ## Stop the background server
+down: ## Stop the background server
 	@if [ -f "$(PID_FILE)" ]; then \
 		PID=$$(cat "$(PID_FILE)"); \
 		if kill -0 "$$PID" 2>/dev/null; then \
@@ -46,7 +46,7 @@ stop: ## Stop the background server
 		echo "No PID file found at $(PID_FILE)"; \
 	fi
 
-restart: stop start ## Restart the background server
+restart: down up ## Restart the background server
 
 status: ## Check whether the server is running
 	@if [ -f "$(PID_FILE)" ] && kill -0 $$(cat "$(PID_FILE)") 2>/dev/null; then \
