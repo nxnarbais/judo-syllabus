@@ -23,6 +23,15 @@
       </div>
 
       <div class="header-side" x-show="!loading && !error" x-cloak>
+        <button
+          type="button"
+          class="glossary-btn"
+          @click="openGlossary()"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h8M8 11h6"/></svg>
+          <span>Lexique JP → FR</span>
+        </button>
+
         <div class="segmented track-switcher" role="group" aria-label="Programme">
           <template x-for="trackKey in Object.keys(tracks)" :key="trackKey">
             <button
@@ -111,13 +120,13 @@
       </section>
 
       <nav class="belt-nav" aria-label="Niveaux de ceinture">
-        <div class="belt-tabs">
+        <div class="belt-tabs" role="group" aria-label="Filtrer par ceinture">
           <button
             type="button"
             class="belt-tab"
-            :class="{ active: selectedBelt === 'all' }"
-            :aria-pressed="selectedBelt === 'all'"
-            @click="setBelt('all')"
+            :class="{ active: isAllBelts }"
+            :aria-pressed="isAllBelts"
+            @click="toggleBelt('all')"
           >
             <span class="belt-tab-name">Toutes</span>
             <span class="belt-tab-count" x-text="`${trackProgress.done}/${trackProgress.total}`"></span>
@@ -127,10 +136,10 @@
             <button
               type="button"
               class="belt-tab"
-              :class="{ active: selectedBelt === belt.id, complete: isComplete(belt) }"
-              :aria-pressed="selectedBelt === belt.id"
+              :class="{ active: isBeltSelected(belt.id), complete: isComplete(belt) }"
+              :aria-pressed="isBeltSelected(belt.id)"
               :title="belt.name"
-              @click="setBelt(belt.id)"
+              @click="toggleBelt(belt.id)"
             >
               <span class="obi" :class="{ stripe: belt.is_stripe }" :style="`--belt: ${belt.color}`" aria-hidden="true"></span>
               <span class="belt-tab-name" x-text="belt.short_name"></span>
@@ -139,7 +148,7 @@
           </template>
         </div>
 
-        <label class="toggle" x-show="selectedBelt !== 'all'" x-cloak>
+        <label class="toggle" x-show="!isAllBelts" x-cloak>
           <input type="checkbox" x-model="cumulative" />
           <span class="toggle-track" aria-hidden="true"><span></span></span>
           Inclure les ceintures précédentes
@@ -289,8 +298,151 @@
     </p>
   </footer>
 
+  <dialog
+    id="glossary-dialog"
+    class="glossary-dialog"
+    closedby="any"
+    aria-labelledby="glossary-title"
+    x-ref="glossaryDialog"
+    @close="glossarySearch = ''; glossaryKind = 'all'"
+  >
+    <div class="glossary-header">
+      <div>
+        <h2 id="glossary-title" class="glossary-title">Lexique japonais → français</h2>
+        <p class="glossary-subtitle" x-text="`${filteredGlossary.length} terme${filteredGlossary.length > 1 ? 's' : ''} affiché${filteredGlossary.length > 1 ? 's' : ''}`"></p>
+      </div>
+      <button type="button" class="glossary-close" @click="$refs.glossaryDialog.close()" aria-label="Fermer le lexique">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="glossary-controls">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Chercher un terme (ex. kuzushi, fauchage, goshi…)"
+          x-model.trim="glossarySearch"
+          aria-label="Rechercher dans le lexique"
+          autofocus
+        />
+        <button type="button" class="search-clear" x-show="glossarySearch" x-cloak @click="glossarySearch = ''" aria-label="Effacer la recherche du lexique">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+
+      <div class="segmented glossary-kinds" role="group" aria-label="Catégorie de termes">
+        <template x-for="opt in glossaryKindOptions" :key="opt.value">
+          <button
+            type="button"
+            class="seg-btn"
+            :class="{ active: glossaryKind === opt.value }"
+            :aria-pressed="glossaryKind === opt.value"
+            @click="glossaryKind = opt.value"
+            x-text="opt.label"
+          ></button>
+        </template>
+      </div>
+    </div>
+
+    <div class="glossary-body">
+      <p x-show="filteredGlossary.length === 0" class="glossary-empty">Aucun terme ne correspond à cette recherche.</p>
+      <dl class="glossary-list" x-show="filteredGlossary.length > 0">
+        <template x-for="entry in filteredGlossary" :key="`${entry.kind}-${entry.jp}`">
+          <div class="glossary-row">
+            <dt class="glossary-jp">
+              <span x-text="entry.jp"></span>
+              <span class="glossary-badge" :class="entry.kind" x-text="entry.badge"></span>
+            </dt>
+            <dd class="glossary-fr" x-text="entry.fr"></dd>
+          </div>
+        </template>
+      </dl>
+    </div>
+  </dialog>
+
   <script>
     const MASTERED_KEY = 'judo:mastered';
+
+    const JUDO_GLOSSARY = [
+      // Familles et catégories techniques
+      { jp: 'Nage-waza', fr: 'Techniques de projection (debout)', kind: 'notion', badge: 'Famille' },
+      { jp: 'Katame-waza', fr: 'Techniques de contrôle (au sol)', kind: 'notion', badge: 'Famille' },
+      { jp: 'Ashi-waza', fr: 'Techniques de jambes et de pieds', kind: 'notion', badge: 'Catégorie' },
+      { jp: 'Koshi-waza', fr: 'Techniques de hanches', kind: 'notion', badge: 'Catégorie' },
+      { jp: 'Te-waza', fr: 'Techniques de bras et d’épaules', kind: 'notion', badge: 'Catégorie' },
+      { jp: 'Sutemi-waza', fr: 'Techniques de sacrifice (chute du lanceur)', kind: 'notion', badge: 'Catégorie' },
+      { jp: 'Ma-sutemi-waza', fr: 'Techniques de sacrifice dans l’axe (sur le dos)', kind: 'notion', badge: 'Catégorie' },
+      { jp: 'Yoko-sutemi-waza', fr: 'Techniques de sacrifice sur le côté', kind: 'notion', badge: 'Catégorie' },
+      { jp: 'Osaekomi-waza', fr: 'Techniques d’immobilisation', kind: 'notion', badge: 'Catégorie' },
+      { jp: 'Shime-waza', fr: 'Techniques d’étranglement', kind: 'notion', badge: 'Catégorie' },
+      { jp: 'Kansetsu-waza', fr: 'Techniques de luxation (clés articulaires)', kind: 'notion', badge: 'Catégorie' },
+
+      // Principes fondamentaux, dojo et arbitrage
+      { jp: 'Kuzushi', fr: 'Déséquilibre de l’adversaire (1re phase d’une projection)', kind: 'notion', badge: 'Principe' },
+      { jp: 'Tsukuri', fr: 'Placement / préparation du corps avant l’exécution', kind: 'notion', badge: 'Principe' },
+      { jp: 'Kake', fr: 'Exécution finale de la projection', kind: 'notion', badge: 'Principe' },
+      { jp: 'Tori', fr: 'Celui qui exécute la technique', kind: 'notion', badge: 'Rôle' },
+      { jp: 'Uke', fr: 'Celui qui subit la technique (le partenaire)', kind: 'notion', badge: 'Rôle' },
+      { jp: 'Kumi-kata', fr: 'Prise de garde (saisie du judogi)', kind: 'notion', badge: 'Principe' },
+      { jp: 'Tai-sabaki', fr: 'Déplacement et rotation du corps', kind: 'notion', badge: 'Principe' },
+      { jp: 'Ukemi', fr: 'Brise-chute (art de tomber sans se blesser)', kind: 'notion', badge: 'Principe' },
+      { jp: 'Randori', fr: 'Exercice libre d’entraînement / combat souple', kind: 'notion', badge: 'Dojo' },
+      { jp: 'Shiai', fr: 'Compétition, combat arbitré', kind: 'notion', badge: 'Dojo' },
+      { jp: 'Judogi', fr: 'Tenue de judo (veste, pantalon, ceinture)', kind: 'notion', badge: 'Dojo' },
+      { jp: 'Obi', fr: 'Ceinture', kind: 'notion', badge: 'Dojo' },
+      { jp: 'Tatami', fr: 'Tapis de pratique', kind: 'notion', badge: 'Dojo' },
+      { jp: 'Rei', fr: 'Salut', kind: 'notion', badge: 'Dojo' },
+      { jp: 'Hajime', fr: 'Commencez ! (ordre de début de combat)', kind: 'notion', badge: 'Arbitrage' },
+      { jp: 'Matte', fr: 'Arrêtez / attendez ! (interruption temporaire)', kind: 'notion', badge: 'Arbitrage' },
+      { jp: 'Sore-made', fr: 'Fin du combat', kind: 'notion', badge: 'Arbitrage' },
+      { jp: 'Osae-komi', fr: 'Immobilisation en cours (début du décompte)', kind: 'notion', badge: 'Arbitrage' },
+      { jp: 'Toketa', fr: 'Sortie d’immobilisation (fin du décompte)', kind: 'notion', badge: 'Arbitrage' },
+      { jp: 'Ippon', fr: 'Point complet (victoire immédiate)', kind: 'notion', badge: 'Arbitrage' },
+      { jp: 'Waza-ari', fr: 'Demi-point (avantage technique important)', kind: 'notion', badge: 'Arbitrage' },
+
+      // Racines et éléments fréquents dans les noms de techniques
+      { jp: 'O-', fr: 'Grand (ex. O-soto-gari : grand fauchage extérieur)', kind: 'racine', badge: 'Racine' },
+      { jp: 'Ko-', fr: 'Petit (ex. Ko-uchi-gari : petit fauchage intérieur)', kind: 'racine', badge: 'Racine' },
+      { jp: 'Soto', fr: 'Extérieur', kind: 'racine', badge: 'Racine' },
+      { jp: 'Uchi', fr: 'Intérieur', kind: 'racine', badge: 'Racine' },
+      { jp: 'Mae', fr: 'Avant, devant', kind: 'racine', badge: 'Racine' },
+      { jp: 'Ushiro', fr: 'Arrière, derrière', kind: 'racine', badge: 'Racine' },
+      { jp: 'Yoko', fr: 'Côté, latéral', kind: 'racine', badge: 'Racine' },
+      { jp: 'Sumi', fr: 'Angle, coin', kind: 'racine', badge: 'Racine' },
+      { jp: 'Gari / Kari', fr: 'Fauchage', kind: 'racine', badge: 'Racine' },
+      { jp: 'Gake / Kake', fr: 'Accrochage', kind: 'racine', badge: 'Racine' },
+      { jp: 'Harai / Barai', fr: 'Balayage', kind: 'racine', badge: 'Racine' },
+      { jp: 'Guruma / Kuruma', fr: 'Roue, enroulement', kind: 'racine', badge: 'Racine' },
+      { jp: 'Goshi / Koshi', fr: 'Hanche', kind: 'racine', badge: 'Racine' },
+      { jp: 'Otoshi', fr: 'Renversement, chute vers le bas', kind: 'racine', badge: 'Racine' },
+      { jp: 'Nage', fr: 'Projection, lancer', kind: 'racine', badge: 'Racine' },
+      { jp: 'Seoi', fr: 'Porter sur le dos', kind: 'racine', badge: 'Racine' },
+      { jp: 'Gatame / Katame', fr: 'Contrôle, maintien', kind: 'racine', badge: 'Racine' },
+      { jp: 'Shime / Jime', fr: 'Étranglement', kind: 'racine', badge: 'Racine' },
+      { jp: 'Garami', fr: 'Enroulement, clé en torsion', kind: 'racine', badge: 'Racine' },
+      { jp: 'Hishigi', fr: 'Luxation, hyperextension', kind: 'racine', badge: 'Racine' },
+      { jp: 'Ashi', fr: 'Jambe, pied', kind: 'racine', badge: 'Racine' },
+      { jp: 'Hiza', fr: 'Genou', kind: 'racine', badge: 'Racine' },
+      { jp: 'Te', fr: 'Main, bras', kind: 'racine', badge: 'Racine' },
+      { jp: 'Ude', fr: 'Bras', kind: 'racine', badge: 'Racine' },
+      { jp: 'Kata', fr: 'Épaule (ou forme codifiée)', kind: 'racine', badge: 'Racine' },
+      { jp: 'Kubi', fr: 'Cou, nuque', kind: 'racine', badge: 'Racine' },
+      { jp: 'Sode', fr: 'Manche du judogi', kind: 'racine', badge: 'Racine' },
+      { jp: 'Eri', fr: 'Revers / col du judogi', kind: 'racine', badge: 'Racine' },
+      { jp: 'Tomoe', fr: 'En cercle, en boucle', kind: 'racine', badge: 'Racine' },
+      { jp: 'Juji', fr: 'En croix', kind: 'racine', badge: 'Racine' },
+      { jp: 'Kesa', fr: 'En écharpe (en diagonale)', kind: 'racine', badge: 'Racine' },
+      { jp: 'Shiho', fr: 'Quatre côtés / quatre points d’appui', kind: 'racine', badge: 'Racine' },
+      { jp: 'Tate', fr: 'Vertical, à cheval', kind: 'racine', badge: 'Racine' },
+      { jp: 'Kami', fr: 'Supérieur, par-dessus la tête', kind: 'racine', badge: 'Racine' },
+      { jp: 'Kuzure', fr: 'Variante', kind: 'racine', badge: 'Racine' },
+      { jp: 'Gyaku', fr: 'Inversé, contraire', kind: 'racine', badge: 'Racine' },
+      { jp: 'Morote', fr: 'À deux mains', kind: 'racine', badge: 'Racine' },
+      { jp: 'Tsuri', fr: 'Soulever, pêcher', kind: 'racine', badge: 'Racine' },
+      { jp: 'Komi', fr: 'Entrer, tirer vers soi', kind: 'racine', badge: 'Racine' },
+    ];
 
     // Accent-, case- and hyphen-insensitive form used for search ("osoto" matches "O-soto-gari", "cle" matches "clé").
     function normalize(text) {
@@ -317,12 +469,21 @@
         tracks: {},
         techniques: {},
         selectedTrack: 'dojo',
-        selectedBelt: 'all',
+        selectedBelts: [],
         selectedGroup: 'all',
         selectedStatus: 'all',
         cumulative: false,
         search: '',
         mastered: loadMastered(),
+        glossarySearch: '',
+        glossaryKind: 'all',
+
+        glossaryKindOptions: [
+          { value: 'all', label: 'Tout' },
+          { value: 'notion', label: 'Notions & Dojo' },
+          { value: 'racine', label: 'Racines' },
+          { value: 'technique', label: 'Techniques' },
+        ],
 
         groupOptions: [
           { value: 'all', label: 'Tout', hint: '' },
@@ -360,13 +521,16 @@
           if (!hash) return;
           if (this.tracks[hash]) {
             this.selectedTrack = hash;
-            this.selectedBelt = 'all';
+            this.selectedBelts = [];
             return;
           }
+          const parts = hash.split(',').map((s) => s.trim()).filter(Boolean);
           for (const [trackKey, track] of Object.entries(this.tracks)) {
-            if ((track.belts || []).some((b) => b.id === hash)) {
+            const trackBeltIds = new Set((track.belts || []).map((b) => b.id));
+            const matched = parts.filter((id) => trackBeltIds.has(id));
+            if (matched.length > 0) {
               this.selectedTrack = trackKey;
-              this.selectedBelt = hash;
+              this.selectedBelts = [...new Set(matched)];
               return;
             }
           }
@@ -374,13 +538,38 @@
 
         setTrack(trackKey) {
           this.selectedTrack = trackKey;
-          this.selectedBelt = 'all';
+          this.selectedBelts = [];
           history.replaceState(null, '', `#${trackKey}`);
         },
 
-        setBelt(beltId) {
-          this.selectedBelt = beltId;
-          history.replaceState(null, '', beltId === 'all' ? `#${this.selectedTrack}` : `#${beltId}`);
+        get isAllBelts() {
+          return this.selectedBelts.length === 0;
+        },
+
+        isBeltSelected(beltId) {
+          return this.selectedBelts.includes(beltId);
+        },
+
+        toggleBelt(beltId) {
+          if (beltId === 'all') {
+            this.selectedBelts = [];
+          } else if (this.selectedBelts.includes(beltId)) {
+            this.selectedBelts = this.selectedBelts.filter((id) => id !== beltId);
+          } else {
+            this.selectedBelts = [...this.selectedBelts, beltId];
+          }
+          this.updateHash();
+        },
+
+        updateHash() {
+          if (this.isAllBelts) {
+            history.replaceState(null, '', `#${this.selectedTrack}`);
+            return;
+          }
+          const ordered = this.currentBelts
+            .filter((b) => this.selectedBelts.includes(b.id))
+            .map((b) => b.id);
+          history.replaceState(null, '', ordered.length ? `#${ordered.join(',')}` : `#${this.selectedTrack}`);
         },
 
         get currentTrack() {
@@ -450,10 +639,15 @@
         },
 
         get visibleBelts() {
-          if (this.selectedBelt === 'all') return this.currentBelts;
-          const idx = this.currentBelts.findIndex((b) => b.id === this.selectedBelt);
-          if (idx === -1) return [];
-          return this.cumulative ? this.currentBelts.slice(0, idx + 1) : [this.currentBelts[idx]];
+          if (this.isAllBelts) return this.currentBelts;
+          if (this.cumulative) {
+            const maxIdx = this.currentBelts.reduce(
+              (max, b, idx) => (this.selectedBelts.includes(b.id) ? idx : max),
+              -1
+            );
+            return maxIdx === -1 ? [] : this.currentBelts.slice(0, maxIdx + 1);
+          }
+          return this.currentBelts.filter((b) => this.selectedBelts.includes(b.id));
         },
 
         matchesSearch(item, tokens) {
@@ -479,7 +673,45 @@
             })
             .filter((belt) => belt.items.length > 0);
         },
+
+        openGlossary() {
+          this.$refs.glossaryDialog?.showModal();
+        },
+
+        get glossaryEntries() {
+          const techEntries = Object.values(this.techniques).map((t) => ({
+            jp: t.name,
+            fr: t.french_name || '',
+            kind: 'technique',
+            badge: t.category || 'Technique',
+          }));
+          return [...JUDO_GLOSSARY, ...techEntries].sort((a, b) =>
+            a.jp.localeCompare(b.jp, 'fr', { sensitivity: 'base' })
+          );
+        },
+
+        get filteredGlossary() {
+          const tokens = this.glossarySearch.split(/\s+/).map(normalize).filter(Boolean);
+          return this.glossaryEntries.filter((entry) => {
+            if (this.glossaryKind !== 'all' && entry.kind !== this.glossaryKind) return false;
+            if (tokens.length === 0) return true;
+            const haystack = normalize(`${entry.jp} ${entry.fr} ${entry.badge}`);
+            return tokens.every((t) => haystack.includes(t));
+          });
+        },
       };
+    }
+
+    if (!('closedBy' in HTMLDialogElement.prototype)) {
+      const outside = (e, dialog) => {
+        const r = dialog.getBoundingClientRect();
+        return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+      };
+      for (const dialog of document.querySelectorAll('dialog[closedby="any"]')) {
+        let pressedOutside = false;
+        dialog.addEventListener('pointerdown', (e) => { pressedOutside = outside(e, dialog); });
+        dialog.addEventListener('pointerup', (e) => { if (pressedOutside && outside(e, dialog)) dialog.close(); });
+      }
     }
 
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
