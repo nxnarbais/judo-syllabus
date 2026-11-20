@@ -1,0 +1,16 @@
+index.html
+  h_c48f198b8665b9 26-34,123,127-129,139-140,142,151,301-364,368-446,472,478-486,524,527,529-531,533,541,545-572,642-650,676-701,705-716
+style.css
+  h_c48f198b8665b9 907-1093
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "593d6e203d0e344e34a080f2b7bb8ffdba30ed01",
+  "prompts": {},
+  "humans": {
+    "h_c48f198b8665b9": {
+      "author": "Nicolas Narbais <nicolas.narbais@gmail.com>"
+    }
+  }
+}
