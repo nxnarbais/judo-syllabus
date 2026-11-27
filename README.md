@@ -72,6 +72,6 @@ Les résultats sont enregistrés dans `scripts/candidates.json`, les chaînes de
 
 ## Déploiement
 
-Déposez simplement `index.html`, `style.css`, `syllabus.json`, `sw.js`, `manifest.webmanifest` et `icon.svg` sur **GitHub Pages** ou **Cloudflare Pages** (HTTPS requis pour le mode hors ligne).
+Le workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml) valide `syllabus.json` et déploie uniquement les fichiers statiques (`index.html`, `style.css`, `syllabus.json`, `sw.js`, `manifest.webmanifest`, `icon.svg`) sur **GitHub Pages** à chaque push sur `main`. Pour l'activer sur GitHub : **Settings → Pages → Source : GitHub Actions** (le dépôt doit être public sur un compte GitHub Free).
 
 Les modifications de `syllabus.json` sont visibles immédiatement ; celles de `index.html` / `style.css` au rechargement suivant. Si vous changez la version d'Alpine.js, mettez aussi à jour l'URL et `CACHE_VERSION` dans `sw.js`.
